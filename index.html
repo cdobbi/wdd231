@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!-- the head is the top of the document and contains metadata and links to external resources -->
+    <title>WDD 231 - Web Frontend Development I - Christi Dobbins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  meta data is information about the data on the page. The viewport meta tag controls the layout on mobile browsers -->
+    <link rel="stylesheet" href="styles/base.css"> <!-- links to the base.css file in the styles directory -->
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Christi Dobbins - This is my introduction page with links to a few projects and linkdin">
+    <!-- meta description is a brief summary of the page content -->
+    <meta name="author" content="Christi Dobbins"> <!-- meta author is the name of the author of the page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap"
+        rel="stylesheet"> <!-- links to the Google Fonts API to import the Gideon Roman and Poppins fonts -->
+    <script src="scripts/getdates.js" defer></script>
+    <!-- links to the getdates.js file in the scripts directory and defers the execution of the script until after the HTML document has been parsed -->
+    <meta charset="UTF-8">
+    <!-- meta charset specifies the character encoding for the document. character encoding is the process of converting characters into a set of bytes -->
+</head>
+
+<body> <!-- the body is the main content of the document -->
+    <header> <!-- the header is the top section of the document and typically contains the page heading and navigation links -->
+        <div class="header-top">
+            <img src="images/profile.jpg" alt="Picture of Christi Dobbins"><!-- the h1 tag is used for the main heading of the page -->
+            <h1>Christina Dobbins</h1> <!-- the h1 tag is used for the main heading of the page -->
+        </div>
+        <nav> <!-- the nav tag is used to define a set of navigation links -->
+            <ul> <!-- the ul tag is used to create an unordered list -->
+                <li><a href="https://cdobbi.github.io/wdd231" target="_blank">Home</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">Chamber</a></li>
+                <li><a href="https://cdobbi.github.io/" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/christi-dobbins-46a6aa98" target="_blank">LinkedIn</a></li>
+                <!-- the a tag is used to create a hyperlink. the href attribute specifies the URL of the page the link goes to -->
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- the main tag is used to define the main content of the document -->
+        <section class="card">
+            <!-- the section tag is used to define sections in a document. the class attribute is used to define a class for the section. card is a class that can be used to style the section -->
+            <h2>About Me</h2> <!-- the h2 tag is used for subheadings on the page -->
+            <div class="about-me-content">
+                <!-- the div tag is used to group elements together. the class attribute is used to define a class for the div -->
+                <p>I'm Christi Dobbins, I live in Payson, Utah. I'm working towards a Bachelor degree in Software Development from BYU-I
+                    Pathways. I'm very grateful for this opportunity and look forward to discovering how it will turn out.</p>
+                <!-- the p tag is used to define a paragraph -->
+ 
+            </div>
+            <h2>Country</h2>
+            <div class="country-content">
+                <img src="images/usflag.jpg" alt="Picture of Christi Dobbins">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+            </div>
+        </section>
+        <aside class="card">
+            <!-- the aside tag is used to define content aside from the main content. the class attribute is used to define a class for the aside. card is a class that can be used to style the aside -->
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">Dev Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a
+                        href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1">Lorem
+                        Ipsum Image</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer> <!--the footer is the bottom section of the document -->
+        <p>&copy; <span id="currentyear"></span> 🐇 Christi Dobbins 🐇 USA</p>
+        <!--the p tag is used to define a paragraph. the span tag is used to group inline elements together. the id attribute is used to identify the span element  -->
+        <p>This document was last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
