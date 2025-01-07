@@ -113,6 +113,20 @@
         border: 2px solid darkcyan;
         padding: 0.3rem;
     }
+
+    .hamburger-menu {
+        display: block;
+        color: chocolate;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 480px) {

@@ -39,6 +39,7 @@ div.header-top {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin-top: 0;
     transition: all 0.3s ease-in-out;
 }
@@ -46,14 +47,14 @@ div.header-top {
 header img {
     width: 210px;
     height: 220px;
-    margin: 1rem;
+    margin: 1rem 0 1rem 0;
     transition: all 0.3s ease-in-out;
 }
 
 header h1 {
-    margin-top: 5rem;
     font-size: 3rem;
     color: #000;
+    margin: 0;
     transition: all 0.3s ease-in-out;
 }
 
@@ -288,4 +289,10 @@ footer img {
     break-after: column;
     /* Forces a column break */
     transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
