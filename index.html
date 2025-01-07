@@ -1,79 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> <!-- the head is the top of the document and contains metadata and links to external resources -->
+<head>
     <title>WDD 231 - Web Frontend Development I - Christi Dobbins</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  meta data is information about the data on the page. The viewport meta tag controls the layout on mobile browsers -->
-    <link rel="stylesheet" href="styles/base.css"> <!-- links to the base.css file in the styles directory -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/glitch.css">
     <meta name="description"
         content="WDD 231 - Web Frontend Development I - Christi Dobbins - This is my introduction page with links to a few projects and linkdin">
-    <!-- meta description is a brief summary of the page content -->
-    <meta name="author" content="Christi Dobbins"> <!-- meta author is the name of the author of the page -->
+    <meta name="author" content="Christi Dobbins">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap"
-        rel="stylesheet"> <!-- links to the Google Fonts API to import the Gideon Roman and Poppins fonts -->
+        rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
-    <!-- links to the getdates.js file in the scripts directory and defers the execution of the script until after the HTML document has been parsed -->
     <meta charset="UTF-8">
-    <!-- meta charset specifies the character encoding for the document. character encoding is the process of converting characters into a set of bytes -->
 </head>
 
-<body> <!-- the body is the main content of the document -->
-    <header> <!-- the header is the top section of the document and typically contains the page heading and navigation links -->
+<body>
+    <header>
         <div class="header-top">
-            <img src="images/profile.jpg" alt="Picture of Christi Dobbins"><!-- the h1 tag is used for the main heading of the page -->
-            <h1>Christina Dobbins</h1> <!-- the h1 tag is used for the main heading of the page -->
+            <img src="images/profile.jpg" alt="Picture of Christi Dobbins">
+            <h1>Christina Dobbins</h1>
         </div>
-        <nav> <!-- the nav tag is used to define a set of navigation links -->
-            <ul> <!-- the ul tag is used to create an unordered list -->
-                <li><a href="https://cdobbi.github.io/wdd231" target="_blank">Home</a></li>
-                <li><a href="https://byui.instructure.com/" target="_blank">Chamber</a></li>
-                <li><a href="https://cdobbi.github.io/" target="_blank">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/christi-dobbins-46a6aa98" target="_blank">LinkedIn</a></li>
-                <!-- the a tag is used to create a hyperlink. the href attribute specifies the URL of the page the link goes to -->
+        <nav>
+            <ul>
+                <li><a href="https://cdobbi.github.io/wdd231" target="_blank" class="glitch" data-text="Home">Home</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank" class="glitch" data-text="Chamber">Chamber</a></li>
+                <li><a href="https://cdobbi.github.io/" target="_blank" class="glitch" data-text="GitHub Profile">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/christi-dobbins-46a6aa98" target="_blank" class="glitch"
+                        data-text="LinkedIn">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
-    <main> <!-- the main tag is used to define the main content of the document -->
+    <main>
         <section class="card">
-            <!-- the section tag is used to define sections in a document. the class attribute is used to define a class for the section. card is a class that can be used to style the section -->
-            <h2>About Me</h2> <!-- the h2 tag is used for subheadings on the page -->
-            <div class="about-me-content">
-                <!-- the div tag is used to group elements together. the class attribute is used to define a class for the div -->
-                <p>I'm Christi Dobbins, I live in Payson, Utah. I'm working towards a Bachelor degree in Software Development from BYU-I
-                    Pathways. I'm very grateful for this opportunity and look forward to discovering how it will turn out.</p>
-                <!-- the p tag is used to define a paragraph -->
-
-            </div>
-            <h2>Country</h2>
-            <div class="country-content">
-                <img src="images/usflag.jpg" alt="Picture of Christi Dobbins">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+            <h2>Course Work</h2>
+            <div class="course-work-content">
+                <ul>
+                    <li><a href="#"></a>Algorithm design</li>
+                    <li><a href="#"></a>Structured programming</li>
+                    <li><a href="#"></a>Object-oriented programming</li>
+                    <li><a href="#"></a>Data Structures</li>
+                    <li><a href="#"></a>Modularization techniques</li>
+                    <li><a href="#"></a>Software tools</li>
+                    <li><a href="#"></a>Variables</li>
+                    <li><a href="#"></a>Loops</li>
+                    <li><a href="#"></a>Arrays</li>
+                    <li><a href="#"></a>JavaScript events</li>
+                    <li><a href="#"></a>HTML</li>
+                    <li><a href="#"></a>CSS</li>
+                    <li><a href="#"></a>Recursion</li>
+                    <li><a href="#"></a>Higher-order functions</li>
+                    <li><a href="#"></a>Responsive user experiences</li>
+                    <li><a href="#"></a>Python</li>
+                    <li><a href="#"></a>C#</li>
+                    <li><a href="#"></a>Git</li>
+                </ul>
             </div>
         </section>
-        <aside class="card">
-            <!-- the aside tag is used to define content aside from the main content. the class attribute is used to define a class for the aside. card is a class that can be used to style the aside -->
-            <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="https://dev.to/">Dev Community</a></li>
-                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://www.udemy.com/">Udemy</a></li>
-                <li><a
-                        href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1">Lorem
-                        Ipsum Image</a></li>
-            </ul>
-        </aside>
+        <section class="card">
+            <h2>Payson, Utah USA</h2>
+            <div class="country-content">
+                <img src="images/payson-utah-usa.jpg" alt="Picture of Payson, Utah USA">
+                <p>My 120 year old shed</p>
+            </div>
+        </section>
+        <section class="third-card">
+            <aside class="card">
+                <h2>Web & Computer Programming Certificate</h2>
+                <div class="project-content"></div>
+                <ul>
+                    <li><a href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1"
+                            target="_blank">All
+                            Projects</a></li>
+                    <li><a href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1"
+                            target="_blank">CSE</a>
+                    </li>
+                    <li><a href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1"
+                            target="_blank">WDD</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="certificate-content">
+                    <ul>
+                        <li><a href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1"
+                                target="_blank">CSE
+                                110</a></li>
+                        <li><a href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1"
+                                target="_blank">CSE
+                                111</a></li>
+                        <li><a href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1"
+                                target="_blank">CSE
+                                210</a></li>
+                        <li><a href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1"
+                                target="_blank">WDD
+                                130</a></li>
+                        <li><a href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1"
+                                target="_blank">WDD
+                                131</a></li>
+                        <li><a href="https://www.bing.com/images/search?q=lorem+picsum+image+placeholder&qpvt=lorem+picsum+image+placeholder&form=IGRE&first=1"
+                                target="_blank">WDD
+                                231</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
     </main>
 
-    <footer> <!--the footer is the bottom section of the document -->
-        <p>&copy; <span id="currentyear"></span> 🐇 Christi Dobbins 🐇 USA</p>
-        <!--the p tag is used to define a paragraph. the span tag is used to group inline elements together. the id attribute is used to identify the span element  -->
-        <p>This document was last modified: <span id="lastModified"></span></p>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🐇 Christi Dobbins 🐇 USA<img src="images/usflag.jpg" alt="Picture of Christi Dobbins"></p>
+        <p></p>Last modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 
