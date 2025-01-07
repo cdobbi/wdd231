@@ -1,14 +1,24 @@
-document.getElementById("lastModified").textContent = document.lastModified;
+const lastModifiedElement = document.getElementById("lastModified");
+if (lastModifiedElement) {
+  lastModifiedElement.textContent = document.lastModified;
+}
 
-document.getElementById("currentyear").textContent = new Date().getFullYear();
+const currentYearElement = document.getElementById("currentyear");
+if (currentYearElement) {
+  currentYearElement.textContent = new Date().getFullYear();
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.querySelector(".hamburger-menu");
   const navLinks = document.querySelector(".nav-links");
 
-  hamburgerMenu.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-  });
+  if (hamburgerMenu && navLinks) {
+    hamburgerMenu.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+      const isActive = navLinks.classList.contains("active");
+      hamburgerMenu.setAttribute("aria-expanded", isActive);
+    });
+  }
 });
 
 const courses = [
@@ -79,3 +89,41 @@ const courses = [
     completed: false,
   },
 ];
+
+function displayCourses(filter = "all") {
+  const courseContainer = document.querySelector(".certificate-content ul");
+  courseContainer.innerHTML = "";
+
+  const filteredCourses = courses.filter((course) => {
+    if (filter === "all") return true;
+    return course.subject === filter;
+  });
+
+  filteredCourses.forEach((course) => {
+    const courseItem = document.createElement("li");
+    courseItem.innerHTML = `<a href="#">${course.subject} ${course.number} - ${course.title}</a>`;
+    courseItem.classList.add(course.completed ? "completed" : "not-completed");
+    courseContainer.appendChild(courseItem);
+  });
+
+  const totalCredits = filteredCourses.reduce(
+    (sum, course) => sum + course.credits,
+    0
+  );
+  const totalCreditsElement = document.querySelector(".total-credits");
+  if (totalCreditsElement) {
+    totalCreditsElement.textContent = `Total Credits: ${totalCredits}`;
+  }
+}
+
+document
+  .querySelector("#all-courses")
+  .addEventListener("click", () => displayCourses("all"));
+document
+  .querySelector("#wdd-courses")
+  .addEventListener("click", () => displayCourses("WDD"));
+document
+  .querySelector("#cse-courses")
+  .addEventListener("click", () => displayCourses("CSE"));
+
+displayCourses();
