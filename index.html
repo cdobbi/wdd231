@@ -14,9 +14,12 @@
     <!-- <link rel="stylesheet" href="styles/glitch.css"> -->
     <link rel="stylesheet" href="styles/index-small.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap"
-        rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap">
+    </noscript>
     <script src="scripts/index.js" defer></script>
     <!-- <script src="scripts/cours-list-array.js" defer></script> -->
 
@@ -25,7 +28,7 @@
 <body>
     <header>
         <div class="header-top">
-            <img src="images/profile.jpg" alt="Picture of Christi Dobbins">
+            <img src="images/profile.jpg" alt="Picture of Christi Dobbins" width="210" height="220" loading="lazy">
             <h1>Christina Dobbins</h1>
             <div class="hamburger-menu">&#9776;</div>
         </div>
@@ -71,7 +74,7 @@
         <section class="card">
             <h2>Payson, Utah USA</h2>
             <div class="country-content">
-                <img src="images/payson-utah-usa.jpg" alt="Picture of Payson, Utah USA">
+                <img src="images/payson-utah-usa.jpg" alt="Picture of Payson, Utah USA" width="450" height="380" loading="lazy">
                 <p>My 120 year old shed</p>
             </div>
         </section>
