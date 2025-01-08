@@ -232,7 +232,7 @@ aside.card a {
 }
 
 .third-card aside.card>ul li:nth-child(-n+3) a {
-    background-color: rgb(209, 138, 88);
+    background-color: rgb(196, 153, 123);
     color: black;
     transition: all 0.3s ease-in-out;
 
