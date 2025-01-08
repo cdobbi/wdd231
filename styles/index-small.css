@@ -87,7 +87,7 @@
     a,
     p,
     ul li {
-        font-size: 0.5rem;
+        font-size: 1.2rem;
     }
 
     .course-work ul {
@@ -95,7 +95,9 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
-        gap: 0;
+        gap: 2rem;
+        font-size: 1.2rem;
+
     }
 
     .course-work ul li {
@@ -125,18 +127,18 @@
         flex-direction: column;
         gap: 0.8rem;
         margin-bottom: 1rem;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 480px) {
     .course-work ul li a {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         padding: 0.3rem;
     }
 
     .course-work ul li {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         padding: 0.3rem;
     }
 
