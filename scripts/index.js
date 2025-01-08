@@ -1,13 +1,3 @@
-const lastModifiedElement = document.getElementById("lastModified");
-if (lastModifiedElement) {
-  lastModifiedElement.textContent = document.lastModified;
-}
-
-const currentYearElement = document.getElementById("currentyear");
-if (currentYearElement) {
-  currentYearElement.textContent = new Date().getFullYear();
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.querySelector(".hamburger-menu");
   const navLinks = document.querySelector(".nav-links");
@@ -25,15 +15,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const cseCoursesBtn = document.getElementById("cse-courses");
 
   if (allCoursesBtn) {
-    allCoursesBtn.addEventListener("click", () => displayCourses("all"));
+    allCoursesBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      displayCourses("all");
+    });
   }
 
   if (wddCoursesBtn) {
-    wddCoursesBtn.addEventListener("click", () => displayCourses("WDD"));
+    wddCoursesBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      displayCourses("WDD");
+    });
   }
 
   if (cseCoursesBtn) {
-    cseCoursesBtn.addEventListener("click", () => displayCourses("CSE"));
+    cseCoursesBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      displayCourses("CSE");
+    });
   }
 
   displayCourses("all");
@@ -109,7 +108,7 @@ const courses = [
 ];
 
 function displayCourses(filter = "all") {
-  const courseContainer = document.querySelector(".course ul");
+  const courseContainer = document.getElementById("course-list");
   courseContainer.innerHTML = "";
 
   const filteredCourses = courses.filter((course) => {
@@ -119,8 +118,11 @@ function displayCourses(filter = "all") {
 
   filteredCourses.forEach((course) => {
     const courseItem = document.createElement("li");
-    courseItem.innerHTML = `<a href="#">${course.subject} ${course.number} - ${course.title}</a>`;
+    courseItem.innerHTML = `<a href="#">${course.subject} ${course.number} ${
+      course.completed ? "✔️" : ""
+    }</a>`;
     courseItem.classList.add(course.completed ? "completed" : "not-completed");
+    courseItem.style.backgroundColor = course.completed ? "" : "white";
     courseContainer.appendChild(courseItem);
   });
 
