@@ -69,8 +69,14 @@
         <section class="card">
             <h2>Payson, Utah USA</h2>
             <div class="country">
-                <img src="images/payson-utah.webp" alt="Picture of Payson, Utah USA" width="350">
-                <p>My 120 year old shed</p>
+                <div class="country">
+                    <picture>
+                        <source srcset="images/payson-utah-small.webp" media="(max-width: 600px)">
+                        <source srcset="images/payson-utah.webp" media="(max-width: 1200px)">
+                        <img src="images/payson-utah-large.webp" alt="Picture of Payson, Utah USA" width="350" loading="lazy">
+                    </picture>
+                    <p>My 120 year old shed</p>
+                </div>
             </div>
         </section>
         <section class="third-card">
