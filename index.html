@@ -51,10 +51,10 @@
         </nav>
     </header>
     <main>
-        <section class="card">
+        <section class="card" id="course-work-section">
             <h2>Course Work</h2>
-            <div class="course-work">
-                <ul>
+            <div class="course-work" id="course-work">
+                <ul id="course-topics">
                     <li><a href="#"></a>Algorithm design</li>
                     <li><a href="#"></a>OOP</li>
                     <li><a href="#"></a>Data Structures</li>
@@ -70,18 +70,22 @@
                 </ul>
             </div>
         </section>
-        <section class="card">
-            <h2>Payson, Utah USA</h2>
-            <div class="country">
-                <div class="country">
-                    <picture>
-                        <source srcset="images/payson-utah-small.webp" media="(max-width: 600px)">
-                        <source srcset="images/payson-utah.webp" media="(max-width: 1200px)">
-                        <img src="images/payson-utah-large.webp" alt="Picture of Payson, Utah USA" width="350" loading="lazy">
-                    </picture>
-                    <p>My 120 year old shed</p>
+        <section class="third-card" id="certificate-section">
+            <aside class="card">
+                <h2>Web & Computer Programming Certificate</h2>
+                <div class="all-courses" id="all-courses-container"></div>
+                <ul>
+                    <li id="all-courses"><a href="#" target="_blank">All Courses</a></li>
+                    <li id="cse-courses"><a href="#" target="_blank">CSE Courses</a></li>
+                    <li id="wdd-courses"><a href="#" target="_blank">WDD Courses</a></li>
+                </ul>
+                <div class="course" id="course-container">
+                    <ul id="course-list">
+                        <!-- Course items will be dynamically added here -->
+                    </ul>
+                    <div class="total-credits" id="total-credits">Total Credits: 0</div>
                 </div>
-            </div>
+            </aside>
         </section>
         <section class="third-card">
             <aside class="card">
