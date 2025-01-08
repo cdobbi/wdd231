@@ -14,10 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap">
-    </noscript>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap">
     <script src="scripts/index.js" defer></script>
     <!-- <script src="scripts/cours-list-array.js" defer></script> -->
 </head>
@@ -51,7 +49,7 @@
     <main>
         <section class="card">
             <h2>Course Work</h2>
-            <div class="course-work-content">
+            <div class="course-work">
                 <ul>
                     <li><a href="#"></a>Algorithm design</li>
                     <li><a href="#"></a>OOP</li>
@@ -70,7 +68,7 @@
         </section>
         <section class="card">
             <h2>Payson, Utah USA</h2>
-            <div class="country-content">
+            <div class="country">
                 <img src="images/payson-utah.webp" alt="Picture of Payson, Utah USA" width="350">
                 <p>My 120 year old shed</p>
             </div>
@@ -78,24 +76,40 @@
         <section class="third-card">
             <aside class="card">
                 <h2>Web & Computer Programming Certificate</h2>
-                <div class="project-content">
-                    <button id="all-courses">All Courses</button>
-                    <button id="wdd-courses">WDD Courses</button>
-                    <button id="cse-courses">CSE Courses</button>
-                </div>
-                <ul class="certificate-content">
-                    <!-- Courses will be dynamically inserted here -->
+                <div class="all-courses"></div> <!--project-content -->
+                <ul>
+                    <li><a href="#" target="_blank">All
+                            Courses</a></li>
+                    <li><a href="#" target="_blank">CSE Courses</a>
+                    </li>
+                    <li><a href="#" target="_blank">WDD Courses</a>
+                    </li>
                 </ul>
-                <div class="total-credits">Total Credits: 0</div>
+                </div>
+                <div class="course"> <!--certificate-content -->
+                    <ul>
+                        <li><a href="#" target="_blank">CSE
+                                110</a></li>
+                        <li><a href="#" target="_blank">CSE
+                                111</a></li>
+                        <li><a href="#" target="_blank">CSE
+                                210</a></li>
+                        <li><a href="#" target="_blank">WDD
+                                130</a></li>
+                        <li><a href="#" target="_blank">WDD
+                                131</a></li>
+                        <li><a href="#" target="_blank">WDD
+                                231</a></li>
+                    </ul>
+                </div>
             </aside>
         </section>
-        
     </main>
 
     <footer>
         <p>&copy; <span id="currentyear"></span> 🐇 Christi Dobbins 🐇 USA<img src="images/usflag.jpg" alt="Picture of Christi Dobbins"
                 width="60" loading="lazy"></p>
-        <p></p>Last modified: <span id="lastModified"></span></p>
+        <p>Last modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 

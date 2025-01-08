@@ -1,0 +1,185 @@
+/* ----- Styles for the Sorted Course Buttons ----- */
+
+.courses-sorted {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem; /* Space above sorted courses */
+    padding: 0;
+}
+
+.sorted-course-btn {
+    padding: 10px 20px;
+    background-color: rgb(255, 192, 192);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.sorted-course-btn:hover {
+    background-color: rgb(209, 138, 88);
+    color: #fff;
+}
+
+/* ----- Styles for the Total Credits Button ----- */
+
+.total-credits {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; /* Space above total credits */
+}
+
+.total-credits-btn {
+    padding: 10px 20px;
+    background-color: rgb(209, 138, 88);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: default; /* Non-clickable */
+}
+
+/* Optional: Hover effect for Total Credits Button (if needed) */
+.total-credits-btn:hover {
+    background-color: rgb(189, 118, 68);
+}
+
+/* Style for completed courses */
+.completed {
+    color: green;
+    font-weight: bold;
+}
+
+/* Style for not-completed courses */
+.not-completed {
+    color: red;
+    font-style: italic;
+}
+
+/* Style for the filter buttons */
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255, 192, 192);
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(209, 138, 88);
+}
+
+/* Style for the total credits display */
+.total-credits {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Existing styles... */
+
+/* Styles for the sorted courses list */
+.courses-sorted {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem; /* Space above sorted courses */
+    padding: 0;
+}
+
+/* Removed empty ruleset for .courses-sorted li */
+
+.courses-sorted li button.sorted-course-btn {
+    padding: 10px 20px;
+    background-color: rgb(255, 192, 192);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.courses-sorted li button.sorted-course-btn:hover {
+    background-color: rgb(209, 138, 88);
+    color: #fff;
+}
+
+/* Styles for the total credits button */
+.total-credits {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; /* Space above total credits */
+}
+
+.total-credits button.total-credits-btn {
+    padding: 10px 20px;
+    background-color: rgb(209, 138, 88);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: default; /* Non-clickable if only for display */
+}
+
+/* Optional: Hover effect for total credits button */
+.total-credits button.total-credits-btn:hover {
+    background-color: rgb(189, 118, 68);
+}
+
+/* Ensure that the back button in Course Work is styled consistently */
+.course-work-content button.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(209, 138, 88);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.course-work-content button.back-button:hover {
+    background-color: rgb(189, 118, 68);
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 601px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+.courses button.active {
+    background-color: rgb(209, 138, 88);
+    color: #fff;
+}

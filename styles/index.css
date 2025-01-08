@@ -152,10 +152,8 @@ main p {
 }
 
 .card h2 {
-    margin: 0 auto;
     background-color: rgb(253, 248, 211);
     color: black;
-    padding: 1.5rem;
     text-align: center;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
@@ -175,7 +173,7 @@ li::marker {
     transition: all 0.3s ease-in-out;
 }
 
-div.course-work-content {
+div.course-work {
     padding: 1rem;
     transition: all 0.3s ease-in-out;
 }
@@ -228,8 +226,13 @@ aside.card a {
 }
 
 .third-card ul li a:hover,
-.third-card .certificate-content ul li a:hover {
+.third-card .course ul li a:hover {
     color: #e8fd60;
+}
+
+.third-card aside.card>ul li:nth-child(-n+3) a {
+    background-color: rgb(209, 138, 88);
+    color: black;
 }
 
 .third-card ul li a {
@@ -240,28 +243,6 @@ aside.card a {
     transition: all 0.3s ease-in-out;
 }
 
-.third-card div.certificate-content {
-    border-bottom: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.third-card .certificate-content ul li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-}
-
-.third-card aside.card>ul li:nth-child(-n+3) a {
-    background-color: rgb(209, 138, 88);
-    color: black;
-}
-
-.third-card .certificate-content ul li:last-child a {
-    background-color: white;
-}
-
 footer img {
     width: 60px;
     height: 40px;
@@ -270,7 +251,7 @@ footer img {
     transition: all 0.3s ease-in-out;
 }
 
-.course-work-content ul {
+.course-work ul {
     column-count: 2;
     column-gap: 2rem;
     /* Gap between the columns */
@@ -278,14 +259,14 @@ footer img {
     transition: all 0.3s ease-in-out;
 }
 
-.course-work-content ul li {
+.course-work ul li {
     break-inside: avoid;
     /* Prevent items from being split between columns */
     margin-bottom: 0;
     transition: all 0.3s ease-in-out;
 }
 
-.course-work-content ul li:nth-child(6) {
+.course-work ul li:nth-child(6) {
     break-after: column;
     /* Forces a column break */
     transition: all 0.3s ease-in-out;

@@ -19,6 +19,24 @@ document.addEventListener("DOMContentLoaded", function () {
       hamburgerMenu.setAttribute("aria-expanded", isActive);
     });
   }
+
+  const allCoursesBtn = document.getElementById("all-courses");
+  const wddCoursesBtn = document.getElementById("wdd-courses");
+  const cseCoursesBtn = document.getElementById("cse-courses");
+
+  if (allCoursesBtn) {
+    allCoursesBtn.addEventListener("click", () => displayCourses("all"));
+  }
+
+  if (wddCoursesBtn) {
+    wddCoursesBtn.addEventListener("click", () => displayCourses("WDD"));
+  }
+
+  if (cseCoursesBtn) {
+    cseCoursesBtn.addEventListener("click", () => displayCourses("CSE"));
+  }
+
+  displayCourses("all");
 });
 
 const courses = [
@@ -91,7 +109,7 @@ const courses = [
 ];
 
 function displayCourses(filter = "all") {
-  const courseContainer = document.querySelector(".certificate-content ul");
+  const courseContainer = document.querySelector(".course ul");
   courseContainer.innerHTML = "";
 
   const filteredCourses = courses.filter((course) => {
@@ -110,20 +128,9 @@ function displayCourses(filter = "all") {
     (sum, course) => sum + course.credits,
     0
   );
+
   const totalCreditsElement = document.querySelector(".total-credits");
   if (totalCreditsElement) {
     totalCreditsElement.textContent = `Total Credits: ${totalCredits}`;
   }
 }
-
-document
-  .querySelector("#all-courses")
-  .addEventListener("click", () => displayCourses("all"));
-document
-  .querySelector("#wdd-courses")
-  .addEventListener("click", () => displayCourses("WDD"));
-document
-  .querySelector("#cse-courses")
-  .addEventListener("click", () => displayCourses("CSE"));
-
-displayCourses();
