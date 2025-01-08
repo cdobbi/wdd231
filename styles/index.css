@@ -26,7 +26,6 @@ footer {
     width: 100%;
     background: rgb(210, 202, 191);
     text-align: center;
-    min-height: 100px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -146,7 +145,6 @@ main p {
 .card {
     border: .8px solid #111010;
     border-radius: 5px;
-    min-height: 200px;
     /* rounded corners */
     background: rgb(206, 221, 229);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -246,10 +244,6 @@ aside.card a {
     height: 100%;
     text-align: center;
     transition: all 0.3s ease-in-out;
-}
-
-.nav-links {
-    min-height: 50px;
 }
 
 footer img {
