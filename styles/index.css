@@ -108,11 +108,11 @@ p {
 }
 
 a:hover {
-    border: 10px solid rgb(209, 138, 88);
+    border: 10px solid rgb(210, 135, 80);
     padding: 0.5rem;
     border-radius: 10px;
     /* rounded corners */
-    color: #d40606;
+    color: black;
     font-weight: bold;
     width: auto;
     display: inline-block;
@@ -170,7 +170,7 @@ main img {
 }
 
 li::marker {
-    color: rgb(209, 138, 88);
+    color: rgb(213, 196, 184);
     transition: all 0.3s ease-in-out;
 }
 
@@ -229,7 +229,7 @@ aside.card a {
 
 .third-card ul li a:hover,
 .third-card .course ul li a:hover {
-    color: #d40606;
+    color: black;
     font-weight: bold;
 }
 
@@ -281,4 +281,9 @@ footer img {
     display: none;
     font-size: 2rem;
     cursor: pointer;
+}
+
+/* Visited Links */
+a:visited {
+    color: blue;
 }
