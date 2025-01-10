@@ -108,11 +108,12 @@ p {
 }
 
 a:hover {
-    border: 3px solid #9512a3;
+    border: 10px solid rgb(209, 138, 88);
     padding: 0.5rem;
-    border-radius: 5px;
+    border-radius: 10px;
     /* rounded corners */
-    color: #e8fd60;
+    color: #d40606;
+    font-weight: bold;
     width: auto;
     display: inline-block;
 }
@@ -228,7 +229,8 @@ aside.card a {
 
 .third-card ul li a:hover,
 .third-card .course ul li a:hover {
-    color: #e8fd60;
+    color: #d40606;
+    font-weight: bold;
 }
 
 .third-card aside.card>ul li:nth-child(-n+3) a {

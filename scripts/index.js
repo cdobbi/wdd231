@@ -119,7 +119,7 @@ function displayCourses(filter = "all") {
   filteredCourses.forEach((course) => {
     const courseItem = document.createElement("li");
     courseItem.innerHTML = `<a href="#">${course.subject} ${course.number} ${
-      course.completed ? "✔️" : ""
+      course.completed ? "✅" : ""
     }</a>`;
     courseItem.classList.add(course.completed ? "completed" : "not-completed");
     courseItem.style.backgroundColor = course.completed ? "" : "white";
