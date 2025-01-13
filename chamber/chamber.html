@@ -10,27 +10,26 @@
     <meta property="og:image" content="image/favicon-city.png" />
     <meta property="og:url" content="https://cdobbi.github.io/wdd231/chamber/directory.html" />
     <meta name="author" content="Christina Dobbins">
-    <meta name="description" content="The subject of this page is the Payson Utah Chamber of Commerce. It's purpose is to provide members networking opportunities, attract new businesses and encourage economic development in the community. It will also improve the visibility of reputation of the chamber as a trusted authority in local business matters. There will be links to pages, Home, Discover, Business Directory and Join.">
-    <link rel="icon" href="images/favicon-city.ico" type="image/x-icon">
+    <meta name="description"
+        content="The subject of this page is the Payson Utah Chamber of Commerce. It's purpose is to provide members networking opportunities, attract new businesses and encourage economic development in the community. It will also improve the visibility of reputation of the chamber as a trusted authority in local business matters. There will be links to pages, Home, Discover, Business Directory and Join.">
+    <link rel="icon" href="images/favicon-swirl.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles/index.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="styles/place.css">
-    </noscript>
-    <link rel="preload" href="images/london-large.webp" as="image">
+    <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>England</h1>
+        <h1>Payson Chamber of Commerce</h1>
     </header>
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/london-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/london-medium.webp" media="(min-width: 500px)">
-                <img src="images/london-small.webp" alt="Image of England." width="500" height="250">
+                <source srcset="images/favicon.png" media="(min-width: 1000px)">
+                <source srcset="images/favicon.png" media="(min-width: 500px)">
+                <img src="images/favicon-handshake.png" alt="Image of Payson City Chamber of Commerce" width="500" height="250">
             </picture>
             <div class="overlay">
                 <section class="card">
@@ -58,9 +57,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> WDD - 231 🐇 Christi Dobbins 🐇 USA<img src="images/usflag.jpg" alt="Picture of Christi Dobbins"
-                width="60" loading="lazy"></p>
-        <p>Last modified: <span id="lastModified"></span></p>
+        <p>Payson Chamber of Commerce<br> 123 Main Street<br>Payson, UT 84651<br>info@paysonchamber.org<br>801-465-6031</p>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/christi-dobbins-46a6aa98" target="_blank" class="social-icon">
                 <i class="fab fa-linkedin"></i>
@@ -72,13 +69,15 @@
                 <i class="fas fa-briefcase"></i>
             </a>
         </div>
+        <p>&copy; <span id="currentyear"></span> WDD - 231 🐇 Christi Dobbins 🐇 Payson City, Chamber of Commerce
+        <p>Last modified: <span id="lastModified"></span></p>
+
     </footer>
     <script>
         document.querySelector('.hamburger-menu').addEventListener('click', function () {
             document.querySelector('#nav-menu ul').classList.toggle('show');
         });
     </script>
-    <script src="scripts/rabbitry.js" defer></script>
 </body>
 
 </html>
