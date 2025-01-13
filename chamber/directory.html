@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 | Payson Chamber of Commerce | Christina Dobbins</title>
+
+    <meta property="og:title" content="Pason, Utah Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="image/favicon-city.png" />
+    <meta property="og:url" content="https://cdobbi.github.io/wdd231/chamber/directory.html" />
+
+    <meta name="description" content="The subject of the page is England where I have visited and is based on the provided wireframe.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/place.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles/place.css">
+    </noscript>
+    <link rel="preload" href="images/london-large.webp" as="image">
+    <meta name="author" content="Christina Dobbins">
+    <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <h1>England</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/london-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/london-medium.webp" media="(min-width: 500px)">
+                <img src="images/london-small.webp" alt="Image of England." width="500" height="250">
+            </picture>
+            <div class="overlay">
+                <section class="card">
+                    <div class="data-container">
+                        <h2>Data</h2>
+                        <ul class="data">
+                            <li>Population: 56,286,961</li>
+                            <li>Capital: London</li>
+                            <li>Area: 130,279 km²</li>
+                            <li>Currency: Pound Sterling</li>
+                            <li>Calling Code: +44</li>
+                            <li>Internet TLD: .uk</li>
+                            <li>Founded: 927 AD</li>
+                        </ul>
+                    </div>
+                </section>
+                <aside class="card weather">
+                    <h2>Weather <span class="weather-icon">🌤️</span></h2>
+                    <p><span>Temperature:</span> <span id="currentTemp">12</span>°C</p>
+                    <p><span>Feels Like:</span> <span id="WindChill">10</span>°C</p>
+                    <p><span>Wind:</span> <span id="windSpeed">5</span> km/h</p>
+                    <p><span>Conditions:</span> Partly Cloudy</p>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🦁 Christi Dobbins 🦁 USA</p>
+        <p>This document was last modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
+
 </html>
