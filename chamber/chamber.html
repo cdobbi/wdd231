@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231 | Payson Chamber of Commerce | Christina Dobbins</title>
-    <meta property="og:title" content="Pason, Utah Chamber of Commerce" />
+    <meta property="og:title" content="Payson, Utah Chamber of Commerce" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="image/favicon-city.png" />
     <meta property="og:url" content="https://cdobbi.github.io/wdd231/chamber/directory.html" />
@@ -23,7 +23,27 @@
 
 <body>
     <header>
-        <h1>Payson Chamber of Commerce</h1>
+        <img src="images/favicon.png" alt="Payson City Chamber of Commerce Logo" width="150" height="150">
+        <h1>Payson City, Utah<br>Chamber of Commerce</h1>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="https://cdobbi.github.io/wdd231" target="_blank" data-text="Home">Home</a>
+                </li>
+                <li>
+                    <a href="https://byui-cse.github.io/wdd231-ww-course/week01/chamber-site-plan.html" target="_blank"
+                        data-text="Chamber">Directory</a>
+                </li>
+                <li>
+                    <a href="https://github.com/cdobbi" target="_blank" data-text="GitHub Profile">Join</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/christi-dobbins-46a6aa98" target="_blank" data-text="LinkedIn">Discover</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false"></div>
+
     </header>
     <main>
         <div class="hero">
@@ -32,21 +52,28 @@
                 <source srcset="images/city-farming.png" media="(min-width: 500px)">
                 <img src="images/favicon-handshake.png" alt="Image of Payson City Chamber of Commerce" width="500" height="250">
             </picture>
-            <div class="overlay">
-                <section class="card">
-                    <div class="data-container">
-                        <h2>Data</h2>
-                        <ul class="data">
-                            <li>Population: 56,286,961</li>
-                            <li>Capital: London</li>
-                            <li>Area: 130,279 km²</li>
-                            <li>Currency: Pound Sterling</li>
-                            <li>Calling Code: +44</li>
-                            <li>Internet TLD: .uk</li>
-                            <li>Founded: 927 AD</li>
-                        </ul>
-                    </div>
-                </section>
+            <div class="hero-content">
+                <h2>Payson City Chamber of Commerce</h2>
+                <p>Providing members networking opportunities, attracting new businesses and encouraging economic development in the
+                    community.</p>
+                <a href="discover.html" class="btn">Discover</a>
+                <div class="overlay">
+                    <section class="card">
+                        <div class="data-container">
+                            <h2>Data</h2>
+                            <ul class="data">
+                                <li>Population: 56,286,961</li>
+                                <li>Capital: London</li>
+                                <li>Area: 130,279 km²</li>
+                                <li>Currency: Pound Sterling</li>
+                                <li>Calling Code: +44</li>
+                                <li>Internet TLD: .uk</li>
+                                <li>Founded: 927 AD</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
                 <aside class="card weather">
                     <h2>Weather <span class="weather-icon">🌤️</span></h2>
                     <p><span>Temperature:</span>
