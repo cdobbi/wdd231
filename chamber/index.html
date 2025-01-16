@@ -7,16 +7,17 @@
     <title>Directory | Chamber of Commerce | Christina Dobbins | WDD 231</title>
     <meta property="og:title" content="Guana Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://cdobbi.github.io/wdd231/chamber/images/favicon-city.png">
+    <meta property="og:image" content="https://cdobbi.github.io/wdd231/chamber/images/favicon.webp">
     <meta property="og:url" content="https://cdobbi.github.io/wdd231/chamber/index.html">
     <meta name="author" content="Christi Dobbins">
     <meta name="description"
         content="The subject of this page is the Guana Chamber of Commerce. It's purpose is to provide members networking opportunities, attract new businesses and encourage economic development in the community.">
-    <link <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles/index.css" media="print" onload="this.media='all'">
-    <link rel="icon" href="images/favicon.ico" type="icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
 </head>
 
 <body>
@@ -26,10 +27,10 @@
         <nav>
             <ul class="nav-links">
                 <li>
-                    <a href="#" target="_blank" data-text="Home">Home</a>
+                    <a href="https://cdobbi.github.io/wdd231/index.html" target="_blank" data-text="Home">Home</a>
                 </li>
                 <li>
-                    <a href="https://cdobbi.github.io/wdd231/chamber/index.html" target="_blank" data-text="Chamber">Directory</a>
+                    <a href="#" target="_blank" data-text="Chamber">Directory</a>
                 </li>
                 <li>
                     <a href="#" target="_blank" data-text="GitHub Profile">Join</a>
@@ -42,48 +43,50 @@
         <div class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false" role="button"></div>
     </header>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/island-view-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/islandview-medium.webp" media="(min-width: 500px)">
-                <img src="images/island-view-small.webp" alt="Photo of Guana Island">
-            </picture>
-        </div>
-        <div class="cards">
-            <aside class="events">
-                <h2>Events</h2>
-                <ul class="events">
-                    <li>Population:</li>
-                    <li>Capital:</li>
-                    <li>Area:</li>
-                    <li>Currency:</li>
-                    <li>Calling Cod:</li>
-                    <li>Internet:</li>
-                    <li>Founded:</li>
-                </ul>
-            </aside>
-            <aside class="weather">
-                <h2>Current Weather <span class="weather-icon">🌤️</span></h2>
-                <p><span>Temperature:</span>
-                    <span id="currentTemp">12</span>°C
-                </p>
-                <p><span>Feels Like:</span>
-                    <span id="WindChill">10</span>°C
-                </p>
-                <p><span>Wind:</span>
-                    <span id="windSpeed">5</span> km/h
-                </p>
-                <p><span>Conditions:</span> Partly Cloudy</p>
-            </aside>
-            <aside class="forcast">
-                <h2>Forcast</h2>
-                <p><span>Temperature:</span>
-                    <span id="currentTemp">12</span>°C
-                </p>
-                <p><span>Wind:</span>
-                    <span id="windSpeed">5</span> km/h
-                </p>
-            </aside>
+        <div class="hero-container">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/island-view-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/islandview-medium.webp" media="(min-width: 500px)">
+                    <img src="images/island-view-small.webp" alt="Photo of Guana Island">
+                </picture>
+            </div>
+            <div class="cards">
+                <aside class="events">
+                    <h2>Events</h2>
+                    <ul class="events-list">
+                        <li>Population:</li>
+                        <li>Capital:</li>
+                        <li>Area:</li>
+                        <li>Currency:</li>
+                        <li>Calling Code:</li>
+                        <li>Internet:</li>
+                        <li>Founded:</li>
+                    </ul>
+                </aside>
+                <aside class="weather">
+                    <h2>Current Weather <span class="weather-icon">🌤️</span></h2>
+                    <p><span>Temperature:</span>
+                        <span id="currentTemp">12</span>°C
+                    </p>
+                    <p><span>Feels Like:</span>
+                        <span id="windChill">10</span>°C
+                    </p>
+                    <p><span>Wind:</span>
+                        <span id="windSpeed">5</span> km/h
+                    </p>
+                    <p><span>Conditions:</span> Partly Cloudy</p>
+                </aside>
+                <aside class="forecast">
+                    <h2>Forecast</h2>
+                    <p><span>Temperature:</span>
+                        <span id="forecastTemp">15</span>°C
+                    </p>
+                    <p><span>Wind:</span>
+                        <span id="forecastWindSpeed">10</span> km/h
+                    </p>
+                </aside>
+            </div>
         </div>
         <h2>Directory</h2>
     </main>
@@ -100,12 +103,12 @@
                 <img src="#" alt="Portfolio icon">
             </a>
         </div>
-        <p>&copy; <span id="currentyear"></span> WDD - 231 🐇 Christi Dobbins 🐇 WDD 231
+        <p>&copy; <span id="currentyear"></span> WDD - 231 🐇 Christi Dobbins 🐇 WDD 231</p>
         <p>Last modified: <span id="lastModified"></span></p>
     </footer>
     <script>
         document.querySelector('.hamburger-menu').addEventListener('click', function () {
-            document.querySelector('#nav-menu ul').classList.toggle('show');
+            document.querySelector('.nav-links').classList.toggle('show');
         });
     </script>
 </body>

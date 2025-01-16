@@ -18,6 +18,7 @@ body {
     margin: 0 auto;
     font-weight: 300;
     overflow-x: hidden;
+    font-family: var(--font-family);
 }
 
 header,
@@ -31,21 +32,19 @@ footer {
 /* HEADER */
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background: var(--primary-color);
-    align-items: flex-end;
+    align-items: center; /* Centered vertically */
+    padding: 1rem 2rem; /* Added padding for spacing */
 }
 
 header img {
-    margin-left: 2rem;
-    margin-bottom: 0.8rem;
+    margin-right: 1rem; /* Adjusted margin */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    margin-left: 0.5rem;
     text-align: left;
     font-family: 'Merriweather', sans-serif;
     font-weight: 300;
@@ -57,90 +56,163 @@ nav {
     margin-right: 2rem;
 }
 
-ul.nav-links,
-ul.nav-links a {
+ul.nav-links {
     display: flex;
     gap: 15px;
-    font-size: 2rem;
+    font-size: 1.6rem; /* Adjusted for better sizing */
     color: white;
-    margin-left: auto;
     list-style-type: none;
-    text-decoration: none;
 }
 
+nav ul.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul.nav-links a:hover {
+    color: var(--tertiary-color);
+}
+
+/* MAIN CONTENT */
 main {
-    flex: 1;
-    background: #fbd428
+    background: #fbd428;
+    padding: 2rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .hero {
-    position: relative;
+    flex: 2; /* Hero takes twice the space of cards */
+}
+
+.hero picture,
+.hero img {
     width: 100%;
     height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
 }
 
-.hero img {
-    background: #fbd428;
-    margin-top: 1rem;
-    width: 69%;
-    margin-left: 1rem;
-    margin: 1rem;   
-}
-
-aside.events h2 {
-    margin: 0;
-    padding: 0.3rem;
-    text-align: left;
-    font-weight: 500;
-    background: rgba(255, 255, 255, 0.7);
-    color: black;
-    list-style-type: none;
-}
-
-li {
-    padding: 0.3rem;
-    font-weight: 500;
-}
-
-aside.events,
-aside.forcast,
-aside.weather {
+.cards {
+    flex: 1; /* Cards take remaining space */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: 125px;
-    right: 25px;
-    background: rgba(255, 255, 255, 0.6);
-    margin: 1rem;;
-    max-width: 600px;
+    gap: 1rem;
+}
+
+/* ASIDES (EVENTS, WEATHER, FORECAST) */
+aside.events,
+aside.weather,
+aside.forecast {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
-    padding: .8rem;
-    color: black;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
 }
 
-p {
-    margin: 0;
-    padding: 0.3rem;
+aside h2 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
 }
 
-.weather-icon,
+aside p, aside ul {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.events-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.events-list li {
+    padding: 0.3rem 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets and Small Desktops */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column; /* Stack image and cards vertically */
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    aside.events,
+    aside.weather,
+    aside.forecast {
+        flex: 1 1 45%; /* Two asides per row */
+        margin: 0.5rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    aside.events,
+    aside.weather,
+    aside.forecast {
+        flex: 1 1 100%; /* Single aside per row */
+        margin: 0.5rem 0;
+    }
+
+    ul.nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.nav-links li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* FOOTER */
+footer {
+    color: white;
+    background: var(--secondary-color);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
 .social-icon img {
     width: 24px;
     height: 24px;
 }
 
-footer {
-    color: white;
-    background: var(--secondary-color);
-    padding: 0.5rem;
-}
-
-ul.data {
-    padding: 0;
-    list-style-type: none;
-    font-weight: 500;
-    margin: 0;
+/* Optional: Add hover effects for asides */
+aside.events:hover,
+aside.weather:hover,
+aside.forecast:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
