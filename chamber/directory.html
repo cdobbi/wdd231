@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 | Payson Chamber of Commerce | Christina Dobbins</title>
+    <meta property="og:title" content="Payson, Utah Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="image/favicon-city.png" />
+    <meta property="og:url" content="https://cdobbi.github.io/wdd231/chamber/directory.html" />
+    <meta name="author" content="Christina Dobbins">
+    <meta name="description"
+        content="The subject of this page is the Payson Utah Chamber of Commerce. It's purpose is to provide members networking opportunities, attract new businesses and encourage economic development in the community. It will also improve the visibility of reputation of the chamber as a trusted authority in local business matters. There will be links to pages, Home, Discover, Business Directory and Join.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/favicon-swirl.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/userData.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/favicon.png" alt="Payson City Chamber of Commerce Logo" width="150" height="150">
+        <h1>Payson City, Utah<br>Chamber of Commerce</h1>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="https://cdobbi.github.io/wdd231" target="_blank" data-text="Home">Home</a>
+                </li>
+                <li>
+                    <a href="https://byui-cse.github.io/wdd231-ww-course/week01/chamber-site-plan.html" target="_blank"
+                        data-text="Chamber">Directory</a>
+                </li>
+                <li>
+                    <a href="https://github.com/cdobbi" target="_blank" data-text="GitHub Profile">Join</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/christi-dobbins-46a6aa98" target="_blank" data-text="LinkedIn">Discover</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false"></div>
+
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/city-farming.png" media="(min-width: 1000px)">
+                <source srcset="images/city-farming.png" media="(min-width: 500px)">
+                <img src="images/favicon-handshake.png" alt="Image of Payson City Chamber of Commerce" width="500" height="250">
+            </picture>
+
+            <div class="hero-content">
+                <h2>Home</h2>
+                <aside class="card data">
+                    <div class="data-container">
+                        <h2>Data</h2>
+                        <ul class="data">
+                            <li>Population: 56,286,961</li>
+                            <li>Capital: London</li>
+                            <li>Area: 130,279 km²</li>
+                            <li>Currency: Pound Sterling</li>
+                            <li>Calling Code: +44</li>
+                            <li>Internet TLD: .uk</li>
+                            <li>Founded: 927 AD</li>
+                        </ul>
+                    </div>
+                </aside>
+                <aside class="card weather">
+                    <h2>Weather <span class="weather-icon">🌤️</span></h2>
+                    <p><span>Temperature:</span>
+                        <span id="currentTemp">12</span>°C
+                    </p>
+                    <p><span>Feels Like:</span>
+                        <span id="WindChill">10</span>°C
+                    </p>
+                    <p><span>Wind:</span>
+                        <span id="windSpeed">5</span> km/h
+                    </p>
+                    <p><span>Conditions:</span> Partly Cloudy</p>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Payson Chamber of Commerce<br> 123 Main Street<br>Payson, UT 84651<br>info@paysonchamber.org<br>801-465-6031</p>
+        <div class="social-icons">
+            <a href="https://www.google.com/maps" target="_blank" class="social-icon">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://cdobbi.github.io/wdd131" target="_blank" class="social-icon">
+                <i class="fas fa-briefcase"></i>
+            </a>
+        </div>
+        `
+        <p>&copy; <span id="currentyear"></span> WDD - 231 🐇 Christi Dobbins 🐇 Payson City, Chamber of Commerce
+        <p>Last modified: <span id="lastModified"></span></p>
+
+    </footer>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+            document.querySelector('#nav-menu ul').classList.toggle('show');
+        });
+    </script>
 </body>
+
 </html>
