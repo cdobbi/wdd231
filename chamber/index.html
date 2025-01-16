@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="styles/index.css" media="print" onload="this.media='all'">
     <link rel="icon" href="images/favicon.ico" type="icon">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -41,7 +40,6 @@
             </ul>
         </nav>
         <div class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false" role="button"></div>
-
     </header>
     <main>
         <div class="hero">
@@ -50,37 +48,44 @@
                 <source srcset="images/islandview-medium.webp" media="(min-width: 500px)">
                 <img src="images/island-view-small.webp" alt="Photo of Guana Island">
             </picture>
-            <h2>Directory</h2>
-            <div class="hero-content">
-                <aside class="card data">
-                    <div class="data-container">
-                        <h2>Data</h2>
-                        <ul class="data">
-                            <li>Population:</li>
-                            <li>Capital:</li>
-                            <li>Area:</li>
-                            <li>Currency:</li>
-                            <li>Calling Cod:</li>
-                            <li>Internet:</li>
-                            <li>Founded:</li>
-                        </ul>
-                    </div>
-                </aside>
-                <aside class="card weather">
-                    <h2>Weather <span class="weather-icon">🌤️</span></h2>
-                    <p><span>Temperature:</span>
-                        <span id="currentTemp">12</span>°C
-                    </p>
-                    <p><span>Feels Like:</span>
-                        <span id="WindChill">10</span>°C
-                    </p>
-                    <p><span>Wind:</span>
-                        <span id="windSpeed">5</span> km/h
-                    </p>
-                    <p><span>Conditions:</span> Partly Cloudy</p>
-                </aside>
-            </div>
         </div>
+        <div class="cards">
+            <aside class="events">
+                <h2>Events</h2>
+                <ul class="events">
+                    <li>Population:</li>
+                    <li>Capital:</li>
+                    <li>Area:</li>
+                    <li>Currency:</li>
+                    <li>Calling Cod:</li>
+                    <li>Internet:</li>
+                    <li>Founded:</li>
+                </ul>
+            </aside>
+            <aside class="weather">
+                <h2>Current Weather <span class="weather-icon">🌤️</span></h2>
+                <p><span>Temperature:</span>
+                    <span id="currentTemp">12</span>°C
+                </p>
+                <p><span>Feels Like:</span>
+                    <span id="WindChill">10</span>°C
+                </p>
+                <p><span>Wind:</span>
+                    <span id="windSpeed">5</span> km/h
+                </p>
+                <p><span>Conditions:</span> Partly Cloudy</p>
+            </aside>
+            <aside class="forcast">
+                <h2>Forcast</h2>
+                <p><span>Temperature:</span>
+                    <span id="currentTemp">12</span>°C
+                </p>
+                <p><span>Wind:</span>
+                    <span id="windSpeed">5</span> km/h
+                </p>
+            </aside>
+        </div>
+        <h2>Directory</h2>
     </main>
     <footer>
         <p>Guana Chamber of Commerce<br>123 Main Street<br>Guana, VI 00830<br>340-555-5555</p>
