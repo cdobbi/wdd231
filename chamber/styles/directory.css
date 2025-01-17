@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #312fc1dd;
-    --secondary-color: #1e5a0ab9;
+    --primary-color: #1563b6fa;
+    --secondary-color: #0056b3;
     --tertiary-color: #fbd4289c;
     --font-family: 'Merriweather', sans-serif;
 }
@@ -212,56 +212,3 @@ footer p:last-child {
     height: 44px;
     transition: all 0.3s ease-in-out;
 }
-
-.business-cards {
-    transition: all 0.3s ease;
-}
-
-.business-cards .business-card {
-    transition: all 0.3s ease;
-}
-
-#toggleViewBtn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#toggleViewBtn:hover {
-    background-color: #0056b3;
-}
-
-.business-cards-controls {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.business-cards.list-view {
-    display: block;
-}
-
-.business-cards.list-view .business-card {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-.business-cards.list-view .business-card img {
-    width: 80px;
-    height: 80px;
-    margin-right: 20px;
-}
-
-.business-cards.list-view .business-card h3 {
-    margin: 0 0 5px 0;
-}
-
-.business-cards.list-view .business-card p {
-    margin: 0;
-}
-
