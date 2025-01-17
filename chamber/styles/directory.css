@@ -125,7 +125,7 @@ aside.forecast {
     padding: 1rem;
     border: 5px solid navy;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
     width: 100%;
     box-sizing: border-box;
     text-align: center;
@@ -135,7 +135,7 @@ aside.forecast {
 aside.events:hover,
 aside.weather:hover,
 aside.forecast:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 25px 33px rgba(0, 0, 0, 0.3);
     /* Darker shadow on hover */
     transform: translateY(-5px);
     /* Slight lift effect */
@@ -150,7 +150,7 @@ h2 {
 aside p,
 aside ul {
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #333;
 }
 
