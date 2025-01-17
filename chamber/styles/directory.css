@@ -19,10 +19,7 @@ body {
     font-weight: 300;
     overflow-x: hidden;
     font-family: var(--font-family);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
     transition: all 0.3s ease-in-out;
-
-
 }
 
 header,
@@ -36,49 +33,45 @@ footer {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Ensures space distribution */
     background: var(--primary-color);
     padding: 1.5rem;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
 }
 
-header img,
-header h1,
-nav {
+header img {
+    width: auto; /* Allows image to adjust based on content */
+    max-width: 100%;
+    height: auto;
     flex-shrink: 1;
 }
 
-header h1::first-line {
-    font-size: 3.5rem;
-}
-
 header h1 {
-    flex: 1 1 auto;
+    flex: 1 1 auto; /* Allows growth and shrinking */
     font-size: 2rem;
     text-align: left;
     font-family: 'Merriweather', sans-serif;
     font-weight: 300;
     line-height: 1.2;
     margin-left: 1rem;
-    white-space: nowrap;
+    white-space: nowrap; /* Consider changing to allow wrapping */
 }
 
-/* NAVIGATION */
 nav {
-    flex: 0 1 auto;
+    flex: 0 1 auto; /* Prevents nav from growing */
     margin-left: auto;
+    flex-shrink: 1;
     transition: all 0.3s ease-in-out;
 }
 
 ul.nav-links {
     display: flex;
-    text-align: right;
     justify-content: flex-end;
     list-style-type: none;
     flex-direction: row;
-    display: flex;
     gap: 30px;
+    flex-shrink: 1;
 }
 
 nav ul.nav-links a {
@@ -90,6 +83,15 @@ nav ul.nav-links a {
 
 nav ul.nav-links a:hover {
     color: var(--tertiary-color);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
 }
 
 /* MAIN CONTENT */
@@ -148,9 +150,7 @@ aside.events:hover,
 aside.weather:hover,
 aside.forecast:hover {
     box-shadow: 0 25px 33px rgba(0, 0, 0, 0.3);
-    /* Darker shadow on hover */
     transform: translateY(-5px);
-    /* Slight lift effect */
 }
 
 h2 {
@@ -209,11 +209,4 @@ footer p:last-child {
 .social-icon img {
     width: 24px;
     height: 24px;
-}
-
-aside.events:hover,
-aside.weather:hover,
-aside.forecast:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
 }
