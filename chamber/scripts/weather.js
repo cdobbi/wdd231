@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Update HTML Elements
       document.getElementById("currentTemp").textContent = temperature;
       document.getElementById("windSpeed").textContent = windSpeed;
+      document.getElementById("windChill").textContent = windChill;
       document.getElementById("condition").textContent =
         capitalizeFirstLetter(condition);
 
@@ -46,9 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((data) => {
+      // Process Forecast Data (e.g., daily summaries)
       const forecast = processForecastData(data.list);
 
-      // Update Forecast HTML Elements
+      // Example: Update for specific dates
       const forecastElements = document.querySelectorAll(".forecast p");
 
       forecastElements.forEach((element) => {
