@@ -117,15 +117,6 @@
         gap: 1rem;
         position: absolute;
     }
-
-    .list .business-card {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .list .business-card img {
-        margin-bottom: 0.5rem;
-    }
 }
 
 @media (max-width: 480px) {

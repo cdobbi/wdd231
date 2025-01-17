@@ -186,6 +186,7 @@ footer {
     text-align: left;
     align-items: center;
     line-height: 1.5;
+    transition: all 0.3s ease-in-out;
 }
 
 footer p:first-child {
