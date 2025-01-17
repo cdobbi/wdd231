@@ -33,7 +33,7 @@ footer {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures space distribution */
+    justify-content: space-between;
     background: var(--primary-color);
     padding: 1.5rem;
     box-sizing: border-box;
@@ -41,25 +41,27 @@ header {
 }
 
 header img {
-    width: auto; /* Allows image to adjust based on content */
+    width: auto;
     max-width: 100%;
     height: auto;
     flex-shrink: 1;
 }
 
 header h1 {
-    flex: 1 1 auto; /* Allows growth and shrinking */
+    flex: 1 1 auto;
+    /* Allows growth and shrinking */
     font-size: 2rem;
     text-align: left;
     font-family: 'Merriweather', sans-serif;
     font-weight: 300;
     line-height: 1.2;
     margin-left: 1rem;
-    white-space: nowrap; /* Consider changing to allow wrapping */
+    white-space: nowrap;
 }
 
 nav {
-    flex: 0 1 auto; /* Prevents nav from growing */
+    flex: 0 1 auto;
+    /* Prevents nav from growing */
     margin-left: auto;
     flex-shrink: 1;
     transition: all 0.3s ease-in-out;
@@ -117,7 +119,6 @@ main {
     height: auto;
     /* Prevents vertical stretching */
     max-height: 500px;
-    /* Sets a maximum height (adjust as needed) */
     object-fit: cover;
     /* Ensures the image covers its container without distortion */
     border-radius: 8px;
