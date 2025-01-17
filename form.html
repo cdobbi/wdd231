@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>WDD 13 | HTML Form - Rabbit Breed Review</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christi Dobbins">
+    <meta name="description" content="Christi Dobbins' student week 05 Product Review Form activity.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rabbit Breed Review</h1>
+    </header>
+
+    <main>
+        <form id="review-form" method="get" action="review.html">
+            <fieldset>
+                <legend>Rabbit Breed 🗝️</legend>
+                <div class="form-item">
+                    <label for="breed-select">Choose a breed to review</label>
+                    <select id="breed-select" name="Breed" required>
+                        <option value="" disabled selected>Choose a breed...</option>
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Purchase 🗝️</legend>
+                <div class="form-item">
+                    <label for="date-of-purchase">When did you purchase this breed?</label>
+                    <input type="date" id="date-of-purchase" name="Date Of Purchase" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>What about this breed do you like most?</legend>
+                <h4>Check all that apply</h4>
+                <div class="checkbox">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="show-worthiness" name="Feature" value="Show Worthiness">
+                        <label for="show-worthiness">Show Worthiness</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="overall-quality" name="Feature" value="Overall Quality">
+                        <label for="overall-quality">Overall Quality</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="body-type" name="Feature" value="Body Type">
+                        <label for="body-type">Body Type</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="structure" name="Feature" value="Structure">
+                        <label for="structure">Structure</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="temperament" name="Feature" value="Temperament">
+                        <label for="temperament">Temperament</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fur-quality" name="Feature" value="Fur Quality">
+                        <label for="fur-quality">Fur Quality</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="rating-fieldset">
+                <legend>Overall Rating 🗝️</legend>
+                <div class="rating-container">
+                    <input type="radio" id="star1" name="Overall Rating" value="1">
+                    <label for="star1">☆</label>
+                    <input type="radio" id="star2" name="Overall Rating" value="2">
+                    <label for="star2">☆☆</label>
+                    <input type="radio" id="star3" name="Overall Rating" value="3">
+                    <label for="star3">☆☆☆</label>
+                    <input type="radio" id="star4" name="Overall Rating" value="4">
+                    <label for="star4">☆☆☆☆</label>
+                    <input type="radio" id="star5" name="Overall Rating" value="5">
+                    <label for="star5">☆☆☆☆☆</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (Optional)</legend>
+                <div class="form-item">
+                    <textarea id="written-review-box" name="Written Review" rows="4" placeholder="Write the review here"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Finish Up</legend>
+                <div class="form-item">
+                    <h4>User name (Optional)</h4>
+                    <input type="text" id="name" name="User Name" placeholder="Enter your name here">
+                </div>
+            </fieldset>
+            <div class="form-item">
+                <button type="submit">Post Review</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🐇 Christi Dobbins 🐇 USA</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+</body>
+
+</html>
