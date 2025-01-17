@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #b90505;
-    --secondary-color: #1e5a0a;
-    --tertiary-color: #fbd428;
+    --primary-color: #312fc1dd;
+    --secondary-color: #1e5a0ab9;
+    --tertiary-color: #fbd4289c;
     --font-family: 'Merriweather', sans-serif;
 }
 
@@ -28,7 +28,6 @@ body {
 header,
 main,
 footer {
-    max-width: 1960px;
     margin: 0 auto;
     transition: all 0.3s ease-in-out;
 }
@@ -36,38 +35,44 @@ footer {
 /* HEADER */
 header {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     background: var(--primary-color);
-    padding: 1rem 2rem;
-}
-
-header img {
-    margin-right: 1rem;
+    padding: 1.5rem;
 }
 
 header h1::first-line {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 header h1 {
-    font-size: 2rem;
+    flex: 0 1 auto;
+    font-size: 3rem;
     text-align: left;
     font-family: 'Merriweather', sans-serif;
     font-weight: 300;
+    line-height: 1.2;
+    margin-left: 1rem;
+
 }
 
 /* NAVIGATION */
+nav {
+    margin-left: auto;
+}
+
 ul.nav-links {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    font-size: 2rem;
-    /* Adjusted for better sizing */
+    text-align: right;
     list-style-type: none;
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
 }
 
 nav ul.nav-links a {
     text-decoration: none;
     color: white;
+    font-size: 2.5rem;
     transition: color 0.3s ease;
 }
 
@@ -77,8 +82,7 @@ nav ul.nav-links a:hover {
 
 /* MAIN CONTENT */
 main {
-    background: var(--tertiary-color);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .hero-container {
@@ -86,22 +90,23 @@ main {
     flex-direction: row;
     gap: 2rem;
     align-items: stretch;
-    /* Align items to the top */
     flex-wrap: wrap;
-    /* Allow wrapping on smaller screens */
 }
 
 .hero {
     flex: 2;
-    /* Hero takes twice the space of cards */
 }
 
 .hero picture,
 .hero img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    /* Prevents vertical stretching */
+    max-height: 500px;
+    /* Sets a maximum height (adjust as needed) */
+    object-fit: cover;
+    /* Ensures the image covers its container without distortion */
     border-radius: 8px;
-    /* Optional: Add rounded corners */
 }
 
 .cards {
@@ -116,9 +121,9 @@ main {
 aside.events,
 aside.weather,
 aside.forecast {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(244, 237, 237, 0.8);
     padding: 1rem;
-    border: 1px solid black;
+    border: 5px solid navy;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -136,9 +141,10 @@ aside.forecast:hover {
     /* Slight lift effect */
 }
 
-aside h2 {
-    margin-bottom: 0.5rem;
-    color: var(--secondary-color);
+h2 {
+    font-size: 2.5rem;
+    color: #13897ff4;
+    margin-bottom: 1rem;
 }
 
 aside p,
@@ -159,12 +165,14 @@ aside ul {
 
 /* FOOTER */
 footer {
+    font-size: 1.8rem;
     display: flex;
     color: white;
-    background: var(--secondary-color);
-    padding: 0.5rem;
+    background: var(--primary-color);
+    padding: 1.8rem;
     text-align: left;
     align-items: center;
+    line-height: 1.5;
 }
 
 footer p:first-child {
@@ -195,7 +203,5 @@ aside.events:hover,
 aside.weather:hover,
 aside.forecast:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    /* Darker shadow on hover */
     transform: translateY(-5px);
-    /* Slight lift effect */
 }
