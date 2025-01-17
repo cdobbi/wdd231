@@ -19,6 +19,10 @@ body {
     font-weight: 300;
     overflow-x: hidden;
     font-family: var(--font-family);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease-in-out;
+
+
 }
 
 header,
@@ -32,20 +36,19 @@ footer {
 /* HEADER */
 header {
     display: flex;
-    justify-content: space-between;
     background: var(--primary-color);
-    align-items: center;
-    /* Centered vertically */
     padding: 1rem 2rem;
-    /* Added padding for spacing */
 }
 
 header img {
     margin-right: 1rem;
 }
 
+header h1::first-line {
+    font-size: 3rem;
+}
+
 header h1 {
-    margin: 0;
     font-size: 2rem;
     text-align: left;
     font-family: 'Merriweather', sans-serif;
@@ -53,17 +56,12 @@ header h1 {
 }
 
 /* NAVIGATION */
-nav {
-    margin-left: auto;
-    margin-right: 2rem;
-}
-
 ul.nav-links {
     display: flex;
+    flex-direction: row;
     gap: 15px;
-    font-size: 1.6rem;
+    font-size: 2rem;
     /* Adjusted for better sizing */
-    color: white;
     list-style-type: none;
 }
 
@@ -132,8 +130,10 @@ aside.forecast {
 aside.events:hover,
 aside.weather:hover,
 aside.forecast:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
-    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Darker shadow on hover */
+    transform: translateY(-5px);
+    /* Slight lift effect */
 }
 
 aside h2 {
@@ -194,6 +194,8 @@ footer p:last-child {
 aside.events:hover,
 aside.weather:hover,
 aside.forecast:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
-    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Darker shadow on hover */
+    transform: translateY(-5px);
+    /* Slight lift effect */
 }
