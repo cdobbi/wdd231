@@ -5,13 +5,16 @@
 }
 
 .business-card {
-    background: white;
-    border: 1px solid black;
+    background: #F4EDEDCC;
+    border: 3px solid black;
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calac(33.333% - 2rem);
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .business-card:hover {
@@ -20,7 +23,7 @@
 }
 
 .business-card img {
-    width: 100%;
+    width: 150px;
     height: 150px;
     /* Set a fixed height for consistency */
     object-fit: cover;
@@ -32,7 +35,7 @@
 .business-card h3 {
     margin-bottom: 0.5rem;
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .business-card p {

@@ -42,18 +42,18 @@ header {
 }
 
 header h1::first-line {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 header h1 {
     flex: 0 1 auto;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: left;
     font-family: 'Merriweather', sans-serif;
     font-weight: 300;
     line-height: 1.2;
     margin-left: 1rem;
-
+    flex-shrink: 1;
 }
 
 /* NAVIGATION */
@@ -72,7 +72,7 @@ ul.nav-links {
 nav ul.nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     transition: color 0.3s ease;
 }
 
@@ -142,7 +142,7 @@ aside.forecast:hover {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #13897ff4;
     margin-bottom: 1rem;
 }
@@ -150,7 +150,7 @@ h2 {
 aside p,
 aside ul {
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #333;
 }
 
