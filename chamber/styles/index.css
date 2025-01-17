@@ -42,12 +42,11 @@ header {
 
 header img {
     margin-right: 1rem;
-    /* Adjusted margin */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2rem;
     text-align: left;
     font-family: 'Merriweather', sans-serif;
     font-weight: 300;
@@ -121,12 +120,20 @@ aside.weather,
 aside.forecast {
     background: rgba(255, 255, 255, 0.8);
     padding: 1rem;
-    border: 1px solid #bbb;
+    border: 1px solid black;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+aside.events:hover,
+aside.weather:hover,
+aside.forecast:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
 }
 
 aside h2 {
@@ -152,17 +159,31 @@ aside ul {
 
 /* FOOTER */
 footer {
+    display: flex;
     color: white;
     background: var(--secondary-color);
     padding: 0.5rem;
-    text-align: center;
+    text-align: left;
+    align-items: center;
+}
+
+footer p:first-child {
+    flex: 1;
+    margin: 0;
+}
+
+footer p:last-child {
+    flex: 1;
+    text-align: right;
+    margin: 0 auto;
 }
 
 .social-icons {
+    flex: 1;
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 0.5rem 0;
+    margin-left: 2rem;
 }
 
 .social-icon img {
@@ -170,11 +191,9 @@ footer {
     height: 24px;
 }
 
-/* Optional: Add hover effects for asides */
 aside.events:hover,
 aside.weather:hover,
 aside.forecast:hover {
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
 }
