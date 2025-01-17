@@ -19,13 +19,12 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gideon+233 24 358 5854Roman&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+233243585854Romanfamily=Poppins:ital,wght@0,100;0,400;1,200&display=swap"
         rel="stylesheet">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
-    <!-- <script src="scripts/base.js" defer></script> -->
+    <script src="scripts/weather.js" defer></script>
 
 </head>
 
@@ -71,28 +70,40 @@
                     </ul>
                 </aside>
                 <aside class="weather">
-                    <h2>Current Weather <span class="weather-icon">🌤️</span></h2>
-                    <p><span>Temperature:</span>
+                    <h2>Current Weather
+                        <span class="weather-icon">🌤️</span>
+                    </h2>
+                    <p>
+                        <span>Temperature:</span>
                         <span id="currentTemp">78</span>°C
                     </p>
-                    <p><span>Feels Like:</span>
-                        <span id="windChill">83/span>°C
+                    <p>
+                        <span>Feels Like:</span>
+                        <span id="windChill">83</span>°C
                     </p>
-                    <p><span>Wind:</span>
-                        <span id="windSpeed">5</span> km/h
+                    <p>
+                        <span>Wind:</span>
+                        <span id="windSpeed">5</span>km/h
                     </p>
-                    <p><span>Conditions:</span> Partly Cloudy</p>
+                    <p>
+                        <span>Conditions:</span>
+                        <span id="condition"></span>Partly Cloudy
+                    </p>
                 </aside>
                 <aside class="forecast">
                     <h2>Forecast</h2>
-                    <p><span>Today:</span>
-                        <span id="forecastTemp">68</span>°C
+                    <p>
+                        <span>Today:</span>
+                        <span id="forecastTemp"data-day="today">68</span>°C
                     </p>
-                    <p><span>Wednesday:</span>
-                        <span id="forecastTemp">72</span>°C
+                    <p>
+                        <span>Tomorrow:</span>
+                        <span id="forecastTemp" data-day="tomorrow">72</span>°C
                     </p>
-                    <p><span>Thursday:</span>
-                        <span id="forecastTemp">70</span>°C
+                    <p>
+                        <span>Following Day:</span>
+                        <span id="forecastTemp"data-day="followingDay">70</span>°C
+                    </p>
                 </aside>
             </div>
         </div>
