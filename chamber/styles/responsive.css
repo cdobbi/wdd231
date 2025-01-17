@@ -3,7 +3,6 @@
 
     nav ul.nav-links {
         display: none;
-        transition: max-height 0.3 ease-in-out;
         overflow: hidden;
         max-height: 0;
     }
