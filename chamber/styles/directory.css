@@ -36,9 +36,17 @@ footer {
 header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     background: var(--primary-color);
     padding: 1.5rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+header img,
+header h1,
+nav {
+    flex-shrink: 1;
 }
 
 header h1::first-line {
@@ -46,23 +54,27 @@ header h1::first-line {
 }
 
 header h1 {
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     font-size: 2rem;
     text-align: left;
     font-family: 'Merriweather', sans-serif;
     font-weight: 300;
     line-height: 1.2;
     margin-left: 1rem;
-    flex-shrink: 1;
+    white-space: nowrap;
 }
 
 /* NAVIGATION */
 nav {
+    flex: 0 1 auto;
     margin-left: auto;
+    transition: all 0.3s ease-in-out;
 }
 
 ul.nav-links {
+    display: flex;
     text-align: right;
+    justify-content: flex-end;
     list-style-type: none;
     flex-direction: row;
     display: flex;

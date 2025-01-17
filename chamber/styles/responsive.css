@@ -1,0 +1,122 @@
+/* responsive.css */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul.nav-links a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        /* Stack image and cards vertically */
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    aside.events,
+    aside.weather,
+    aside.forecast {
+        flex: 1 1 45%;
+        /* Two asides per row */
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 1.5rem;
+        /* Reduce padding */
+        justify-content: center;
+        /* Centers the remaining elements */
+    }
+
+    header img {
+        display: none;
+        /* Hides the header image */
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        /* Decreases h1 font size */
+        text-align: center;
+        /* Centers the h1 text */
+        white-space: normal;
+        /* Allows h1 text to wrap if necessary */
+    }
+
+    nav {
+        width: 100%;
+        /* Ensures navigation takes full width */
+        margin-left: 0;
+        /* Removes left margin */
+    }
+
+    ul.nav-links {
+        justify-content: center;
+        /* Centers navigation links */
+        gap: 1rem;
+        /* Reduces gap between links */
+    }
+
+    nav ul.nav-links a {
+        font-size: 1.2rem;
+        /* Decreases navigation link font size */
+    }
+
+    .cards {
+        flex-direction: column;
+        /* Stack business cards vertically if desired */
+    }
+
+}
+
+@media (max-width: 600px) {
+    .hero-container {
+        flex-direction: column;
+        /* Ensure stacking if not already handled */
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    aside.events,
+    aside.weather,
+    aside.forecast {
+        flex: 1 1 100%;
+        /* Single aside per row */
+        margin: 0.5rem 0;
+    }
+
+    ul.nav-links {
+        display: none;
+        /* Hide navigation links */
+    }
+
+    ul.nav-links li.show {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+    }
+}
+
+/* Media Query for Extra Small Screens (Small Phones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+        /* Minimizes h1 font size */
+    }
+
+    nav ul.nav-links a {
+        font-size: 1rem;
+        /* Minimizes navigation link font size */
+    }
+}
