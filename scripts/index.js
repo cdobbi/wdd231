@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Hamburger Menu Functionality
   const hamburgerMenu = document.querySelector(".hamburger-menu");
   const navLinks = document.querySelector(".nav-links");
 
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Course Filter Buttons
   const allCoursesBtn = document.getElementById("all-courses");
   const wddCoursesBtn = document.getElementById("wdd-courses");
   const cseCoursesBtn = document.getElementById("cse-courses");
@@ -35,9 +37,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Event Listener for Course Clicks to Open Modal
+  const courseContainer = document.getElementById("course-list");
+  courseContainer.addEventListener("click", (event) => {
+    const courseLink = event.target.closest("a");
+    if (courseLink) {
+      event.preventDefault();
+      const courseId = parseInt(courseLink.getAttribute("data-course-id"));
+      const course = courses.find((c) => c.number === courseId);
+      if (course) {
+        showCourseDetails(course);
+      }
+    }
+  });
+
+  // Initially Display All Courses
   displayCourses("all");
 });
 
+// Courses Data Array
 const courses = [
   {
     subject: "CSE",
@@ -107,6 +125,7 @@ const courses = [
   },
 ];
 
+// Function to Display Courses Based on Filter
 function displayCourses(filter = "all") {
   const courseContainer = document.getElementById("course-list");
   courseContainer.innerHTML = "";
@@ -118,9 +137,9 @@ function displayCourses(filter = "all") {
 
   filteredCourses.forEach((course) => {
     const courseItem = document.createElement("li");
-    courseItem.innerHTML = `<a href="#">${course.subject} ${course.number} ${
-      course.completed ? "✅" : ""
-    }</a>`;
+    courseItem.innerHTML = `<a href="#" data-course-id="${course.number}">${
+      course.subject
+    } ${course.number} ${course.completed ? "✅" : ""}</a>`;
     courseItem.classList.add(course.completed ? "completed" : "not-completed");
     courseItem.style.backgroundColor = course.completed ? "" : "white";
     courseContainer.appendChild(courseItem);
@@ -135,4 +154,75 @@ function displayCourses(filter = "all") {
   if (totalCreditsElement) {
     totalCreditsElement.textContent = `Total Credits: ${totalCredits}`;
   }
+}
+
+// Function to Create and Show the Modal with Course Details
+function showCourseDetails(course) {
+  // Create Modal Element
+  const modal = document.createElement("div");
+  modal.classList.add("modal");
+
+  // Create Modal Content
+  const modalContent = document.createElement("div");
+  modalContent.classList.add("modal-content");
+
+  // Close Button
+  const closeButton = document.createElement("span");
+  closeButton.classList.add("close-button");
+  closeButton.innerHTML = "&times;";
+
+  // Course Details Elements
+  const courseTitle = document.createElement("h2");
+  courseTitle.textContent = `${course.subject} ${course.number}: ${course.title}`;
+
+  const courseCredits = document.createElement("p");
+  courseCredits.innerHTML = `<strong>Credits:</strong> ${course.credits}`;
+
+  const courseCertificate = document.createElement("p");
+  courseCertificate.innerHTML = `<strong>Certificate:</strong> ${course.certificate}`;
+
+  const courseDescription = document.createElement("p");
+  courseDescription.innerHTML = `<strong>Description:</strong> ${course.description}`;
+
+  const courseTechnology = document.createElement("p");
+  courseTechnology.innerHTML = `<strong>Technology:</strong> ${course.technology.join(
+    ", "
+  )}`;
+
+  const courseCompleted = document.createElement("p");
+  courseCompleted.innerHTML = `<strong>Completed:</strong> ${
+    course.completed ? "Yes" : "No"
+  }`;
+
+  // Append Elements to Modal Content
+  modalContent.appendChild(closeButton);
+  modalContent.appendChild(courseTitle);
+  modalContent.appendChild(courseCredits);
+  modalContent.appendChild(courseCertificate);
+  modalContent.appendChild(courseDescription);
+  modalContent.appendChild(courseTechnology);
+  modalContent.appendChild(courseCompleted);
+
+  // Append Modal Content to Modal
+  modal.appendChild(modalContent);
+
+  // Append Modal to Body
+  document.body.appendChild(modal);
+
+  // Display the Modal
+  modal.style.display = "block";
+
+  // Event Listener to Close Modal When Close Button is Clicked
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+    modal.remove();
+  });
+
+  // Event Listener to Close Modal When Clicking Outside the Modal Content
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      modal.remove();
+    }
+  });
 }
