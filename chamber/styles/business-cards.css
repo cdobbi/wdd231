@@ -15,8 +15,8 @@ h3 {
 
 .business-cards .business-card {
     background: #f6f9f9f4;
-    border: 0.1875rem solid black;
-    border-radius: 0.5rem;
+    border: 0.5rem solid rgba(100, 70, 9, 0.769);
+    border-radius: 1rem;
     padding: 1rem;
     box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -53,7 +53,7 @@ h3 {
     width: 9.375rem;
     height: 9.375rem;
     object-fit: cover;
-    border-radius: 0.25rem;
+    border-radius: .5rem;
     margin-bottom: 0.3125rem;
 }
 
@@ -82,7 +82,6 @@ h3 {
 .business-cards.list-view .business-card a {
     display: flex;
     flex-direction: row;
-    border-bottom: 0.1875rem solid rgba(0, 0, 0, 0.1);
     background: var(-tertiary-color);
     margin-top: 0.5rem;
     color: black;
@@ -175,8 +174,8 @@ h3 {
     font-size: 1.8rem;
     background-color: var(--tertiary-color);
     color: white;
-    border: none;
-    border-radius: 10px;
+    border: 0.5rem solid rgba(100, 70, 9, 0.769);
+    border-radius: 1rem;
     cursor: pointer;
 }
 

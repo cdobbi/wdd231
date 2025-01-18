@@ -143,9 +143,9 @@ aside.weather,
 aside.forecast {
     background: #f6f9f9f4;
     padding: 1rem;
-    border: 5px solid navy;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    border: 8px solid rgba(100, 70, 9, 0.769);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(7, 0, 0);
     width: 100%;
     box-sizing: border-box;
     text-align: center;
@@ -155,7 +155,7 @@ aside.forecast {
 aside.events:hover,
 aside.weather:hover,
 aside.forecast:hover {
-    box-shadow: 0 25px 33px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 25px 33px rgba(8, 0, 0, 0.3);
     transform: translateY(-5px);
 }
 
@@ -163,10 +163,11 @@ h2 {
     font-size: 2.2rem;
     color: var(--tertiary-color);
     font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 h3 {
-    font-style: poppins;
+    font-style: 'poppins', sans-serif;
     font-size: 2rem;
     color: var(--tertiary-color);
     margin: 1rem 0 1rem 0;
