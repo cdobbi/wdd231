@@ -58,6 +58,11 @@
         flex: 1 1 45%;
         margin: 0.5rem;
     }
+
+    social-icons {
+        gap: 0;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 768px) {

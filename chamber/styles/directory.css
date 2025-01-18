@@ -239,7 +239,6 @@ footer p:last-child {
 
 .social-icons {
     flex: 1;
-    display: flex;
     justify-content: center;
     gap: 2rem;
     margin-left: 2rem;
