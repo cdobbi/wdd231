@@ -79,6 +79,7 @@ ul.nav-links {
 nav ul.nav-links a {
     text-decoration: none;
     color: white;
+    background: none;
     font-size: 2rem;
     transition: color 0.3s ease;
 }
@@ -136,7 +137,7 @@ main {
 aside.events,
 aside.weather,
 aside.forecast {
-    background: rgba(244, 237, 237, 0.8);
+    background: #f6f9f9f4;
     padding: 1rem;
     border: 5px solid navy;
     border-radius: 8px;
@@ -155,30 +156,36 @@ aside.forecast:hover {
 }
 
 h2 {
-    font-size: 1.8rem;
-    color: #13897ff4;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    color: var(--tertiary-color);
 }
 
 h3 {
-    font-size: 1.8rem;
-    color: #0f6f67f4;
+    font-style: poppins;
+    font-size: 2rem;
+    color: var(--tertiary-color);
     margin: 1rem 0 1rem 0;
 }
 
 p {
-    font-size: 1.5rem;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1rem;
     color: #000;
     text-align: center;
-    margin: 0 auto;
+    line-height: normal;
     transition: all 0.3s ease-in-out;
 }
 
 a {
-    color: #000;
+    font-family: 'Merriweather', sans-serif;
     text-decoration: none;
-    padding: 1rem;
     font-size: 1rem;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    background: var(--tertiary-color);
     transition: all 0.3s ease-in-out;
 }
 
@@ -211,9 +218,17 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
+footer p {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', sans-serif;
+    line-height: 1.5rem;
+}
+
 footer p:first-child {
     flex: 1;
     margin: 0;
+    text-align: left;
 }
 
 footer p:last-child {
@@ -230,8 +245,13 @@ footer p:last-child {
     margin-left: 2rem;
 }
 
+a.social-icon {
+    background: none;
+}
+
 .social-icon img {
     width: 44px;
     height: 44px;
+    background: none;
     transition: all 0.3s ease-in-out;
 }
