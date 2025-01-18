@@ -6,6 +6,12 @@
     transition: all 0.3s ease;
 }
 
+h3 {
+    font-size: 1.8rem;
+    color: #13897ff4;
+    margin-bottom: 1rem;
+}
+
 .business-cards .business-card {
     background: #F4EDEDCC;
     border: 0.1875rem solid black;
@@ -33,82 +39,28 @@
     margin-bottom: 0.3125rem;
 }
 
-.business-cards .business-card .business-info {
-    width: 100%;
-}
-
-.business-cards .business-card .business-info .business-name {
-    margin-bottom: 0.3125rem;
-    color: var(--primary-color);
-    font-size: 0.8125rem;
-    font-weight: bold;
-}
-
-.business-cards .business-card .business-info .business-address,
-.business-cards .business-card .business-info .business-phone,
-.business-cards .business-card .business-info .business-email {
-    font-size: 0.5625rem;
-    color: black;
-    line-height: 1.5;
-    display: block;
-    margin-bottom: 0.25rem;
-}
-
 /* LIST VIEW STYLES */
 .business-cards.list-view {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     width: 100%;
 }
 
-.business-cards.list-view .business-card {
+.business-cards.list-view .business-card p {
+    justify-content: center;
+}
+
+.business-cards.list-view .business-card,
+.business-cards.list-view .business-card a {
     display: flex;
     flex-direction: row;
-    align-items: center;
     border-bottom: 0.1875rem solid rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
     background: #F4EDEDCC;
-    box-shadow: none;
+    margin-top: 0.3125rem;
 }
 
 .business-cards.list-view .business-card img {
-    display: none;
-}
-
-.business-cards.list-view .business-info {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
-    width: 100%;
-}
-
-.business-cards.list-view .business-info> * {
-    flex: 1;
-    text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.business-cards.list-view .business-info .business-name {
-    font-size: 1rem;
-    font-family: 'Roboto', Helvetica, sans-serif;
-    color: var(--primary-color);
-}
-
-.business-cards.list-view .business-info .business-address,
-.business-cards.list-view .business-info .business-phone,
-.business-cards.list-view .business-info .business-email {
-    font-size: 0.875rem;
-    color: black;
-    line-height: 1;
-    margin: 0;
-}
-
-.business-cards.list-view .business-card:nth-child(odd) {
-    background-color: white;
+    margin: auto;
 }
 
 .business-cards.list-view .business-card:nth-child(even) {
@@ -128,25 +80,25 @@
     }
 
     .business-cards.list-view .business-info {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 .business-cards-controls {
     text-align: center;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 #toggleViewBtn {
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.8rem;
     background-color: navy;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 #toggleViewBtn:hover {
-    background-color: #0056b3;
+    background-color: #12b300;
 }
