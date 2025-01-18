@@ -173,13 +173,13 @@ h3 {
 #toggleViewBtn {
     padding: 15px 25px;
     font-size: 1.8rem;
-    background-color: navy;
-    color: black;
+    background-color: var(--tertiary-color);
+    color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
 #toggleViewBtn:hover {
-    background-color: var(--tertiary-color);
+    background-color: navy;
 }
