@@ -29,11 +29,13 @@ h3 {
 
 .business-cards .business-card a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 0.5rem;
     margin: 1rem;
     padding: 0.5rem 1.5rem;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
 }
 
 .business-cards .business-card p {
@@ -72,7 +74,6 @@ h3 {
 }
 
 .business-cards.list-view .business-card h3 {
-    font-size: 2.5rem;
     color: #13897ff4;
     margin: 0 auto;
 }
@@ -84,8 +85,7 @@ h3 {
     border-bottom: 0.1875rem solid rgba(0, 0, 0, 0.1);
     background: var(-tertiary-color);
     margin-top: 0.5rem;
-    color: white;
-    font-size: 1.5rem;
+    color: black;
 }
 
 .business-cards.list-view .business-card img {
@@ -100,16 +100,68 @@ h3 {
     .business-cards {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
+
+    .business-cards .business-card a,
+    .business-cards .business-card p {
+        font-size: 0.3rem;
+        padding: 0.5rem;
+    } 
+
+    .business-cards .business-card img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .business-cards .business-card {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 600px) {
     .business-cards.list-view .business-card {
         flex-direction: column;
         align-items: center;
+        padding: 0;
+    }
+
+    .business-cards.list-view .business-card p {
+        padding: 0.5rem;
+    }
+
+    .business-cards .business-card p a,
+    .business-cards.list-view .business-card a {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .business-cards .business-card h3 a,
+    .business-cards.list-view .business-card a{
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .business-cards.list-view .business-card h3 {
+        font-size: 1.5rem;
     }
 
     .business-cards.list-view .business-info {
+        font-size: 1.5rem;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .business-cards .business-card img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .business-cards .business-card {
+        font-size: 0.8rem;
+    }
+
+    .business-cards .business-card p a {
+        overflow-wrap: break-word;
+        max-width: 100%;
+        font-size: 0.8rem;
     }
 }
 

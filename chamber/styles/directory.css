@@ -13,6 +13,20 @@
     box-sizing: border-box;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 body {
     max-width: 95%;
     margin: 0 auto;
@@ -52,8 +66,8 @@ header h1 {
     /* Allows growth and shrinking */
     font-size: 2rem;
     text-align: left;
-    font-family: 'Merriweather', sans-serif;
-    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     line-height: 1.2;
     margin-left: 1rem;
     white-space: nowrap;
@@ -158,6 +172,7 @@ aside.forecast:hover {
 h2 {
     font-size: 2.2rem;
     color: var(--tertiary-color);
+    font-family: 'Poppins', sans-serif;
 }
 
 h3 {
