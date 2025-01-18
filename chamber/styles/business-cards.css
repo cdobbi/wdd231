@@ -9,7 +9,7 @@
 h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
-    color: #13897ff4;
+    color: black;
     margin-bottom: 0.5rem;
 }
 
@@ -74,7 +74,7 @@ h3 {
 }
 
 .business-cards.list-view .business-card h3 {
-    color: #13897ff4;
+    color: black;
     margin: 0 auto;
 }
 
@@ -105,7 +105,7 @@ h3 {
     .business-cards .business-card p {
         font-size: 0.3rem;
         padding: 0.5rem;
-    } 
+    }
 
     .business-cards .business-card img {
         width: 7rem;
@@ -135,7 +135,7 @@ h3 {
     }
 
     .business-cards .business-card h3 a,
-    .business-cards.list-view .business-card a{
+    .business-cards.list-view .business-card a {
         font-size: 0.8rem;
         margin: 0;
     }
@@ -174,7 +174,7 @@ h3 {
     padding: 15px 25px;
     font-size: 1.8rem;
     background-color: navy;
-    color: #fff;
+    color: black;
     border: none;
     border-radius: 10px;
     cursor: pointer;
