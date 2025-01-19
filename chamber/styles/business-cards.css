@@ -31,11 +31,10 @@ h3 {
     text-decoration: none;
     color: black;
     font-size: 0.5rem;
-    margin: 1rem;
-    padding: 0.5rem 1.5rem;
+    margin: 1.5rem;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-weight: 800;
+    font-weight: 300;
 }
 
 .business-cards .business-card p {
@@ -78,11 +77,10 @@ h3 {
     margin: 0 auto;
 }
 
-.business-cards.list-view .business-card,
-.business-cards.list-view .business-card a {
-    display: flex;
-    flex-direction: row;
-    background: var(-tertiary-color);
+/* LIST VIEW STYLES */
+.business-cards.list-view .business-card {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
     margin-top: 0.5rem;
     color: black;
 }
@@ -103,7 +101,6 @@ h3 {
     .business-cards .business-card a,
     .business-cards .business-card p {
         font-size: 0.3rem;
-        padding: 0.5rem;
     }
 
     .business-cards .business-card img {
@@ -145,7 +142,7 @@ h3 {
 
     .business-cards.list-view .business-info {
         font-size: 1.5rem;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 0.5fr 2fr 0.5fr;
     }
 
     .business-cards .business-card img {
