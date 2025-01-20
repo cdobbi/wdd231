@@ -1,7 +1,7 @@
 /* responsive.css */
 
-@media (max-width: 1200px) {
 
+@media (max-width: 1600px) {
     .hamburger {
         display: block;
     }
@@ -9,10 +9,6 @@
     nav ul.nav-links {
         display: none;
         flex-direction: column;
-    }
-
-    .hamburger {
-        display: block;
     }
 
     nav ul.nav-links.active {
@@ -69,7 +65,7 @@
         margin: 0.5rem;
     }
 
-    social-icons {
+    .social-icons {
         gap: 0;
         margin-left: 0;
     }
@@ -98,40 +94,62 @@
         font-size: 1.5rem;
     }
 
-    nav ul.nav-links a {
-        font-size: 1.5rem;
+    div.cards {
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-right: 1rem;
     }
 
-    .cards {
-        flex-direction: column;
+    main img {
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
 }
 
 @media (max-width: 600px) {
-    .hero-container {
+    header {
         flex-direction: column;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
-
-    aside.events,
-    aside.weather,
-    aside.forecast {
-        flex: 1 1 100%;
-        margin: 0.5rem 0;
+        align-items: center;
+        margin-bottom: 0;
     }
 
     ul.nav-links {
         display: none;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 5px;
+        width: 100%;
+        background: var(--primary-color);
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        top: 100%;
+        left: 0;
+        z-index: 1;
     }
 
-    ul.nav-links li.show {
+    ul.nav-links.active {
         display: flex;
+    }
+
+    main {
+        padding: 1rem;
+        margin-top: 0;
+        transition: margin-top 0.3s ease-in-out;
+    }
+
+    main.shifted {
+        margin-top: 1rem;
+    }
+
+    .cards {
         flex-direction: column;
-        gap: 1.5rem;
-        position: absolute;
+        margin: 0 auto;
+    }
+
+    div.cards {
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -154,4 +172,14 @@
         display: flex;
     }
 
+    .cards {
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+
+    div.cards {
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
 }
