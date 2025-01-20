@@ -167,7 +167,7 @@ h2 {
 }
 
 h3 {
-    font-style: 'poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 2rem;
     color: var(--tertiary-color);
     margin: 1rem 0 1rem 0;
