@@ -2,7 +2,7 @@
 .business-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
     transition: all 0.3s ease;
 }
 
@@ -27,7 +27,6 @@
     text-decoration: none;
     color: black;
     font-size: 0.5rem;
-    margin: 1.5rem;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -71,7 +70,6 @@
 .business-cards.list-view .business-card {
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.5fr;
-    margin-top: 0.5rem;
     color: black;
 }
 
@@ -79,17 +77,17 @@
     justify-content: center;
     font-size: 1rem;
     line-height: 1.5rem;
-    padding-right: 8rem;
     transition: all 0.3s ease;
+    margin: 0;
 }
 
 .business-cards.list-view .business-card h3 {
     color: black;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .business-cards.list-view .business-card img {
-    margin: auto;
+    margin: 0;
 }
 
 .business-cards.list-view .business-card:nth-child(even) {
@@ -179,6 +177,7 @@
     border: 0.1rem solid rgba(100, 70, 9, 0.769);
     border-radius: 0.3rem;
     cursor: pointer;
+    margin: 0.5rem;
 }
 
 #toggleViewBtn:hover {

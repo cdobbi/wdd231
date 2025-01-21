@@ -73,11 +73,6 @@
         transform-origin: top left;
     }
 
-    header {
-        padding: 1rem 1.5rem;
-        justify-content: center;
-    }
-
     header h1 {
         text-align: left;
         white-space: normal;
