@@ -20,6 +20,8 @@ body {
     overflow-x: hidden;
     font-family: var(--font-family);
     transition: all 0.3s ease-in-out;
+    font-size: 2vw;
+    /* Use viewport width for font size */
 }
 
 header,
@@ -32,7 +34,7 @@ footer {
 /* HEADER */
 header {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     background: var(--primary-color);
     padding: 1.5rem;
@@ -45,6 +47,8 @@ header img {
     max-width: 100%;
     height: auto;
     flex-shrink: 1;
+    border: 0.1rem solid rgba(100, 70, 9, 0.769);
+    border-radius: 0.3rem;
 }
 
 .hamburger {
@@ -53,14 +57,18 @@ header img {
 
 header h1 {
     flex: 1 1 auto;
+    align-items: flex-end;
     /* Allows growth and shrinking */
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: left;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1.2;
+    margin: 0;
     margin-left: 1rem;
     white-space: nowrap;
+    font-size: 3vw;
+    /* Use viewport width for font size */
 }
 
 nav {
@@ -72,20 +80,19 @@ nav {
 
 ul.nav-links {
     display: flex;
-    justify-content: flex-end;
     list-style-type: none;
     flex-direction: row;
     gap: 5px;
     flex-shrink: 1;
-    margin-right: 1rem;
 }
 
 nav ul.nav-links a {
     text-decoration: none;
     color: black;
     background: none;
-    font-size: 2.2rem;
     transition: color 0.3s ease;
+    font-size: 2vw;
+    /* Use viewport width for font size */
 }
 
 nav ul.nav-links a:hover {
@@ -96,7 +103,7 @@ nav ul.nav-links a:hover {
     display: none;
     background: none;
     border: none;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     color: black;
     cursor: pointer;
 }
@@ -126,7 +133,7 @@ main {
     max-height: 500px;
     object-fit: cover;
     /* Ensures the image covers its container without distortion */
-    border-radius: 8px;
+    border-radius: .3rem;
 }
 
 .cards {
@@ -143,8 +150,8 @@ aside.weather,
 aside.forecast {
     background: #f6f9f9f4;
     padding: 0.5rem;
-    border: 8px solid rgba(100, 70, 9, 0.769);
-    border-radius: 10px;
+    border: 0.1rem solid rgba(100, 70, 9, 0.769);
+    border-radius: 0.3rem;
     box-shadow: 0 4px 8px rgb(7, 0, 0);
     width: 100%;
     box-sizing: border-box;
@@ -159,16 +166,22 @@ aside.forecast:hover {
     transform: translateY(-5px);
 }
 
+aside h2 {
+    margin: 0 auto;
+}
+
 h2 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: var(--tertiary-color);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    margin-bottom: -5rem;
+    margin: 1rem;
 }
 
 h3 {
     font-family: 'poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--tertiary-color);
     margin: 1rem 0 1rem 0;
     font-weight: 400;
@@ -213,6 +226,8 @@ aside ul {
 
 /* FOOTER */
 footer {
+    width: 100%;
+    max-width: none;
     font-size: 1.8rem;
     color: black;
     background: var(--primary-color);
@@ -229,9 +244,9 @@ footer {
 
 footer p {
     color: black;
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
 }
 
 footer p:first-child {
@@ -249,7 +264,7 @@ footer p:last-child {
 .social-icons {
     flex: 1;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     margin-left: 2rem;
 }
 
@@ -261,5 +276,7 @@ a.social-icon {
     width: 44px;
     height: 44px;
     background: none;
+    border: 0.1px solid black;
+    border-radius: 26px;
     transition: all 0.3s ease-in-out;
 }

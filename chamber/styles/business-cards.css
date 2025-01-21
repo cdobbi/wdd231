@@ -6,17 +6,10 @@
     transition: all 0.3s ease;
 }
 
-h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-    color: black;
-    margin-bottom: 0.5rem;
-}
-
-.business-cards .business-card {
+.business-card {
     background: #f6f9f9f4;
-    border: 0.5rem solid rgba(100, 70, 9, 0.769);
-    border-radius: 1rem;
+    border: 0.1rem solid rgba(100, 70, 9, 0.769);
+    border-radius: 0.3rem;
     padding: 1rem;
     box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -25,9 +18,12 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    /* Ensure content stays within the card */
 }
 
-.business-cards .business-card a {
+.business-card a {
     text-decoration: none;
     color: black;
     font-size: 0.5rem;
@@ -35,25 +31,33 @@ h3 {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    display: block;
+    word-wrap: break-word;
+    /* Ensure long email addresses wrap within the card */
 }
 
-.business-cards .business-card p {
+.business-card a:hover {
+    text-decoration: underline;
+}
+
+.business-card p {
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin: 0.5rem;
 }
 
-.business-cards .business-card:hover {
+.business-card:hover {
     transform: translateY(-0.3125rem);
     box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2);
 }
 
-.business-cards .business-card img {
+.business-card img {
     width: 9.375rem;
     height: 9.375rem;
     object-fit: cover;
-    border-radius: .5rem;
     margin-bottom: 0.3125rem;
+    border: 0.1px solid black;
+    border-radius: 60px;
 }
 
 /* LIST VIEW STYLES */
@@ -62,6 +66,13 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
+}
+
+.business-cards.list-view .business-card {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    margin-top: 0.5rem;
+    color: black;
 }
 
 .business-cards.list-view .business-card p {
@@ -77,14 +88,6 @@ h3 {
     margin: 0 auto;
 }
 
-/* LIST VIEW STYLES */
-.business-cards.list-view .business-card {
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr;
-    margin-top: 0.5rem;
-    color: black;
-}
-
 .business-cards.list-view .business-card img {
     margin: auto;
 }
@@ -93,22 +96,23 @@ h3 {
     background-color: #e0f8f6;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 1024px) {
     .business-cards {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
-    .business-cards .business-card a,
-    .business-cards .business-card p {
+    .business-card a,
+    .business-card p {
         font-size: 0.3rem;
     }
 
-    .business-cards .business-card img {
+    .business-card img {
         width: 7rem;
         height: 7rem;
     }
 
-    .business-cards .business-card {
+    .business-card {
         font-size: 0.8rem;
     }
 }
@@ -124,13 +128,13 @@ h3 {
         padding: 0.5rem;
     }
 
-    .business-cards .business-card p a,
+    .business-card p a,
     .business-cards.list-view .business-card a {
         font-size: 0.8rem;
         margin: 0;
     }
 
-    .business-cards .business-card h3 a,
+    .business-card h3 a,
     .business-cards.list-view .business-card a {
         font-size: 0.8rem;
         margin: 0;
@@ -145,16 +149,16 @@ h3 {
         grid-template-columns: 0.5fr 2fr 0.5fr;
     }
 
-    .business-cards .business-card img {
+    .business-card img {
         width: 5rem;
         height: 5rem;
     }
 
-    .business-cards .business-card {
+    .business-card {
         font-size: 0.8rem;
     }
 
-    .business-cards .business-card p a {
+    .business-card p a {
         overflow-wrap: break-word;
         max-width: 100%;
         font-size: 0.8rem;
@@ -164,15 +168,16 @@ h3 {
 .business-cards-controls {
     text-align: center;
     margin: 30px 0;
+    margin: 0;
 }
 
 #toggleViewBtn {
     padding: 15px 25px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background-color: var(--tertiary-color);
     color: white;
-    border: 0.5rem solid rgba(100, 70, 9, 0.769);
-    border-radius: 1rem;
+    border: 0.1rem solid rgba(100, 70, 9, 0.769);
+    border-radius: 0.3rem;
     cursor: pointer;
 }
 

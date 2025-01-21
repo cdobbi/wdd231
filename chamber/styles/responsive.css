@@ -1,7 +1,25 @@
 /* responsive.css */
 
+@media (max-width: 1024px) {
+    body {
+        transform: scale(0.9);
+        transform-origin: top left;
+    }
 
-@media (max-width: 1600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+
+    nav ul.nav-links a {
+        font-size: 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
     .hamburger {
         display: block;
     }
@@ -13,34 +31,16 @@
 
     nav ul.nav-links.active {
         display: flex;
-    }
-
-    nav ul.nav-links a {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0.5rem;
-    }
-
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    nav ul.nav-links a {
-        font-size: 1.5rem;
-    }
-
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        text-align: right;
     }
 }
 
 @media (max-width: 900px) {
+    body {
+        transform: scale(0.8);
+        transform-origin: top left;
+    }
+
     .hero-container {
         flex-direction: column;
     }
@@ -51,11 +51,7 @@
     }
 
     nav ul.nav-links a {
-        font-size: 1.5rem;
-    }
-
-    header h1 {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     aside.events,
@@ -72,13 +68,17 @@
 }
 
 @media (max-width: 768px) {
+    body {
+        transform: scale(0.7);
+        transform-origin: top left;
+    }
+
     header {
         padding: 1rem 1.5rem;
         justify-content: center;
     }
 
     header h1 {
-        font-size: 2rem;
         text-align: left;
         white-space: normal;
     }
@@ -86,12 +86,6 @@
     nav {
         width: 100%;
         margin-left: 0;
-    }
-
-    ul.nav-links {
-        justify-content: center;
-        gap: 1rem;
-        font-size: 1.5rem;
     }
 
     div.cards {
@@ -107,6 +101,11 @@
 }
 
 @media (max-width: 600px) {
+    body {
+        transform: scale(0.6);
+        transform-origin: top left;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
@@ -154,8 +153,9 @@
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 2rem;
+    body {
+        transform: scale(0.5);
+        transform-origin: top left;
     }
 
     nav ul.nav-links a {
