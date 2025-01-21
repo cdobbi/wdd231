@@ -29,6 +29,7 @@ main,
 footer {
     margin: 0 auto;
     transition: all 0.3s ease-in-out;
+    border-radius: 0.2rem;
 }
 
 /* HEADER */
@@ -236,7 +237,6 @@ footer {
     transition: all 0.3s ease-in-out;
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.5fr;
-    margin-top: 0.5rem;
     color: black;
 }
 
