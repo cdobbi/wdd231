@@ -29,7 +29,6 @@ main,
 footer {
     margin: 0 auto;
     transition: all 0.3s ease-in-out;
-    border-radius: 0.2rem;
 }
 
 /* HEADER */
@@ -117,6 +116,7 @@ main {
 .hero-container {
     display: flex;
     flex-direction: row;
+    gap: 2rem;
     align-items: stretch;
     flex-wrap: wrap;
 }
@@ -141,6 +141,7 @@ main {
     /* Cards take remaining space */
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 /* ASIDES (EVENTS, WEATHER, FORECAST) */
@@ -237,6 +238,7 @@ footer {
     transition: all 0.3s ease-in-out;
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.5fr;
+    margin-top: 0.5rem;
     color: black;
 }
 
