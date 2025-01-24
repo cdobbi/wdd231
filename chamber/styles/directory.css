@@ -114,15 +114,15 @@ main {
 }
 
 .hero-container {
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
     gap: 2rem;
-    align-items: stretch;
-    flex-wrap: wrap;
+    /* align-items: stretch; */
+    /* flex-wrap: wrap; */
 }
 
 .hero {
-    flex: 2;
+    flex: 3;
 }
 
 .hero picture,
@@ -137,10 +137,10 @@ main {
 }
 
 .cards {
-    flex: 1;
+    /* flex: 1; */
     /* Cards take remaining space */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 1rem;
 }
 
