@@ -1,26 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   fetchAndDisplayMembers();
-
-  const toggleViewBtn = document.getElementById("toggleViewBtn");
-  const businessCardsContainer = document.querySelector(".business-cards");
-
-  const savedView = localStorage.getItem("businessCardsView");
-  if (savedView === "list") {
-    businessCardsContainer.classList.add("list-view");
-    toggleViewBtn.textContent = "Switch to Grid View";
-  }
-
-  toggleViewBtn.addEventListener("click", () => {
-    businessCardsContainer.classList.toggle("list-view");
-
-    if (businessCardsContainer.classList.contains("list-view")) {
-      toggleViewBtn.textContent = "Switch to Grid View";
-      localStorage.setItem("businessCardsView", "list");
-    } else {
-      toggleViewBtn.textContent = "Switch to List View";
-      localStorage.setItem("businessCardsView", "grid");
-    }
-  });
 });
 
 async function fetchAndDisplayMembers() {
@@ -34,8 +13,8 @@ async function fetchAndDisplayMembers() {
     // Shuffle the members array
     const shuffledMembers = shuffleArray(members);
 
-    // Select the first 3 members
-    const selectedMembers = shuffledMembers.slice(0, 3);
+    // Select the first 4 members
+    const selectedMembers = shuffledMembers.slice(0, 4);
 
     // Display the selected members
     displayMembers(selectedMembers);
@@ -65,11 +44,11 @@ function displayMembers(members) {
     const memberCard = document.createElement("div");
     memberCard.classList.add("member-card");
     memberCard.innerHTML = `
-        <h3>${member.name}</h3>
-        <p>${member.address}</p>
-        <p>${member.phone}</p>
-        <p>${member.email}</p>
-      `;
+          <h3>${member.name}</h3>
+          <p>${member.address}</p>
+          <p>${member.phone}</p>
+          <p>${member.email}</p>
+        `;
     container.appendChild(memberCard);
   });
 }
