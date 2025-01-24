@@ -1,10 +1,10 @@
 /* responsive.css */
 
 @media (max-width: 1024px) {
-    body {
+    /* body {
         transform: scale(0.9);
         transform-origin: top left;
-    }
+    } */
 
     header {
         flex-direction: row;
@@ -36,10 +36,10 @@
 }
 
 @media (max-width: 900px) {
-    body {
+    /* body {
         transform: scale(0.8);
         transform-origin: top left;
-    }
+    } */
 
     .hero-container {
         flex-direction: column;
@@ -65,17 +65,28 @@
         gap: 0;
         margin-left: 0;
     }
+
+    .cta {
+        margin: 0 auto;
+        padding: 0.6rem 1.2rem;
+    }
 }
 
 @media (max-width: 768px) {
-    body {
+    /* body {
         transform: scale(0.7);
         transform-origin: top left;
-    }
+    } */
 
     header h1 {
         text-align: left;
         white-space: normal;
+    }
+
+    .cta {
+        margin: 0 auto;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
     }
 
     nav {
@@ -96,10 +107,10 @@
 }
 
 @media (max-width: 600px) {
-    body {
+    /* body {
         transform: scale(0.6);
         transform-origin: top left;
-    }
+    } */
 
     header {
         flex-direction: column;

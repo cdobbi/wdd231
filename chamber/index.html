@@ -34,7 +34,8 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/shuffle.js" defer></script>
+
 </head>
 
 <body>
@@ -65,53 +66,55 @@
         <div class="hero-container">
             <div class="hero">
                 <picture>
-                    <source srcset="images/huts-large.webp" media="(min-width: 1000px)">
-                    <source srcset="images/huts-medium.webp" media="(min-width: 500px)">
-                    <img src="images/huts-small.webp" alt="Photo of huts in Ghana">
+                    <source srcset="images/largeboats.webp" media="(min-width: 1000px)">
+                    <source srcset="images/mediumboats.webp" media="(min-width:150px)">
+                    <img src="images/smallboats.webp" alt="Photo of huts in Ghana">
                 </picture>
+                <a href="https://cdobbi.github.io/wdd231/form.html" target="_blank" class="cta">Become a member now!</a>
             </div>
-            <div class="cards">
-                <aside class="events">
-                    <h2>Networking Events</h2>
-                    <ul class="events-list">
-                        <li> </li>
-                        <li> </li>
-                    </ul>
-                </aside>
-                <aside class="weather">
-                    <h2>Current Weather
-                        <span class="weather-icon">🌤️</span>
-                    </h2>
-                    <p>
-                        <span>Temperature:</span>
-                        <span id="currentTemp">78</span>°C
-                    </p>
-                    <p>
-                        <span>Feels Like:</span>
-                        <span id="windChill">32</span>°C
-                    </p>
-                    <p>
-                        <span>Wind:</span>
-                        <span id="windSpeed"></span>km/h
-                    </p>
-                    <p>
-                        <span>Conditions:</span>
-                        <span id="condition"></span>
-                    </p>
-                </aside>
-                <aside class="forecast">
-                    <h2>Forecast</h2>
-                    <p>
-                        <span>Tomorrow:</span>
-                        <span id="forecastTemp" data-day="tomorrow">33</span>°C
-                    </p>
-                </aside>
-            </div>
+        </div>
+        <div class="cards">
+            <aside class="events">
+                <h2>Networking Events</h2>
+                <ul class="events-list">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididun </li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididun </li>
+                </ul>
+            </aside>
+            <aside class="weather">
+                <h2>Current Weather
+                    <span class="weather-icon">🌤️</span>
+                </h2>
+                <p>
+                    <span>Temperature:</span>
+                    <span id="currentTemp">78</span>°C
+                </p>
+                <p>
+                    <span>Feels Like:</span>
+                    <span id="windChill">32</span>°C
+                </p>
+                <p>
+                    <span>Wind:</span>
+                    <span id="windSpeed"></span>km/h
+                </p>
+                <p>
+                    <span>Conditions:</span>
+                    <span id="condition"></span>
+                </p>
+            </aside>
+            <aside class="forecast">
+                <h2>Forecast</h2>
+                <p>
+                    <span>Tomorrow:</span>
+                    <span id="forecastTemp" data-day="tomorrow">33</span>°C
+                </p>
+            </aside>
         </div>
         <h2>Home</h2>
-        <div class="business-cards-controls">
-            <button id="toggleViewBtn" aria-label="Toggle between grid and list view">Switch to List View</button>
-        </div>
+        <section class="featured-businesses">
+            <h2>Featured Businesses</h2>
+            <div class="featured-business-cards"></div>
+        </section>
         <div class="business-cards"></div>
     </main>
 

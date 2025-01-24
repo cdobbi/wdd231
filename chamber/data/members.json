@@ -1,65 +1,86 @@
 [
   {
-    "name": "Business Name 1",
+    "name": "Business Name 🥇",
     "address": "123 Business St., Accra, Ghana",
     "phone": "+233 24 358 5854",
     "email": "email@business1.com",
     "image": "images/favicon.webp"
   },
   {
-    "name": "Business Name 2",
+    "name": "Business Name 🥈",
     "address": "456 Business Ave., Accra, Ghana",
     "phone": "+233 24 358 5855",
     "email": "email@business2.com",
     "image": "images/favicon.webp"
   },
   {
-    "name": "Business Name 3",
+    "name": "Business Name 🥉",
     "address": "123 Business St., Accra, Ghana",
     "phone": "+233 24 358 5854",
     "email": "email@business1.com",
     "image": "images/favicon.webp"
   },
   {
-    "name": "Business Name 4",
+    "name": "Business Name 🥇",
     "address": "456 Business Ave., Accra, Ghana",
     "phone": "+233 24 358 5855",
     "email": "email@business2.com",
     "image": "images/favicon.webp"
   },
   {
-    "name": "Business Name 5",
+    "name": "Business Name 🥈",
     "address": "123 Business St., Accra, Ghana",
     "phone": "+233 24 358 5854",
     "email": "email@business1.com",
     "image": "images/favicon.webp"
   },
   {
-    "name": "Business Name 6",
+    "name": "Business Name 🥉",
     "address": "456 Business Ave., Accra, Ghana",
     "phone": "+233 24 358 5855",
     "email": "email@business2.com",
     "image": "images/favicon.webp"
   },
   {
-    "name": "Business Name 7",
+    "name": "Business Name 🥇",
     "address": "123 Business St., Accra, Ghana",
     "phone": "+233 24 358 5854",
     "email": "email@business1.com",
     "image": "images/favicon.webp"
   },
   {
-    "name": "Business Name 8",
+    "name": "Business Name 🥈",
     "address": "456 Business Ave., Accra, Ghana",
     "phone": "+233 24 358 5855",
     "email": "email@business2.com",
     "image": "images/favicon.webp"
   },
   {
-    "name": "Business Name 9",
+    "name": "Business Name 🥉",
     "address": "123 Business St., Accra, Ghana",
     "phone": "+233 24 358 5854",
     "email": "email@business1.com",
+    "image": "images/favicon.webp"
+  },
+  {
+    "name": "Business Name 🥇",
+    "address": "456 Business Ave., Accra, Ghana",
+    "phone": "+233 24 358 5855",
+    "email": "email@business2.com",
+    "image": "images/favicon.webp"
+  },
+  {
+    "name": "Business Name 🥈",
+    "address": "123 Business St., Accra, Ghana",
+    "phone": "+233 24 358 5854",
+    "email": "email@business1.com",
+    "image": "images/favicon.webp"
+  },
+  {
+    "name": "Business Name 🥉",
+    "address": "456 Business Ave., Accra, Ghana",
+    "phone": "+233 24 358 5855",
+    "email": "email@business2.com",
     "image": "images/favicon.webp"
   }
 ]
