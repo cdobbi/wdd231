@@ -12,7 +12,7 @@ body {
     max-height: 1100px;
     justify-content: center;
     align-items: center;
-    margin: 1rem auto 0 auto;
+    margin: 0 auto;
     font-family: "Poppins", sans-serif;
     grid-template-areas: "header" "main" "footer";
     display: grid;
@@ -28,9 +28,8 @@ footer {
 }
 
 footer p {
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
     text-align: center;
     transition: all 0.3s ease-in-out
 }
@@ -45,26 +44,18 @@ div.header-top {
 }
 
 header img {
-    width: 210px;
-    height: 220px;
-    margin: 1rem 0 1rem 0;
-    transition: all 0.3s ease-in-out
-}
-
-header h1 {
-    font-size: 3rem;
-    color: #000;
-    margin: 0;
+    width: 170px;
+    height: 180px;
+    margin: 0.5rem 0 0.5rem 0;
     transition: all 0.3s ease-in-out
 }
 
 h1,
 h2 {
     font-weight: 400;
-    margin: 1rem;
     color: #000;
-    padding: 1rem;
-    font-size: 2rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
     transition: all 0.3s ease-in-out
 }
 
@@ -75,7 +66,7 @@ header ul {
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    padding: 1.5rem;
+    padding: 1rem;
     list-style-type: none;
     background: #ffc0c0;
     transition: all 0.3s ease-in-out;
@@ -88,22 +79,6 @@ ul {
     transition: all 0.3s ease-in-out
 }
 
-a {
-    color: #000;
-    text-decoration: none;
-    padding: 0.3rem 1rem 0.3rem 1rem;
-    font-size: 1.5rem;
-    border: 2px solid #d28750;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out
-}
-
-p {
-    font-size: 1.5rem;
-    color: #000;
-    text-align: center;
-    transition: all 0.3s ease-in-out
-}
 
 a:hover {
     border: 10px solid #d28750 #fff0;
@@ -122,20 +97,8 @@ main {
     grid-template-columns: 2fr 1fr;
     gap: .8rem;
     background: #c7e4e4;
-    padding: 2rem;
-    margin: 0;
+    padding: 1rem;
     box-sizing: border-box;
-    transition: all 0.3s ease-in-out
-}
-
-main ul {
-    margin: 2rem;
-    transition: all 0.3s ease-in-out
-}
-
-main p {
-    text-align: center;
-    margin: 0 auto;
     transition: all 0.3s ease-in-out
 }
 
@@ -150,29 +113,29 @@ main p {
 .card h2 {
     background-color: #fdf8d3;
     color: #000;
-    margin: 0;
     text-align: center;
+    margin: 0;
     border-radius: 5px;
     transition: all 0.3s ease-in-out
 }
 
 main img {
     display: block;
-    width: 90%;
+    width: 50%;
     height: auto;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     transition: all 0.3s ease-in-out
 }
 
-li::marker {
+main li::marker {
     color: #d5c4b8;
     transition: all 0.3s ease-in-out
 }
 
 div.course-work {
     padding: 1rem;
-    font-size: 1.5rem;
+    margin-left: 1rem;
     transition: all 0.3s ease-in-out
 }
 
@@ -188,21 +151,12 @@ aside.card {
     transition: all 0.3s ease-in-out
 }
 
-aside.card ul li {
-    text-decoration: none;
-    transition: all 0.3s ease-in-out
-}
-
-aside.card h2 {
-    width: 100%;
-    padding: 1rem;
-    margin: 0;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out
-}
-
-aside.card a {
-    color: #000;
+div.total-credits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
     transition: all 0.3s ease-in-out
 }
 
@@ -221,12 +175,6 @@ aside.card a {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease
-}
-
-.third-card ul li a:hover,
-.third-card .course ul li a:hover {
-    color: #000;
-    font-weight: 700
 }
 
 .third-card aside.card>ul li:nth-child(-n+3) a {
@@ -327,4 +275,38 @@ a:visited {
 .close-button:focus {
     color: #000;
     text-decoration: none
+}
+
+h1 {
+    font-size: 2rem;
+    color: #000;
+    margin: 0;
+    padding: 1.5rem;
+    font-weight: 400
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0.5rem;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+p,
+li,
+a {
+    font-size: 1.2rem;
+    color: #000;
+    text-decoration: none;
+    text-align: center
+}
+
+li {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+ul.nav-links {
+    padding: 0.5rem;
 }
