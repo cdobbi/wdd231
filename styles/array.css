@@ -6,7 +6,8 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    margin-top: 1rem; /* Space above sorted courses */
+    margin-top: 1rem;
+    /* Space above sorted courses */
     padding: 0;
 }
 
@@ -31,7 +32,8 @@
 .total-credits {
     display: flex;
     justify-content: center;
-    margin-top: 1rem; /* Space above total credits */
+    margin-top: 1rem;
+    /* Space above total credits */
 }
 
 .total-credits-btn {
@@ -41,7 +43,8 @@
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
-    cursor: default; /* Non-clickable */
+    cursor: default;
+    /* Non-clickable */
 }
 
 /* Optional: Hover effect for Total Credits Button (if needed) */
@@ -93,7 +96,8 @@ button:hover {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    margin-top: 1rem; /* Space above sorted courses */
+    margin-top: 1rem;
+    /* Space above sorted courses */
     padding: 0;
 }
 
@@ -119,7 +123,8 @@ button:hover {
 .total-credits {
     display: flex;
     justify-content: center;
-    margin-top: 1rem; /* Space above total credits */
+    margin-top: 1rem;
+    /* Space above total credits */
 }
 
 .total-credits button.total-credits-btn {
@@ -129,7 +134,8 @@ button:hover {
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
-    cursor: default; /* Non-clickable if only for display */
+    cursor: default;
+    /* Non-clickable if only for display */
 }
 
 /* Optional: Hover effect for total credits button */
