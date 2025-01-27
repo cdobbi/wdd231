@@ -1,16 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Hamburger Menu Functionality
-  const hamburgerMenu = document.querySelector(".hamburger-menu");
-  const navLinks = document.querySelector(".nav-links");
-
-  if (hamburgerMenu && navLinks) {
-    hamburgerMenu.addEventListener("click", function () {
-      navLinks.classList.toggle("active");
-      const isActive = navLinks.classList.contains("active");
-      hamburgerMenu.setAttribute("aria-expanded", isActive);
-    });
-  }
-
+document.addEventListener("DOMContentLoaded", () => {
   // Course Filter Buttons
   const allCoursesBtn = document.getElementById("all-courses");
   const wddCoursesBtn = document.getElementById("wdd-courses");
@@ -37,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Event Listener for Course Clicks to Open Modal
   const courseContainer = document.getElementById("course-list");
   courseContainer.addEventListener("click", (event) => {
     const courseLink = event.target.closest("a");
@@ -158,20 +145,16 @@ function displayCourses(filter = "all") {
 
 // Function to Create and Show the Modal with Course Details
 function showCourseDetails(course) {
-  // Create Modal Element
   const modal = document.createElement("div");
   modal.classList.add("modal");
 
-  // Create Modal Content
   const modalContent = document.createElement("div");
   modalContent.classList.add("modal-content");
 
-  // Close Button
   const closeButton = document.createElement("span");
   closeButton.classList.add("close-button");
   closeButton.innerHTML = "&times;";
 
-  // Course Details Elements
   const courseTitle = document.createElement("h2");
   courseTitle.textContent = `${course.subject} ${course.number}: ${course.title}`;
 
@@ -194,7 +177,6 @@ function showCourseDetails(course) {
     course.completed ? "Yes" : "No"
   }`;
 
-  // Append Elements to Modal Content
   modalContent.appendChild(closeButton);
   modalContent.appendChild(courseTitle);
   modalContent.appendChild(courseCredits);
@@ -203,22 +185,17 @@ function showCourseDetails(course) {
   modalContent.appendChild(courseTechnology);
   modalContent.appendChild(courseCompleted);
 
-  // Append Modal Content to Modal
   modal.appendChild(modalContent);
 
-  // Append Modal to Body
   document.body.appendChild(modal);
 
-  // Display the Modal
   modal.style.display = "block";
 
-  // Event Listener to Close Modal When Close Button is Clicked
   closeButton.addEventListener("click", () => {
     modal.style.display = "none";
     modal.remove();
   });
 
-  // Event Listener to Close Modal When Clicking Outside the Modal Content
   window.addEventListener("click", function (event) {
     if (event.target === modal) {
       modal.style.display = "none";
