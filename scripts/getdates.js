@@ -1,13 +1,17 @@
-let yearElement = document.querySelector("#year");
-let lastModifiedElement = document.querySelector("#lastModified");
+document.addEventListener("DOMContentLoaded", () => {
+  const yearElement = document.querySelector("#year");
+  const lastModifiedElement = document.querySelector("#lastModified");
 
-let today = new Date();
-let lastModifiedDate = new Date(document.lastModified);
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 
-yearElement.innerHTML = today.getFullYear();
-
-let formatter = new Intl.DateTimeFormat("en-US", {
-  timeStyle: "medium",
-  dateStyle: "medium",
+  if (lastModifiedElement) {
+    const lastModifiedDate = new Date(document.lastModified);
+    const formatter = new Intl.DateTimeFormat("en-US", {
+      timeStyle: "medium",
+      dateStyle: "medium",
+    });
+    lastModifiedElement.textContent = formatter.format(lastModifiedDate);
+  }
 });
-lastModifiedElement.innerHTML = formatter.format(lastModifiedDate);
