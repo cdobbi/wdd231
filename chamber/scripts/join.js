@@ -36,3 +36,34 @@ showInfo
       "timestamp"
     )}</p>\n    `)
   : console.error("Element with ID 'results' not found.");
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Set timestamp value
+  const timestampInput = document.getElementById("timestamp");
+  if (timestampInput) {
+    timestampInput.value = new Date().toISOString();
+  } else {
+    console.error("Element with ID 'timestamp' not found.");
+  }
+
+  // Modal functions
+  window.openModal = function (modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.showModal();
+      modal.classList.add("open");
+    } else {
+      console.error(`Modal with ID '${modalId}' not found.`);
+    }
+  };
+
+  window.closeModal = function (modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.close();
+      modal.classList.remove("open");
+    } else {
+      console.error(`Modal with ID '${modalId}' not found.`);
+    }
+  };
+});
