@@ -1,20 +1,12 @@
 /* BUSINESS CARDS CONTAINER - GRID VIEW (Default) */
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-div.business-cards {
+.business-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.5rem;
     transition: all 0.3s ease;
 }
 
-div.business-card {
+.business-card {
     background: #f6f9f9f4;
     border: 0.1rem solid rgba(100, 70, 9, 0.769);
     border-radius: 0.3rem;
