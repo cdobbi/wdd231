@@ -22,6 +22,15 @@
 
     .hamburger {
         display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: black;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
     }
 
     nav ul.nav-links {
@@ -93,6 +102,20 @@
         margin: 0 auto;
         margin-bottom: 1rem;
     }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav ul.nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.nav-links.active {
+        display: flex;
+    }
 }
 
 @media (max-width: 600px) {
@@ -102,7 +125,6 @@
     }
 
     header {
-        flex-direction: column;
         align-items: center;
         margin-bottom: 0;
     }

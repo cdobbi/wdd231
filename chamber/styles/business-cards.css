@@ -118,6 +118,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
+
 @media (max-width: 600px) {
     .business-cards.list-view .business-card {
         flex-direction: column;
@@ -187,3 +193,16 @@
 #toggleViewBtn:hover {
     background-color: navy;
 }
+
+.hamburger {
+    display: block; /* Ensure it's visible */
+    /* Other styles */
+}
+
+.hamburger {
+    position: relative;
+    z-index: 1000; /* Higher value to appear on top */
+}
+
+
+    
