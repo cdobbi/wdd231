@@ -4,23 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 Advanced Forms Data Capture Week 04">
-    <meta name="author" content="Christi Dobbins">
+    <meta name="author" content="Christina Dobbins">
+    <meta name="description"
+        content="The subject of this page is the Ghana Chamber of Commerce Thanks For Joining page after having submitted the form to become a member. It's purpose is to provide members networking opportunities, attract new businesses and encourage economic development in the community.">
+    <title> Thank You - Ghana Chamber of Commerce | Christins Dobbins | WDD 231</title>
 
-    <link rel="stylesheet" href="styles/join.css">
+    <meta property="og:title" content="Chamber of Commerce Thanks For Joining Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdobbi.github.io/wdd231/chamber/images/favicon.webp">
+    <meta property="og:url" content="https://cdobbi.github.io/wdd231/chamber/thanks.html">
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/base.css">
-    <title>Advanced Forms Data Capture</title>
+    <link rel="stylesheet" href="styles/join.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <img src="images/small.webp" alt="Ghana Chamber of Commerce Logo" width="150" height="150">
+        <h1>GHANA<br>CHAMBER OF COMMERCE</h1>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="https://cdobbi.github.io/wdd231/chamber/index.html" target="_blank" data-text="Home">Home</a>
+                </li>
+                <li>
+                    <a href="https://cdobbi.github.io/wdd231/chamber/directory.html" target="_blank" data-text="Chamber">Directory</a>
+                </li>
+                <li>
+                    <a href="https://cdobbi.github.io/wdd231/form.html" target="_blank" data-text="Form">Join</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/christi-dobbins-46a6aa98" target="_blank" data-text="LinkedIn">Discover</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+    </header>
 
     <main>
-        <h1>Thank you for scheduling your appointment!</h1>
-        <h2>Your apointment details are below</h2>
+        <h1>Thank you for joining!</h1>
+        <h2>Your details are below</h2>
         <div id="results"></div>
     </main>
-
     <script src="scripts/join.js"></script>
+
+    <footer>
+        <p>Ghana<br>Chamber of Commerce<br>123 Main Street<br>Accra Ghana<br>+233 24 358 5854</p>
+        <div class="social-icons">
+            <a href="https://www.google.com/maps/place/Accra,+Ghana/" target="_blank" class="social-icon">
+                <img src="images/map.webp" alt="Ghana map icon">
+            </a>
+            <a href="https://www.facebook.com/robdobb/" target="_blank" class="social-icon">
+                <img src="images/facebook.webp" alt="Facebook icon">
+            </a>
+            <a href="https://cdobbi.github.io/wdd231" target="_blank" class="social-icon">
+                <img src="images/portfolio.webp" alt="Portfolio icon">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> WDD - 231<br>Christina Dobbins<br>Last modified:<br> <span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>

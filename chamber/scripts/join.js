@@ -1,27 +1,38 @@
 const currentUrl = window.location.href;
-console.log(currentUrl);
-
-const everything = currentUrl.split("?");
-console.log(everything);
-
-let formData = everything[1].split("&");
-console.log(formData);
-
-function show(cup) {
-  console.log(cup);
-  formData.forEach((element) => {
-    console.log(element);
-    if (element.startsWith(cup)) {
-      result = element.split("=")[1].replace("%40", "@");
-    }
-  });
-  return result;
+console.log("Current URL:", currentUrl);
+const queryString = currentUrl.split("?")[1];
+queryString || console.error("No query parameters found in the URL.");
+const formData = queryString ? queryString.split("&") : [];
+function getValue(key) {
+  for (let element of formData)
+    if (element.startsWith(`${key}=`))
+      return decodeURIComponent(element.split("=")[1].replace(/\+/g, " "));
+  return "";
 }
-
+console.log("Form Data:", formData);
 const showInfo = document.querySelector("#results");
-showInfo.innerHTML = `
-<p>Appointment for ${show("first")} ${show("last")}</p>
-<p>Proxy ${show("ordinance")} on ${show("fecha")} in the ${show("location")}</p>
-<p>Your Phone: ${show("phone")}</p>
-  <p>Your Email: <a href="mailto:${show("email")}">${show("email")}</a></p>
-`;
+showInfo
+  ? (showInfo.innerHTML = `\n        <p><strong>First Name:</strong> ${getValue(
+      "first"
+    )}</p>\n        <p><strong>Last Name:</strong> ${getValue(
+      "last"
+    )}</p>\n        <p><strong>Organizational Title:</strong> ${getValue(
+      "orgTitle"
+    )}</p>\n        <p><strong>Company Name:</strong> ${getValue(
+      "company"
+    )}</p>\n        <p><strong>Email:</strong> <a href="mailto:${getValue(
+      "email"
+    )}">${getValue(
+      "email"
+    )}</a></p>\n        <p><strong>Cell Phone:</strong> ${getValue(
+      "phone"
+    )}</p>\n        <p><strong>Business Type:</strong> ${getValue(
+      "type"
+    )}</p>\n        <p><strong>Business Description:</strong> ${getValue(
+      "description"
+    )}</p>\n        <p><strong>Membership Level:</strong> ${getValue(
+      "level"
+    )}</p>\n        <p><strong>Timestamp:</strong> ${getValue(
+      "timestamp"
+    )}</p>\n    `)
+  : console.error("Element with ID 'results' not found.");

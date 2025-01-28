@@ -1,17 +1,18 @@
-.ticker {
+.bunny {
     display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    animation: ticker 10s linear infinite;
+    animation: hop 1s infinite;
 }
 
-@keyframes ticker {
+@keyframes hop {
     0% {
-        transform: translateX(100%);
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateY(0);
     }
 }
