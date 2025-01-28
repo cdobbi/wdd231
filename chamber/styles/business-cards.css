@@ -116,11 +116,25 @@
     .business-card {
         font-size: 0.8rem;
     }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger {
+        position: relative;
+        z-index: 1000;
+    }
 }
 
 @media (max-width: 768px) {
     .hamburger {
         display: block;
+    }
+
+    .hamburger {
+        position: relative;
+        z-index: 1000;
     }
 }
 
@@ -195,14 +209,10 @@
 }
 
 .hamburger {
-    display: block; /* Ensure it's visible */
-    /* Other styles */
+    display: block;
 }
 
 .hamburger {
     position: relative;
-    z-index: 1000; /* Higher value to appear on top */
+    z-index: 1000;
 }
-
-
-    

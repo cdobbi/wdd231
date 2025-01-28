@@ -21,7 +21,6 @@ body {
     font-family: var(--font-family);
     transition: all 0.3s ease-in-out;
     font-size: 2vw;
-    font-family: 'Poppins', sans-serif;
 }
 
 header,
@@ -49,22 +48,20 @@ header img {
     border: 0.1rem solid rgba(100, 70, 9, 0.769);
     border-radius: 0.3rem;
 }
+
 h1, h2, h3 {
-    font-family: 'Dancing Script', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header h1 {
     flex: 1 1 auto;
-    font-size: 2rem;
+    font-size: 3vw;
     text-align: left;
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1.2;
     margin: 0;
     margin-left: 1rem;
     white-space: nowrap;
-    font-size: 3vw;
-    /* Use viewport width for font size */
 }
 
 nav {
@@ -87,224 +84,187 @@ nav ul.nav-links a {
     background: none;
     transition: color 0.3s ease;
     font-size: 2vw;
-    /* Use viewport width for font size */
 }
 
 nav ul.nav-links a:hover {
     color: var(--tertiary-color);
 }
 
-/* HAMBURGER MENU */
-.hamburger {
-    display: block;
+/* MAIN CONTENT */
+main {
+    padding: 1rem;
 }
 
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
+.hero-container {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.cta {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.8rem 1.5rem;
+    background-color: #13897ff4;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.cta:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* ASIDES (EVENTS, WEATHER, FORECAST) */
+aside.events,
+aside.weather,
+aside.forecast {
+    background: #f6f9f9f4;
+    padding: 1rem;
+    border: 0.1rem solid rgba(100, 70, 9, 0.769);
+    border-radius: 0.3rem;
+    box-shadow: 0 4px 8px rgb(7, 0, 0);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+aside.events:hover,
+aside.weather:hover,
+aside.forecast:hover {
+    box-shadow: 0 25px 33px rgba(8, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+aside h2 {
+    margin: 0 auto;
+}
+
+h2 {
     font-size: 2.2rem;
+    color: var(--tertiary-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: -5rem;
+    margin: 1rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: var(--tertiary-color);
+    margin: 1rem 0 1rem 0;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
     color: black;
-    cursor: pointer;
+    text-align: center;
+    line-height: normal;
+    transition: all 0.3s ease-in-out;
 }
 
-.hamburger.active::before {
-    content: 'X';
+a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+    background: var(--tertiary-color);
+    transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    nav ul.nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul.nav-links.active {
-        display: flex;
-    }
-
+aside p,
+aside ul {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: black;
+    line-height: 1.5;
 }
 
-    /* MAIN CONTENT */
-    main {
-        padding: 1rem;
-    }
+.events-list {
+    list-style-type: none;
+}
 
-    .hero-container {
-        position: relative;
-        width: 100%;
-        max-height: 400px;
-        overflow: hidden;
-        margin-bottom: 1rem;
-    }
+/* FOOTER */
+footer {
+    width: 100%;
+    max-width: none;
+    font-size: 1.8rem;
+    color: black;
+    background: var(--primary-color);
+    padding: 1.8rem;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    margin-top: 0.5rem;
+}
 
-    .hero img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 0.3rem;
-    }
+footer p {
+    color: black;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6rem;
+}
 
-    .cta {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        padding: 0.8rem 1.5rem;
-        background-color: #13897ff4;
-        color: rgb(255, 255, 255);
-        font-weight: 700;
-        text-decoration: none;
-        border-radius: 0.3rem;
-        text-align: center;
-        font-size: 1.8rem;
-        transition: all 0.3s ease-in-out;
-        z-index: 1;
-    }
+footer p:first-child {
+    flex: 1;
+    margin: 0;
+    text-align: left;
+}
 
-    .cta:hover {
-        background-color: rgba(0, 0, 0, 0.9);
-        /* Darker background on hover */
-    }
+footer p:last-child {
+    flex: 1;
+    text-align: right;
+    margin: 0 auto;
+}
 
-    .cards {
-        display: flex;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
+.social-icons {
+    flex: 1;
+    justify-content: center;
+    gap: 3rem;
+    margin-left: 2rem;
+}
 
-    /* ASIDES (EVENTS, WEATHER, FORECAST) */
-    aside.events,
-    aside.weather,
-    aside.forecast {
-        background: #f6f9f9f4;
-        padding: 1rem;
-        border: 0.1rem solid rgba(100, 70, 9, 0.769);
-        border-radius: 0.3rem;
-        box-shadow: 0 4px 8px rgb(7, 0, 0);
-        width: 100%;
-        box-sizing: border-box;
-        text-align: center;
-        transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
+a.social-icon {
+    background: none;
+}
 
-    aside.events:hover,
-    aside.weather:hover,
-    aside.forecast:hover {
-        box-shadow: 0 25px 33px rgba(8, 0, 0, 0.3);
-        transform: translateY(-5px);
-    }
-
-    aside h2 {
-        margin: 0 auto;
-    }
-
-    h2 {
-        font-size: 2.2rem;
-        color: var(--tertiary-color);
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        margin-bottom: -5rem;
-        margin: 1rem;
-        line-height: 1.5;
-    }
-
-    h3 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.8rem;
-        color: var(--tertiary-color);
-        margin: 1rem 0 1rem 0;
-        font-weight: 400;
-    }
-
-    p {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.5rem;
-        color: black;
-        text-align: center;
-        line-height: normal;
-        transition: all 0.3s ease-in-out;
-    }
-
-    a {
-        font-family: 'Poppins', sans-serif;
-        text-decoration: none;
-        font-size: 1.2rem;
-        border-radius: 8px;
-        padding: 0.5rem 0.5rem;
-        text-align: center;
-        color: black;
-        margin: 0 auto;
-        background: var(--tertiary-color);
-        transition: all 0.3s ease-in-out;
-    }
-
-    aside p,
-    aside ul {
-        margin-bottom: 0.5rem;
-        font-size: 1.8rem;
-        color: black;
-        line-height: 1.5;
-    }
-
-    .events-list {
-        list-style-type: none;
-    }
-
-    /* FOOTER */
-    footer {
-        width: 100%;
-        max-width: none;
-        font-size: 1.8rem;
-        color: black;
-        background: var(--primary-color);
-        padding: 1.8rem;
-        text-align: center;
-        align-items: center;
-        line-height: 1.5;
-        display: grid;
-        grid-template-columns: 0.5fr 2fr 0.5fr;
-        margin-top: 0.5rem;
-    }
-
-    footer p {
-        color: black;
-        font-size: 1rem;
-        font-family: 'Poppins', sans-serif;
-        line-height: 1.6rem;
-    }
-
-    footer p:first-child {
-        flex: 1;
-        margin: 0;
-        text-align: left;
-    }
-
-    footer p:last-child {
-        flex: 1;
-        text-align: right;
-        margin: 0 auto;
-    }
-
-    .social-icons {
-        flex: 1;
-        justify-content: center;
-        gap: 3rem;
-        margin-left: 2rem;
-    }
-
-    a.social-icon {
-        background: none;
-    }
-
-    .social-icon img {
-        width: 44px;
-        height: 44px;
-        background: none;
-        border: 0.1px solid black;
-        border-radius: 26px;
-        transition: all 0.3s ease-in-out;
-    }
+.social-icon img {
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: 0.1px solid black;
+    border-radius: 26px;
+    transition: all 0.3s ease-in-out;
+}
