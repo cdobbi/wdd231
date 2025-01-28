@@ -4,20 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Chamber of Commerce | Christina Dobbins | WDD 231</title>
-    <meta property="og:title" content="Payson, Utah Chamber of Commerce" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="image/favicon-city.png" />
-    <meta property="og:url" content="https://cdobbi.github.io/wdd231/chamber/directory.html" />
-    <meta name="author" content="Christina Dobbins">
-    <meta name="description"
-        content="The subject of this page is the Payson Utah Chamber of Commerce. It's purpose is to provide members networking opportunities, attract new businesses and encourage economic development in the community. It will also improve the visibility of reputation of the chamber as a trusted authority in local business matters. There will be links to pages, Home, Discover, Business Directory and Join.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="images/favicon-swirl.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/userData.js" defer></script>
-    <script src="scripts/index.js" defer></script>
+    <meta name="description" content="Form Index WDD 231 Advanced Forms Data Capture Week 04">
+    <meta name="author" content="Christi Dobbins">
+
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <title>Web Lab Start File</title>
 </head>
+
+<body>
+
+    <main>
+        <h1>Temple Appointment</h1>
+
+        <form method="GET" action="thanks.html" class="designOne">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                    placeholder="987-555-1234"></label>
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                    autocomplete="email"></label>
+
+
+            <h3>Select Ordinance</h3>
+            <label><input type="radio" name="ordinance" value="Baptism" checked> Proxy Baptism</label>
+            <label><input type="radio" name="ordinance" value="Initiatory"> Proxy Initiatory</label>
+            <label><input type="radio" name="ordinance" value="Endowment"> Proxy Endowment</label>
+            <label><input type="radio" name="ordinance" value="Sealing"> Proxy Sealing</label>
+
+
+            <h3>Date and Location</h3>
+            <label>Date <input type="date" name="fecha" required></label>
+
+            <label>Location
+                <select name="location" required>
+                    <option value="">None</option>
+                    <option value="Payson">Payson</option>
+                    <option value="Orem">Orem</option>
+                    <option value="Provo City Center">Provo City Center</option>
+            </label>
+
+            <input type="submit" value="Schedule An Appointment">
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>
