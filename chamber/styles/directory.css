@@ -20,7 +20,7 @@ body {
     overflow-x: hidden;
     font-family: var(--font-family);
     transition: all 0.3s ease-in-out;
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 header,

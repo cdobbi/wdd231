@@ -14,11 +14,6 @@
 
 /* MEDIA QUERIES */
 @media (max-width: 1024px) {
-    body {
-        transform: scale(0.9);
-        transform-origin: top left;
-    }
-
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -73,11 +68,6 @@
 }
 
 @media (max-width: 768px) {
-    body {
-        transform: scale(0.7);
-        transform-origin: top left;
-    }
-
     header h1 {
         text-align: left;
         white-space: normal;
@@ -92,10 +82,6 @@
         flex-direction: column;
         margin-top: 1rem;
         margin-right: 1rem;
-    }
-
-    main img {
-        margin: 0 auto;
     }
 
     /* Ensure hamburger remains visible */
@@ -114,11 +100,6 @@
 }
 
 @media (max-width: 600px) {
-    body {
-        transform: scale(0.6);
-        transform-origin: top left;
-    }
-
     header {
         align-items: center;
         margin-bottom: 0;
@@ -167,13 +148,14 @@
     .business-card a,
     .business-card p {
         font-size: 1.5rem;
+        padding: 0.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    body {
-        transform: scale(0.5);
-        transform-origin: top left;
+    header {
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul.nav-links a {
