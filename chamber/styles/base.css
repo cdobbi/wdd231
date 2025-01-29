@@ -56,10 +56,10 @@ h1, h2, h3 {
 
 header h1 {
     flex: 1 1 auto;
-    font-size: 3vw;
+    font-size: 2.5rem;
     text-align: left;
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 1.5;
     margin: 0;
     margin-left: 1rem;
     white-space: nowrap;
@@ -84,7 +84,7 @@ nav ul.nav-links a {
     color: black;
     background: none;
     transition: color 0.3s ease;
-    font-size: 2vw;
+    font-size: 2rem;;
 }
 
 nav ul.nav-links a:hover {
@@ -286,6 +286,16 @@ a.social-icon {
     border: 0.1px solid black;
     border-radius: 26px;
     transition: all 0.3s ease-in-out;
+}
+
+.grid-container {
+    display: grid;
+    /* Other grid properties */
+}
+
+.grid {
+    gap: 1rem; /* Adjust as needed */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 

@@ -100,6 +100,7 @@
 @media (max-width: 1024px) {
     .business-cards {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        overflow: hidden;
     }
 
     .business-card a,
@@ -208,4 +209,14 @@
 .hamburger {
     position: relative;
     z-index: 1000;
+}
+
+.grid-container {
+    display: grid;
+    /* Other grid properties */
+}
+
+.grid {
+    gap: 1rem; /* Adjust as needed */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }

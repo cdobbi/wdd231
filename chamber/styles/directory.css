@@ -268,3 +268,13 @@ a.social-icon {
     border-radius: 26px;
     transition: all 0.3s ease-in-out;
 }
+
+.grid-container {
+    display: grid;
+    /* Other grid properties */
+}
+
+.grid {
+    gap: 1rem; /* Adjust as needed */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
