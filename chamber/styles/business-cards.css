@@ -105,7 +105,7 @@
 
     .business-card a,
     .business-card p {
-        font-size: 0.3rem;
+        font-size: 1.5rem;
     }
 
     .business-card img {
@@ -114,14 +114,11 @@
     }
 
     .business-card {
-        font-size: 0.8rem;
+        font-size: 1.5rem;
     }
 
     .hamburger {
         display: block;
-    }
-
-    .hamburger {
         position: relative;
         z-index: 1000;
     }
@@ -130,9 +127,6 @@
 @media (max-width: 768px) {
     .hamburger {
         display: block;
-    }
-
-    .hamburger {
         position: relative;
         z-index: 1000;
     }
@@ -151,13 +145,13 @@
 
     .business-card p a,
     .business-cards.list-view .business-card a {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         margin: 0;
     }
 
     .business-card h3 a,
     .business-cards.list-view .business-card a {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         margin: 0;
     }
 
@@ -176,7 +170,7 @@
     }
 
     .business-card {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
     .business-card p a {
