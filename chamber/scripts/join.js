@@ -12,29 +12,40 @@ function getValue(key) {
 console.log("Form Data:", formData);
 const showInfo = document.querySelector("#results");
 showInfo
-  ? (showInfo.innerHTML = `\n        <p><strong>First Name:</strong> ${getValue(
+    ? (showInfo.innerHTML = `\n
+    <p><strong>First Name:</strong> ${getValue(
       "first"
-    )}</p>\n        <p><strong>Last Name:</strong> ${getValue(
+        )}</p>\n
+    <p><strong>Last Name:</strong> ${getValue(
       "last"
-    )}</p>\n        <p><strong>Organizational Title:</strong> ${getValue(
+        )}</p>\n
+    <p><strong>Organizational Title:</strong> ${getValue(
       "orgTitle"
-    )}</p>\n        <p><strong>Company Name:</strong> ${getValue(
+        )}</p>\n
+    <p><strong>Company Name:</strong> ${getValue(
       "company"
-    )}</p>\n        <p><strong>Email:</strong> <a href="mailto:${getValue(
+        )}</p>\n
+    <p><strong>Email:</strong> <a href="mailto:${getValue(
       "email"
-    )}">${getValue(
+         )}">${getValue(
       "email"
-    )}</a></p>\n        <p><strong>Cell Phone:</strong> ${getValue(
+        )}</a></p>\n
+    <p><strong>Cell Phone:</strong> ${getValue(
       "phone"
-    )}</p>\n        <p><strong>Business Type:</strong> ${getValue(
+        )}</p>\n
+    <p><strong>Business Type:</strong> ${getValue(
       "type"
-    )}</p>\n        <p><strong>Business Description:</strong> ${getValue(
+        )}</p>\n
+    <p><strong>Business Description:</strong> ${getValue(
       "description"
-    )}</p>\n        <p><strong>Membership Level:</strong> ${getValue(
+        )}</p>\n
+    <p><strong>Membership Level:</strong> ${getValue(
       "level"
-    )}</p>\n        <p><strong>Timestamp:</strong> ${getValue(
+        )}</p>\n
+    <p><strong>Timestamp:</strong> ${getValue(
       "timestamp"
-    )}</p>\n    `)
+        )}</p>\n   
+     `)
   : console.error("Element with ID 'results' not found.");
 
 document.addEventListener("DOMContentLoaded", () => {

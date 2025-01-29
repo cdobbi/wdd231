@@ -203,6 +203,7 @@
 }
 
 .grid {
-    gap: 1rem; /* Adjust as needed */
+    gap: 1rem;
+    /* Adjust as needed */
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }

@@ -8,7 +8,8 @@ html {
 }
 
 h1 {
-    color: #3d405b
+    color: #3d405b;
+    font-size: 2rem;
 }
 
 form {
@@ -20,6 +21,13 @@ label {
     font-size: 1rem;
     color: #3d405b;
     padding-top: .5rem
+}
+
+h2 {
+    font-size: 2rem;
+    color: #3d405b;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee
 }
 
 h3 {
@@ -84,7 +92,7 @@ input:-webkit-autofill {
     background-color: #f4f1de;
     padding: 0 1rem;
     border: 1px solid #e07a5f;
-    border-radius: 6px
+    border-radius: 6px;
 }
 
 .membership-cards-container {
@@ -169,7 +177,7 @@ dialog button:hover {
     padding: 1rem;
     margin: 1rem 0;
     opacity: 0;
-    animation: fadeIn 2s forwards
+    animation: fadeIn 5s forwards
 }
 
 dialog {
