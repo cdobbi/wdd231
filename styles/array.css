@@ -192,3 +192,14 @@ button:hover {
     background-color: rgb(209, 138, 88);
     color: #fff;
 }
+
+/* Normal state of anchor elements */
+a {
+    border: 10px solid transparent;
+    transition: border 0.3s;
+}
+
+/* Hover state of anchor elements */
+a:hover {
+    border: 10px solid #000; /* Change the border color on hover */
+}
