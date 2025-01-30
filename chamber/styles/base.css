@@ -32,11 +32,11 @@ footer {
 
 /* HEADER */
 header {
+    padding: 1rem;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     background: var(--primary-color);
-    padding: 1.5rem;
     box-sizing: border-box;
 }
 
@@ -44,6 +44,9 @@ header img {
     width: 144px;
     max-width: 100%;
     height: auto;
+    margin-left: 1rem;
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
     flex-shrink: 1;
     border: 0.1rem solid rgba(100, 70, 9, 0.769);
     border-radius: 0.3rem;
@@ -68,23 +71,30 @@ header h1 {
 nav {
     flex: 0 1 auto;
     flex-shrink: 1;
+    background: none;
+    margin-right: 1rem;
     transition: all 0.3s ease-in-out;
 }
 
 ul.nav-links {
+    width: 100%;
     display: flex;
     list-style-type: none;
+    background: none;
     flex-direction: row;
-    gap: 5px;
+    gap: 2px;
     flex-shrink: 1;
+    margin-left: 1rem;
+    margin-right: 3rem;
+    align-items: center;
 }
 
 nav ul.nav-links a {
+    padding: 1rem;
     text-decoration: none;
     color: black;
     background: none;
     transition: color 0.3s ease;
-    font-size: 2rem;
     ;
 }
 
@@ -97,7 +107,6 @@ nav ul.nav-links a:hover {
     display: none;
     background: none;
     border: none;
-    font-size: 1.5rem;
     color: black;
     cursor: pointer;
     position: absolute;
@@ -111,10 +120,6 @@ nav ul.nav-links a:hover {
 }
 
 /* MAIN CONTENT */
-main {
-    padding: 1rem;
-}
-
 .hero-container {
     position: relative;
     width: 100%;
@@ -213,7 +218,6 @@ a {
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 8px;
-    padding: 0.5rem 0.5rem;
     text-align: center;
     color: black;
     margin: 0 auto;
