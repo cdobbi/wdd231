@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
+    <!-- Meta and Links -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Christina Dobbins">
-    <meta name="description"
-        content="The subject of this page is the Ghana Chamber of Commerce form to join the organization and become a member. It's purpose is to provide members networking opportunities, attract new businesses and encourage economic development in the community.">
-    <title> Join - Ghana Chamber of Commerce | Christi Dobbins | WDD 231</title>
-
-    <meta property="og:title" content="Chamber of Commerce Join Form">
-    <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdobbi.github.io/wdd231/chamber/images/favicon.webp">
     <meta property="og:url" content="https://cdobbi.github.io/wdd231/chamber/join.html">
-
-    <!-- Stylesheets -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/join.css">
-    <link rel="stylesheet" href="styles/hamburger.css">
     <link rel="stylesheet" href="styles/responsive.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
-
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/join.js" defer></script>
-
 </head>
 
 <body>
@@ -39,29 +25,21 @@
         <h1>GHANA<br>CHAMBER OF COMMERCE</h1>
         <nav>
             <ul class="nav-links">
-                <li>
-                    <a href="https://cdobbi.github.io/wdd231/chamber/index.html" target="_blank" data-text="Home">Home</a>
-                </li>
-                <li>
-                    <a href="https://cdobbi.github.io/wdd231/chamber/directory.html" target="_blank" data-text="Chamber">Directory</a>
-                </li>
-                <li>
-                    <a href="https://cdobbi.github.io/wdd231/chamber/join.html" target="_blank" data-text="Form">Join</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/christi-dobbins-46a6aa98" target="_blank" data-text="LinkedIn">Discover</a>
-                </li>
+                <li><a href="https://cdobbi.github.io/wdd231/chamber/index.html" target="_blank" data-text="Home">Home</a></li>
+                <li><a href="https://cdobbi.github.io/wdd231/chamber/directory.html" target="_blank" data-text="Chamber">Directory</a></li>
+                <li><a href="https://cdobbi.github.io/wdd231/chamber/join.html" target="_blank" data-text="Form">Join</a></li>
+                <li><a href="https://www.linkedin.com/in/christi-dobbins-46a6aa98" target="_blank" data-text="LinkedIn">Discover</a></li>
             </ul>
         </nav>
-        <button class="hamburger" aria-label="Toggle navigation">
-            &#9776;
-        </button>
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
     </header>
 
     <main>
         <h2>Join the Ghana Chamber of Commerce</h2>
         <div class="form-and-cards-container">
-            <form method="GET" action="thanks.html" class="designOne">
+            <form method="GET" action="thanks.html" target="_blank" class="designOne">
+
+                <!-- Form Fields -->
                 <label>First Name
                     <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
                 </label>
@@ -69,7 +47,8 @@
                     <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
                 </label>
                 <label>Organizational Title
-                    <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+                        pattern="[A-Za-z\s-]{7,}">
                 </label>
                 <label>Company Name
                     <input type="text" name="company" required title="Your Company Name" autocomplete="organization">
@@ -78,7 +57,8 @@
                     <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
                 </label>
                 <label>Cell Phone
-                    <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" required>
+                    <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"
+                        required>
                 </label>
                 <label>Business Type
                     <select name="type" required>
@@ -101,39 +81,40 @@
                         <option value="Gold">Gold</option>
                     </select>
                 </label>
-    
+
                 <input type="hidden" name="timestamp" id="timestamp">
                 <script>
                     document.getElementById('timestamp').value = new Date().toISOString();
                 </script>
-    
+
                 <input type="submit" value="Join Now">
             </form>
-    
+
             <section class="dialogs">
                 <h2>Membership Levels</h2>
                 <div class="membership-cards-container">
                     <div class="membership-card">
                         <h3>Non-Profit ⭐</h3>
-                        <button onclick="openModal('nonProfitModal')">Learn More</button>
+                        <button class="learn-more" data-modal-id="nonProfitModal">Learn More</button>
                     </div>
                     <div class="membership-card">
                         <h3>Bronze Membership 🥉</h3>
-                        <button onclick="openModal('bronzeModal')">Learn More</button>              
+                        <button class="learn-more" data-modal-id="bronzeModal">Learn More</button>
                     </div>
                     <div class="membership-card">
                         <h3>Silver Membership 🥈</h3>
-                        <button onclick="openModal('silverModal')">Learn More</button>
+                        <button class="learn-more" data-modal-id="silverModal">Learn More</button>
                     </div>
                     <div class="membership-card">
                         <h3>Gold Membership 🥇</h3>
-                        <button onclick="openModal('goldModal')">Learn More</button>
+                        <button class="learn-more" data-modal-id="goldModal">Learn More</button>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-    
+
+
 
     <footer>
         <p>Ghana<br>Chamber of Commerce<br>123 Main Street<br>Accra Ghana<br>+233 24 358 5854</p>
