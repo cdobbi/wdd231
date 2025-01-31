@@ -1,58 +1,42 @@
-/* responsive.css */
-
-/* Hide hamburger by default */
 .hamburger {
     display: none;
     background: none;
     border: none;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: black;
     cursor: pointer;
-    position: relative;
     z-index: 1001;
 }
 
-/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 1024px) {
     header {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0.5rem;
-    }
-
-    header h1 {
-        display: none;
-    }
-
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .hamburger {
-        display:block;
-        align-items: center;
-        position: absolute;
-    }
-
-    .hamburger::after{
-        display: block;
-        align-items: center;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 1001;
-    }
-
-    .business-card a,
-    .business-card p {
+        align-items: flex-end;
         padding: 0.5rem;
     }
 
     nav {
-        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
     }
 
-    /* Navigation Links */
+    .hamburger {
+        display: block;
+        position: relative;
+        top: 2rem;
+        right: 1rem;
+        z-index: 1002;
+    }
+
     nav ul.nav-links {
         font-size: 1.2rem;
         border: none;
@@ -66,16 +50,12 @@
         z-index: 1;
     }
 
-    /* Active State */
     nav ul.nav-links.active {
-        font-size: 1.2rem;
         max-height: 500px;
         opacity: 1;
     }
 
-    /* Navigation Links Styling */
     nav ul.nav-links a {
-        font-size: 1.2rem;
         border: none;
     }
 }
@@ -90,33 +70,22 @@
         margin-left: 0;
     }
 
+    .cards,
+    div.cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 1rem auto;
+    }
+
     .business-card a,
     .business-card p {
+        font-size: 1rem;
         padding: 0.5rem;
     }
 
-    div.cards {
-        flex-direction: column;
-        margin-top: 1rem;
-        margin-right: 1rem;
-    }
-
-    /* Ensure hamburger remains visible */
-    .hamburger {
-        display: block;
-        align-items: center;
-        position: absolute;
-    }
-
     nav ul.nav-links {
-        font-size: 1.2rem;
         width: 100%;
-    }
-
-    nav ul.nav-links.active {
-        font-size: 1.2rem;
-        max-height: 500px;
-        opacity: 1;
     }
 }
 
@@ -126,7 +95,8 @@
         margin-bottom: 0;
     }
 
-    ul.nav-links {
+    ul.nav-links,
+    nav ul.nav-links {
         font-size: 1.2rem;
         flex-direction: column;
         width: 100%;
@@ -144,20 +114,17 @@
         transition: margin-top 0.3s ease-in-out;
     }
 
-    .cards {
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
+    .cards,
     div.cards {
-        flex-direction: column;
-        margin-top: 1rem;
-        margin-right: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 1rem auto;
     }
 
     .business-card a,
     .business-card p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 0.5rem;
     }
 }
@@ -168,50 +135,42 @@
         align-items: center;
     }
 
-    header im {
-        margin-bottom: 0rem;
-    }
-
-    header h1  {
+    header im,
+    header h1 {
         display: none;
-}
+    }
 
     nav ul.nav-links a {
         font-size: 1.5rem;
     }
 
     nav ul.nav-links {
-        flex-direction: column;
         gap: 0.5rem;
-        max-height: 0;
-        opacity: 0;
-        transition: max-height 0.3s ease, opacity 0.3s ease;
+        justify-content: center;
     }
 
     nav ul.nav-links.active {
         max-height: 500px;
         opacity: 1;
+        justify-content: center;
     }
 
-    .cards {
+    .cards,
+    div.cards {
         flex-direction: column;
         margin: 1rem auto;
     }
 
-    div.cards {
-        flex-direction: column;
-        margin-top: 1rem;
-        margin-right: 1rem;
+    .grid-container {
+        display: grid;
+    }
+
+    .grid {
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
 
-.grid-container {
-    display: grid;
-    /* Other grid properties */
-}
-
-.grid {
-    gap: 1rem;
-    /* Adjust as needed */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.hamburger {
+    margin: 1rem;
 }

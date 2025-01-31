@@ -202,14 +202,14 @@
     background-color: navy;
 }
 
-.hamburger {
+/* .hamburger {
     display: block;
 }
 
 .hamburger {
     position: relative;
     z-index: 1000;
-}
+} */
 
 .grid-container {
     display: grid;
