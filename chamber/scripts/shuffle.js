@@ -34,3 +34,4 @@ function displayMembers(members) {
 document.addEventListener("DOMContentLoaded", () => {
   fetchAndDisplayMembers();
 });
+

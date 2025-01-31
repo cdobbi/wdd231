@@ -60,4 +60,5 @@ document.addEventListener("DOMContentLoaded", () => {
   
       businessCardsContainer.appendChild(card);
     });
-  }
+}
+  
