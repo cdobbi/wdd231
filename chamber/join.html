@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta property="og:image" content="https://cdobbi.github.io/wdd231/chamber/images/favicon.webp">
-    <meta property="og:url" content="https://cdobbi.github.io/wdd231/chamber/join.html">
     <title>Join - Ghana Chamber of Commerce | Christi Dobbins | WDD 231</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="The subject of this page is the Ghana Chamber of Commerce membership join page. Its purpose is to provide members networking opportunities, attract new businesses, and encourage economic development in the community by joining the chamber.">
+    <meta name="author" content="Christina Dobbins">
+    <meta property="og:image" content="https://cdobbi.github.io/wdd231/chamber/images/favicon.webp">
+    <meta property="og:url" content="https://cdobbi.github.io/wdd231/chamber/join.html">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/responsive.css">
@@ -39,8 +43,6 @@
         <h2>Join the Ghana Chamber of Commerce</h2>
         <div class="form-and-cards-container">
             <form method="GET" action="thanks.html" target="_blank" class="designOne">
-
-                <!-- Form Fields -->
                 <label>First Name
                     <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
                 </label>
@@ -83,14 +85,17 @@
                         <option value="Gold">Gold</option>
                     </select>
                 </label>
-
                 <input type="hidden" name="timestamp" id="timestamp">
                 <script>
                     document.getElementById('timestamp').value = new Date().toISOString();
                 </script>
 
+
+
                 <input type="submit" value="Join Now">
             </form>
+
+            
 
             <section class="dialogs">
                 <h2>Membership Levels</h2>
