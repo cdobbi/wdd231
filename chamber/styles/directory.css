@@ -16,11 +16,11 @@
 body {
     max-width: 95%;
     margin: 0 auto;
-    font-weight: 300;
-    overflow-x: hidden;
     font-family: var(--font-family);
-    transition: all 0.3s ease-in-out;
+    font-weight: 300;
     font-size: 2rem;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 header,
@@ -37,7 +37,6 @@ header {
     justify-content: space-between;
     background: var(--primary-color);
     padding: 1.5rem;
-    box-sizing: border-box;
 }
 
 header img {
@@ -49,8 +48,10 @@ header img {
     border-radius: 0.3rem;
 }
 
-h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3 {
+    font-family: var(--font-family);
 }
 
 header h1 {
@@ -59,7 +60,6 @@ header h1 {
     text-align: left;
     font-weight: 300;
     line-height: 1.2;
-    margin: 0;
     margin-left: 1rem;
     white-space: nowrap;
 }
@@ -72,18 +72,19 @@ nav {
 
 ul.nav-links {
     display: flex;
-    list-style-type: none;
+    list-style: none;
     flex-direction: row;
     gap: 5px;
     flex-shrink: 1;
+    background: none;
 }
 
 nav ul.nav-links a {
     text-decoration: none;
     color: black;
-    background: none;
-    transition: color 0.3s ease;
     font-size: 2vw;
+    transition: color 0.3s ease;
+    background: none;
 }
 
 nav ul.nav-links a:hover {
@@ -115,8 +116,8 @@ main {
     bottom: 20px;
     right: 20px;
     padding: 0.8rem 1.5rem;
-    background-color: #13897ff4;
-    color: rgb(255, 255, 255);
+    background-color: var(--tertiary-color);
+    color: #fff;
     font-weight: 700;
     text-decoration: none;
     border-radius: 0.3rem;
@@ -146,7 +147,6 @@ aside.forecast {
     border-radius: 0.3rem;
     box-shadow: 0 4px 8px rgb(7, 0, 0);
     width: 100%;
-    box-sizing: border-box;
     text-align: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -165,23 +165,19 @@ aside h2 {
 h2 {
     font-size: 2.2rem;
     color: var(--tertiary-color);
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    margin-bottom: -5rem;
     margin: 1rem;
     line-height: 1.5;
 }
 
 h3 {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     color: var(--tertiary-color);
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0;
     font-weight: 400;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     color: black;
     text-align: center;
@@ -190,11 +186,10 @@ p {
 }
 
 a {
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 8px;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
     text-align: center;
     color: black;
     margin: 0 auto;
@@ -211,13 +206,12 @@ aside ul {
 }
 
 .events-list {
-    list-style-type: none;
+    list-style: none;
 }
 
 /* FOOTER */
 footer {
     width: 100%;
-    max-width: none;
     font-size: 1.8rem;
     color: black;
     background: var(--primary-color);
@@ -231,26 +225,19 @@ footer {
 }
 
 footer p {
-    color: black;
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
     line-height: 1.6rem;
 }
 
 footer p:first-child {
-    flex: 1;
-    margin: 0;
     text-align: left;
 }
 
 footer p:last-child {
-    flex: 1;
     text-align: right;
-    margin: 0 auto;
 }
 
 .social-icons {
-    flex: 1;
     justify-content: center;
     gap: 3rem;
     margin-left: 2rem;
@@ -263,7 +250,6 @@ a.social-icon {
 .social-icon img {
     width: 44px;
     height: 44px;
-    background: none;
     border: 0.1px solid black;
     border-radius: 26px;
     transition: all 0.3s ease-in-out;
@@ -271,10 +257,13 @@ a.social-icon {
 
 .grid-container {
     display: grid;
-    /* Other grid properties */
 }
 
 .grid {
-    gap: 1rem; /* Adjust as needed */
+    gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+header nav ul-nav-links a {
+    background: var(--primary-color);
 }
