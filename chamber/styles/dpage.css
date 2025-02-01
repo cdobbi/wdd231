@@ -6,9 +6,9 @@ div.business-card {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    text-align: center; /* Center text */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 div.business-card img {
@@ -16,7 +16,7 @@ div.business-card img {
     border-radius: 50%;
     border: 2px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-bottom: 10px; /* Add some space below the image */
+    margin-bottom: 10px;
 }
 
 /* List view styles */
@@ -49,8 +49,7 @@ div.business-card img {
     text-align: right;
 }
 
-/* Light colored ruled paper look for every other card */
 .business-cards.list-view .business-card:nth-child(even) {
     background: linear-gradient(white 50%, #f0f0f0 50%);
-    background-size: 100% 40px; /* Adjust the height of the lines */
+    background-size: 100% 40px;
 }
