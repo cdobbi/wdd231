@@ -5,7 +5,7 @@ async function fetchAndDisplayMembers() {
       throw new Error("Failed to fetch members.json: " + response.statusText);
     const members = await response.json(),
       shuffledMembers = shuffleArray(members),
-      selectedMembers = shuffledMembers.slice(0, 4);
+      selectedMembers = shuffledMembers.slice(0, 3);
     displayMembers(selectedMembers);
   } catch (error) {
     console.error("Error fetching members:", error);
@@ -34,4 +34,3 @@ function displayMembers(members) {
 document.addEventListener("DOMContentLoaded", () => {
   fetchAndDisplayMembers();
 });
-
