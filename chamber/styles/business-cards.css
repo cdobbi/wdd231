@@ -10,6 +10,8 @@
     gap: 1.5rem;
     padding: 1rem;
     transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .member-card {
@@ -175,4 +177,9 @@
 
 #toggleViewBtn:hover {
     background-color: navy;
+}
+
+div.business-card img {
+    border-radius: 0.3rem;
+    
 }
