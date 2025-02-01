@@ -40,100 +40,99 @@
         </nav>
     </header>
 
-    <body>
-        <main>
-            <h2>Join the Ghana Chamber of Commerce</h2>
-            <div class="form-and-cards-container">
-                <form method="GET" action="thankyou.html" target="_blank" class="designOne">
-                    <label>First Name
-                        <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
-                    </label>
-                    <label>Last Name
-                        <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
-                    </label>
-                    <label>Organizational Title
-                        <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
-                            pattern="[A-Za-z\s-]{7,}">
-                    </label>
-                    <label>Company Name
-                        <input type="text" name="company" required title="Your Company Name" autocomplete="organization">
-                    </label>
-                    <label>Email
-                        <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
-                    </label>
-                    <label>Cell Phone
-                        <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"
-                            required>
-                    </label>
-                    <label>Business Type
-                        <select name="type" required>
-                            <option value="">Select One</option>
-                            <option value="Retail">Retail</option>
-                            <option value="Service">Service</option>
-                            <option value="Manufacturing">Manufacturing</option>
-                            <option value="Non-Profit">Non-Profit</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </label>
-                    <label>Business Description
-                        <textarea name="description" required title="Business Description"></textarea>
-                    </label>
-                    <label>Membership Level
-                        <select name="level" required>
-                            <option value="" disabled selected>Select an option</option>
-                            <option value="Non-Profit">Non-Profit</option>
-                            <option value="Bronze">Bronze</option>
-                            <option value="Silver">Silver</option>
-                            <option value="Gold">Gold</option>
-                        </select>
-                    </label>
-                    <input type="hidden" name="timestamp" id="timestamp">
-                    <script>
-                        document.getElementById('timestamp').value = new Date().toISOString();
-                    </script>
-                    <input type="submit" value="Join Now">
-                </form>
-                <section class="dialogs">
-                    <h2>Membership Levels</h2>
-                    <div class="membership-cards-container">
-                        <div class="membership-card">
-                            <h3>Non-Profit ⭐</h3>
-                            <button class="learn-more" data-modal-id="nonProfitModal">Learn More</button>
-                        </div>
-                        <div class="membership-card">
-                            <h3>Bronze Membership 🥉</h3>
-                            <button class="learn-more" data-modal-id="bronzeModal">Learn More</button>
-                        </div>
-                        <div class="membership-card">
-                            <h3>Silver Membership 🥈</h3>
-                            <button class="learn-more" data-modal-id="silverModal">Learn More</button>
-                        </div>
-                        <div class="membership-card">
-                            <h3>Gold Membership 🥇</h3>
-                            <button class="learn-more" data-modal-id="goldModal">Learn More</button>
-                        </div>
+    <main>
+        <h2>Join the Ghana Chamber of Commerce</h2>
+        <div class="form-and-cards-container">
+            <form method="GET" action="thankyou.html" target="_blank" class="designOne">
+                <label>First Name
+                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                </label>
+                <label>Last Name
+                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                </label>
+                <label>Organizational Title
+                    <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+                        pattern="[A-Za-z\s-]{7,}">
+                </label>
+                <label>Company Name
+                    <input type="text" name="company" required title="Your Company Name" autocomplete="organization">
+                </label>
+                <label>Email
+                    <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
+                </label>
+                <label>Cell Phone
+                    <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"
+                        required>
+                </label>
+                <label>Business Type
+                    <select name="type" required>
+                        <option value="">Select One</option>
+                        <option value="Retail">Retail</option>
+                        <option value="Service">Service</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Non-Profit">Non-Profit</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+                <label>Business Description
+                    <textarea name="description" required title="Business Description"></textarea>
+                </label>
+                <label>Membership Level
+                    <select name="level" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Non-Profit">Non-Profit</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                    </select>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <script>
+                    document.getElementById('timestamp').value = new Date().toISOString();
+                </script>
+                <input type="submit" value="Join Now">
+            </form>
+            <section class="dialogs">
+                <h2>Membership Levels</h2>
+                <div class="membership-cards-container">
+                    <div class="membership-card">
+                        <h3>Non-Profit ⭐</h3>
+                        <button class="learn-more" data-modal-id="nonProfitModal">Learn More</button>
                     </div>
-                </section>
-            </div>
-        </main>
+                    <div class="membership-card">
+                        <h3>Bronze Membership 🥉</h3>
+                        <button class="learn-more" data-modal-id="bronzeModal">Learn More</button>
+                    </div>
+                    <div class="membership-card">
+                        <h3>Silver Membership 🥈</h3>
+                        <button class="learn-more" data-modal-id="silverModal">Learn More</button>
+                    </div>
+                    <div class="membership-card">
+                        <h3>Gold Membership 🥇</h3>
+                        <button class="learn-more" data-modal-id="goldModal">Learn More</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-        <footer>
-            <p>Ghana<br>Chamber of Commerce<br>123 Main Street<br>Accra Ghana<br>+233 24 358 5854</p>
-            <div class="social-icons">
-                <a href="https://www.google.com/maps/place/Accra,+Ghana/" target="_blank" class="social-icon" aria-label="Google Maps">
-                    <img src="images/map.webp" alt="Ghana map icon">
-                </a>
-                <a href="https://www.facebook.com/robdobb/" target="_blank" class="social-icon" aria-label="Facebook">
-                    <img src="images/facebook.webp" alt="Facebook icon">
-                </a>
-                <a href="https://cdobbi.github.io/wdd231" target="_blank" class="social-icon" aria-label="Portfolio">
-                    <img src="images/portfolio.webp" alt="Portfolio icon">
-                </a>
-            </div>
-            <p>&copy; <span id="currentyear"></span> WDD - 231<br>Christina Dobbins<br>Last modified:<br> <span id="lastModified"></span>
-            </p>
-        </footer>
+    <footer>
+        <p>Ghana<br>Chamber of Commerce<br>123 Main Street<br>Accra Ghana<br>+233 24 358 5854</p>
+        <div class="social-icons">
+            <a href="https://www.google.com/maps/place/Accra,+Ghana/" target="_blank" class="social-icon" aria-label="Google Maps">
+                <img src="images/map.webp" alt="Ghana map icon">
+            </a>
+            <a href="https://www.facebook.com/robdobb/" target="_blank" class="social-icon" aria-label="Facebook">
+                <img src="images/facebook.webp" alt="Facebook icon">
+            </a>
+            <a href="https://cdobbi.github.io/wdd231" target="_blank" class="social-icon" aria-label="Portfolio">
+                <img src="images/portfolio.webp" alt="Portfolio icon">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> WDD - 231<br>Christina Dobbins<br>Last modified:<br> <span id="lastModified"></span>
+        </p>
+    </footer>
 
-    </body>
+</body>
 
 </html>
