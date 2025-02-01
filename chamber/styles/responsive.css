@@ -12,6 +12,11 @@
     header h1 {
         font-size: 1.5rem;
     }
+
+    .cards,
+    div.cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media (max-width: 1024px) {
@@ -129,6 +134,14 @@
     }
 }
 
+@media (max-width: 599px) {
+
+    .cards,
+    div.cards {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 480px) {
     header {
         flex-direction: column;
@@ -172,5 +185,5 @@
 }
 
 .hamburger {
-    margin: 1rem;
+    margin: 2rem;
 }
