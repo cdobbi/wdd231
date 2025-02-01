@@ -18,3 +18,39 @@ div.business-card img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px; /* Add some space below the image */
 }
+
+/* List view styles */
+.business-cards.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.business-cards.list-view .business-card {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+}
+
+.business-cards.list-view .business-card img {
+    grid-column: 1;
+    margin: 0;
+}
+
+.business-cards.list-view .business-card .info {
+    grid-column: 2;
+    padding-left: 10px;
+}
+
+.business-cards.list-view .business-card .actions {
+    grid-column: 3;
+    text-align: right;
+}
+
+/* Light colored ruled paper look for every other card */
+.business-cards.list-view .business-card:nth-child(even) {
+    background: linear-gradient(white 50%, #f0f0f0 50%);
+    background-size: 100% 40px; /* Adjust the height of the lines */
+}
