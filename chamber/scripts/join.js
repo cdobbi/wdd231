@@ -1,4 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Add this code to handle the modal functionality
+  const learnMoreButtons = document.querySelectorAll(".learn-more");
+  const closeButtons = document.querySelectorAll(".close");
+
+  learnMoreButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const modalId = button.getAttribute("data-modal-id");
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = "block";
+      } else {
+        console.error(`Modal with ID '${modalId}' not found.`);
+      }
+    });
+  });
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const modalId = button.getAttribute("data-modal-id");
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = "none";
+      } else {
+        console.error(`Modal with ID '${modalId}' not found.`);
+      }
+    });
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target.classList.contains("modal")) {
+      event.target.style.display = "none";
+    }
+  });
+
   const currentUrl = window.location.href;
   console.log("Current URL:", currentUrl);
   const queryString = currentUrl.split("?")[1];
