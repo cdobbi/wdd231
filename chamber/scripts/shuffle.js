@@ -14,6 +14,7 @@ async function fetchAndDisplayMembers() {
       "<p>Failed to load business members. Please try again later.</p>";
   }
 }
+
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -21,16 +22,24 @@ function shuffleArray(array) {
   }
   return array;
 }
+
 function displayMembers(members) {
   const container = document.querySelector(".business-cards");
-  (container.innerHTML = ""),
-    members.forEach((member) => {
-      const memberCard = document.createElement("div");
-      memberCard.classList.add("member-card"),
-        (memberCard.innerHTML = `\n          <h3>${member.name}</h3>\n          <p>${member.address}</p>\n          <p>${member.phone}</p>\n          <p>${member.email}</p>\n        `),
-        container.appendChild(memberCard);
-    });
+  container.innerHTML = "";
+  members.forEach((member) => {
+    const memberCard = document.createElement("div");
+    memberCard.classList.add("member-card");
+    memberCard.innerHTML = `
+        <img src="${member.logo}" alt="${member.name} Logo" class="business-logo">
+        <h3>${member.name}</h3>
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+        <p><a href="mailto:${member.email}">${member.email}</a></p>
+      `;
+    container.appendChild(memberCard);
+  });
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   fetchAndDisplayMembers();
 });
