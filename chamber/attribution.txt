@@ -1,0 +1,6 @@
+My husband helped me with fixing a few errors.
+I referenced a pocket css and  a pocket html book for help wiht syntax and structure.
+I also asked github copilot for help in teaching me how to structure or fix syntax. I also had copilot minimiz my code as I installed a minimizing extension in vs code, used it in minimizing ALL my files and committed them to Github.... I won't do that ever again, I ruined 3 of my pages and I spend 2 whole days fixing them. After fixing them I had copilot minize them.
+I also refered to the poster or chart that was provided in the lesson material.
+I used some of my code from the practice in this weeks lessons
+I used some code that I wrote last semester for a form. Not the whole form just a section I remembered liking.
