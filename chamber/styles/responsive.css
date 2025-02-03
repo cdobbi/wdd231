@@ -10,7 +10,7 @@
 
 @media (max-width: 1200px) {
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .cards,
@@ -46,7 +46,7 @@
     }
 
     nav ul.nav-links {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         border: none;
         flex-direction: column;
         width: 100%;
@@ -88,7 +88,7 @@
 
     .business-card a,
     .business-card p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0.5rem;
     }
 
@@ -105,7 +105,7 @@
 
     ul.nav-links,
     nav ul.nav-links {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         flex-direction: column;
         width: 100%;
         background: var(--primary-color);
@@ -132,7 +132,7 @@
 
     .business-card a,
     .business-card p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0.5rem;
     }
 }
@@ -157,7 +157,7 @@
     }
 
     nav ul.nav-links a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     nav ul.nav-links {
