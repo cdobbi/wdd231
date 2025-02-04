@@ -6,28 +6,21 @@ Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    /* change the values below to your colors from your palette */
     --primary-color: #f8e3de;
     --secondary-color: #611538;
     --accent1-color: #743C7D;
     --accent2-color: #F26D91;
     --accent3-color: #31123B;
 
-    /* change the values below to your chosen font(s) */
     --title-font: "Delius Unicase", sans-serif;
     --heading-font: "Lato", sans-serif;
     --paragraph-font: "Raleway", Lato, Helvetica;
 
-    /* these colors below should be chosen from among your palette colors above */
     --headline-color-on-white: var(--accent3-color);
-    /* headlines on a white background */
     --headline-color-on-color: #000000;
-    /* headlines on a colored background */
     --paragraph-color-on-white: var(--secondary-color);
-    /* paragraph text on a white background */
     --paragraph-color-on-color: #000000;
     ;
-    /* paragraph text on a colored background */
     --paragraph-background-color: var(--primary-color);
     --nav-link-color: #ffffff;
     --nav-background-color: var(--accent1-color);
@@ -35,12 +28,11 @@ Fonts are separated by a | */
     --nav-hover-background-color: var(--accent2-color);
 }
 
-/*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4em;
+    padding: 4rem;
     font-size: 18px;
 }
 
@@ -73,7 +65,7 @@ hr {
 }
 
 header {
-    padding: 1em;
+    padding: 1rem;
     text-align: center;
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
@@ -87,7 +79,7 @@ header>h2 {
 p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
-    padding: 1em;
+    padding: 1rem;
 }
 
 .colors {
@@ -103,7 +95,7 @@ p {
 
 .colors td {
     width: 25%;
-    height: 3em;
+    height: 3rem;
 }
 
 .primary {
@@ -129,9 +121,9 @@ p.colored {
 
 nav {
     background-color: var(--accent3-color);
-    line-height: 3em;
+    line-height: 3rem;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 nav {
@@ -140,7 +132,7 @@ nav {
 }
 
 nav a {
-    padding: 1em;
+    padding: 1rem;
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
@@ -156,12 +148,12 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-.sitemap {
+.sitremap {
     display: grid;
     justify-content: center;
 
     grid-template-columns: repeat(6, 15%);
-    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-rows: 3rem 1.5rem 1.5rem 3rem;
     grid-template-areas:
         ". . home home . ."
         ". . . top . ."
@@ -169,26 +161,26 @@ nav a:hover {
         "page2 page2 . . page3 page3";
 }
 
-.sitemap>div {
+.sitremap>div {
     text-align: center;
 }
 
 .sm-home {
     grid-area: home;
     background-color: #ccc;
-    line-height: 3em;
+    line-height: 3rem;
 }
 
 .sm-page2 {
     grid-area: page2;
     background-color: #ccc;
-    line-height: 3em;
+    line-height: 3rem;
 }
 
 .sm-page3 {
     grid-area: page3;
     background-color: #ccc;
-    line-height: 3em;
+    line-height: 3rem;
 }
 
 .top {
@@ -214,4 +206,11 @@ nav a:hover {
 
 .wireframe {
     width: 70%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rrem;
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-color);
 }

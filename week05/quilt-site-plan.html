@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quilt Creations Site Plan</title>
     <link rel="stylesheet" href="styles/quilt-site-plan.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -13,16 +14,16 @@
         <h1>Quilt Creations Site Plan</h1>
         <h2> Christi Dobbins</h2>
         <h2>WDD 231</h2>
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="quilt-home.html">Home</a></li>
                 <li><a href="quilt-site-plan.html">Site Plan</a></li>
                 <li><a href="quilt-gallery.html">Gallery</a></li>
                 <li><a href="quilt-shop.html">Shop</a></li>
                 <li><a href="quilt-services.html">Services</a></li>
-                <li><a href="quilt-contact.html">Contact Form</a></li>
+                <li><a href="quilt-contact.html">Contact Us</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
         <hr>
@@ -37,85 +38,120 @@
         <h3>Dynamic Elements</h3>
         <p>The Quilt Creations website will include the following dynamic elements:</p>
         <ul>
-            <li>Quilt Gallery</li>
-            <li>Quilt Shop</li>
-            <li>Quilting Services</li>
-            <li>Contact Form</li>
+            <li>A Home page with a gallery of quilts and navigation link cards</li>
+            <li>The Gallery page will be a right aligned scrolling wheel of quilts that open in a modal window</li>
+            <li>The Shop page showcases quilts LeAnn has for sale and other items such as quilt patterns</li>
+            <li>The Services page will provide information about the quilting services that the owner offers</li>
+            <li>The Contact Us Form and page will include a form that users can fill out to contact the owner, a map of the owner's
+                location, and the owner's contact information</li>
         </ul>
         <h3>Proposed Implementation</h3>
         <p>* The Quilt Creations website will be built using HTML, CSS, and JavaScript.<br>
             * The site will be responsive and accessible, with a focus on user experience.<br>
-            * For quilt purchases, a third-party service like Etsy or Venmo will handle transactions.<br>
+            * For quilt purchases, a third-party service, Venmo will handle transactions.<br>
             * The site will be optimized for search engines to increase visibility.<br>
-            * For the contact form, I will use a dynamic interactive form that will send an email to the owner when submitted.<br>
+            * The Contact Us page will use a dynamic interactive form that will email to the owner when submitted.<br>
             * There will be a simple calculator to estimate the cost of quilting, binding, and other services.<br>
             * Clicking on a quilt image will open a larger version in a modal window.<br>
-            * Dynamic JavaScript ot handle the image display and close button.<br>
-            * For the Quilt Shop page, I'll use an array of quilt objects to store information about each item for purchase (quilt_patterns,
-            quilt_images, item_description), dynamically create and display quilt cards on the page using JavaScript forEach or map to
-            iterate over the quilt array.<br>
-            </p>
+            * JavaScript will handle the image display and close button.<br>
+            * The Shop page will use an array of quilt objects to store information about items for purchase, create and display quilt cards
+            on the page using JavaScript forEach or map to iterate over the quilt array.<br>
+        </p>
         <hr>
         <h2>Branding</h2>
         <h3>Website Logo</h3>
-        <!-- <img src="images/DALL·E 2024-11-25 13.52.47 - A minimalist logo for 'Desert Rain Soap' that combines elegant typography and subtle graphic elements. The words 'Desert Rain Soap' are written in a s.jpeg" alt="Desert Rain Soap Logo" class="logo"/> -->
-        <!-- <img src="images/DALL·E 2024-11-25 13.52.47 - A minimalist logo for 'Desert Rain Soap' that combines elegant typography and subtle graphic elements. The words 'Desert Rain Soap' are written in a s.jpeg" alt="Desert Rain Soap Logo" class="logo"/> -->
-        <!-- <img src="images/DALL·E 2024-11-25 13.52.47 - A minimalist logo for 'Desert Rain Soap' that combines elegant typography and subtle graphic elements. The words 'Desert Rain Soap' are written in a s.jpeg" alt="Desert Rain Soap Logo" class="logo"/> -->
+        <img src="images/quilt-logo.png" alt="Quilt Creations Logo">
         <hr>
         <h2>Style Guide</h2>
         <h3>Color Palette</h3>
-        
-		"Palette URL: "
-        <a href="https://cdobbi.github.io/wdd231/week05/images/leanns_quilt.jpeg" target="_blank">https://cdobbi.github.io/wdd231/week5/images/leanns_quilt.jpeg</a>
+
+        "Palette URL: "
+        <a href="https://cdobbi.github.io/wdd231/week05/images/leanns_quilt.jpeg"
+            target="_blank">https://cdobbi.github.io/wdd231/week5/images/leanns_quilt.jpeg</a>
         </a>
         <table class="colors">
-            <tr>
-                <td>Primary Color</td>
-                <td>#611538;</td>
-            </tr>
-            <tr>
-                <td>Secondary Color</td>
-                <td>#A6215F;</td>
-            </tr>
-            <tr>
-                <td>Accent Color</td>
-                <td>#743C7D;</td>
-            </tr>
-            <tr>
-                <td>Accent Color 2 Color</td>
-                <td>#F26D91;</td>
-            </tr>
-            <tr>
-                <td>Accent Color 3 Color</td>
-                <td>#31123B;</td>
-             <tr>
-                <td style="background-color: #611538;"></td>
-                <td style="background-color: #F26D91;"></td>
-                <td style="background-color: #f8e3de;"></td>
-                <td style="background-color: #743C7D;"></td>
-                <td style="background-color: #31123B;"></td>
-
-
+            <tbody>
+                <tr>
+                    <th>Primary</th>
+                    <th>Secondary</th>
+                    <th>Accent1</th>
+                    <th>Accent2</th>
+                    <th>Accent3</th>
+                </tr>
+                <tr>
+                    <td class="primary">#FDFBF6</td>
+                    <td class="secondary">#31123B</td>
+                    <td class="accent1">#F26091</td>
+                    <td class="accent2">#611538</td>
+                    <td class="accent3">#8D369B<br>Lavendar</td>
                 </tr>
             </tbody>
         </table>
         <h3>Typography</h3>
-        <h4>"Heading Font:  Lato "</h4>
-        <h4>" Paragraph Font:  Raleway"</h4>
+        <h4>"Heading Font: Lato "</h4>
+        <h4>" Paragraph Font: Raleway"</h4>
         <h3>Normal paragraph example</h3>
         <p> LeAnn has been quilting for over 20 years and has a passion for creating beautiful quilts. She specializes in longarm quilting
             and offers a variety of services to help you complete your quilting projects. </p>
         <h3>Colored paragraph example</h3>
-        <p class="colored">Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-         </p>
-
+        <p class="colored">Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillu dolore eu fugiat nulla pariatur.
+        </p>
+        <h3>Navigation</h3>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">Services</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <hr>
+        <h2>Content</h2>
+        <h3>Home</h3>
+        <p>"Welcome to Quilt Creations! I specialize in longarm quilting. I've been quilting for over 35 years. I've found that quilting is
+            an artistic expression of love. I offer a variety of services to help you complete your quilting projects and I'll make your
+            quilting vision come to fruition. At Quilt Creations, I'll help you create a beautiful quilt that you'll cherish for years to
+            come."
+            <br>
+            "This home page will include a brief introduction to the owner and her quilting experience. It will also include a gallery of
+            quilts with dynamic scrolling images alongside navigation link cards to the contact us form, e-shop, and services page."
+        </p>
+        <br>
+        <h3>Gallery</h3>
+        <p>"The Gallery page will showcase a variety of quilts that the owner has created. Each quilt will have a title, description, and
+            image. Clicking on a quilt image will open a larger version in a modal window. The gallery will be displayed in a grid format
+            with a maximum of 4 quilts per row. The gallery will be responsive and accessible, with a focus on user experience."
+        </p>
+        <br>
+        <h3>Shop</h3>
+        <p>"The Shop page will display a variety of quilts that are available for purchase. Each quilt will have a title, description,
+            price, and image. The shop will be displayed in a grid format with a maximum of 4 quilts per row. The shop will be responsive
+            and accessible, with a focus on user experience. Clicking on a quilt will open a modal window with more information about the
+            quilt and a button to purchase."
+        </p>
+        <br>
+        <h3>Services</h3>
+        <p>"The Services page will provide information about the quilting services that the owner offers. This will include information
+            about longarm quilting, binding, and other services. The page will also include a simple calculator to estimate the cost of
+            quilting, binding, and other services. The page will be responsive and accessible, with a focus on user experience."
+        </p>
+        <br>
+        <h3>Contact Us</h3>
+        <p>"The Contact Us page will include a form that users can fill out to contact the owner. The form will include fields for name,
+            email, phone number, and message. When the form is submitted, an email will be sent to the owner with the user's information.
+            The page will also include the owner's contact information and a map of the owner's location."
+        </p>
+        <br>
+        <h3>Wireframes</h3>
+        <p>"I'll include two wireframe images here."
+        </p>
+        <img src="images/quilt-wireframe1.png" alt="Quilt Creations Wireframe 1" class="wireframe">
+        <img src="images/quilt-wireframe2.png" alt="Quilt Creations Wireframe 2" class="wireframe">
     </main>
     <footer>
-        <p>&copy; 2025 WDD 231 - Project Quilt Creations<br>Christi Dobbins<br>Last Updated: <span id="lastModified"></span></p>
+        <p> WDD 231 | Project Quilt Creations 🪡<br>&copy; 2025 | Christi Dobbins 🧵<br>Last Updated: <span id="lastModified"></span>🕰️</p>
     </footer>
-
 </body>
 
 </html>
