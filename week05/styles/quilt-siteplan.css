@@ -6,26 +6,27 @@ Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --primary-color: #f8e3de;
-    --secondary-color: #611538;
-    --accent1-color: #743C7D;
-    --accent2-color: #F26D91;
-    --accent3-color: #31123B;
+    --primary-color: #142a56;
+    --secondary-color: #435F96;
+    --accent1-color: #2ad7c9;
+    --accent2-color: #456B6B;
+    --accent3-color: #354141;
+    --accent4-color: #ffffff;
 
     --title-font: "Delius Unicase", sans-serif;
     --heading-font: "Lato", sans-serif;
     --paragraph-font: "Raleway", Lato, Helvetica;
 
     --headline-color-on-white: var(--accent3-color);
-    --headline-color-on-color: #000000;
+    --headline-color-on-color: #ffffff;
     --paragraph-color-on-white: var(--secondary-color);
-    --paragraph-color-on-color: #000000;
+    --paragraph-color-on-color: #ffffff;
     ;
     --paragraph-background-color: var(--primary-color);
     --nav-link-color: #ffffff;
     --nav-background-color: var(--accent1-color);
-    --nav-hover-link-color: var(--secondary-color);
-    --nav-hover-background-color: var(--accent2-color);
+    --nav-hover-link-color: var(--accent3-color);
+    --nav-hover-background-color: var(--accent1-color);
 }
 
 
