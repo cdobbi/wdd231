@@ -13,7 +13,7 @@ Fonts are separated by a | */
     --accent3-color: #354141;
     --accent4-color: #ffffff;
 
-    --title-font: "Delius Unicase", sans-serif;
+    --title-font: "Raleway", Lato, Helvetica;
     --heading-font: "Lato", sans-serif;
     --paragraph-font: "Raleway", Lato, Helvetica;
 
@@ -21,7 +21,8 @@ Fonts are separated by a | */
     --headline-color-on-color: #ffffff;
     --paragraph-color-on-white: var(--secondary-color);
     --paragraph-color-on-color: #ffffff;
-    ;
+    --paragraph-font: var(--accent4-color);
+
     --paragraph-background-color: var(--primary-color);
     --nav-link-color: #ffffff;
     --nav-background-color: var(--accent1-color);
@@ -35,6 +36,17 @@ body {
     margin: 0 auto;
     padding: 4rem;
     font-size: 18px;
+}
+
+.primary,
+.secondary,
+.accent2 {
+    color: var(--accent4-color);
+}
+
+.accent3 {
+    background-color: var(--accent3-color);
+    color: var(--accent4-color);
 }
 
 img {
@@ -95,7 +107,7 @@ p {
 }
 
 .colors td {
-    width: 25%;
+    width: 20%;
     height: 3rem;
 }
 
@@ -117,7 +129,7 @@ p {
 
 p.colored {
     background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
+    color: var(--accent4-color);
 }
 
 nav {
