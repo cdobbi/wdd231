@@ -39,23 +39,29 @@
         <p>The Quilt Creations website will include the following dynamic elements:</p>
         <ul>
             <li>A Home page with a gallery of quilts and navigation link cards</li>
-            <li>The Gallery page will be a right aligned scrolling wheel of quilts that open in a modal window</li>
+            <li>The Gallery page will be a right aligned scrolling wheel of quilts that open in a dialog box and modal.</li>
             <li>The Shop page showcases quilts LeAnn has for sale and other items such as quilt patterns</li>
             <li>The Services page will provide information about the quilting services that the owner offers</li>
             <li>The Contact Us Form and page will include a form that users can fill out to contact the owner, a map of the owner's
                 location, and the owner's contact information</li>
         </ul>
-        <h3>Proposed Implementation</h3>
-        <p>* The Quilt Creations website will be built using HTML, CSS, and JavaScript.<br>
-            * The site will be responsive and accessible, with a focus on user experience.<br>
-            * For quilt purchases, a third-party service, Venmo will handle transactions.<br>
+        <h3>Integration of Requirements</h3>
+        <p>
+            * Functionss and ES Modules: Three functions to fetch quilts and patterns, handle form submission and toggle modals that will be
+            organized into seperate ES modules for clarity and reusability.<br>
+            * DOM Interaction: Select elements, modify them, and add event listeners (e.g., selecting quilt images, adding event listeners
+            for click events to open the modal).<br>.
+            * Conditional Branching: Use conditions to handle different scenarios (e.g., checking if a form field is empty before
+            processing).<br>
             * The site will be optimized for search engines to increase visibility.<br>
-            * The Contact Us page will use a dynamic interactive form that will email to the owner when submitted.<br>
-            * There will be a simple calculator to estimate the cost of quilting, binding, and other services.<br>
-            * Clicking on a quilt image will open a larger version in a modal window.<br>
-            * JavaScript will handle the image display and close button.<br>
-            * The Shop page will use an array of quilt objects to store information about items for purchase, create and display quilt cards
-            on the page using JavaScript forEach or map to iterate over the quilt array.<br>
+            * Template Literals: Use template literals to build strings (e.g., creating HTML content for quilt services).<br>
+            * Local Storage: Store form data in localStorage when the form is submitted as well as emailing the owner upon submission.<br>
+            * Fetch JSON Data: Fetch quilts and patterns from a local JSON file or a remote API using an asynchronous function.<br>
+            * Asynchronous Function with Try Block: Use fetchQuiltPatterns() function to fetch data asynchronously with a try block for
+            error handling.<br>
+            *Build at Least 15 Items Dynamically: Store 15 images or patterns and display them dynamically on the page.<br>
+            * Use of Modal Dialog: Implement the toggleModal() and closeModal() functions to handle displaying the information about the
+            quilt techniques and patterns.<br>
         </p>
         <hr>
         <h2>Branding</h2>

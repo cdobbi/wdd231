@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Sunshine Quilt",
+    "image": "images/sunshine_quilt_200x200.jpg",
+    "description": "A beautiful quilt with sunny colors.",
+    "fullImage": "images/sunshine_quilt_800x800.jpg"
+  },
+  {
+    "name": "Rainbow Quilt",
+    "image": "images/rainbow_quilt_200x200.jpg",
+    "description": "A quilt with all the colors of the rainbow.",
+    "fullImage": "images/rainbow_quilt_800x800.jpg"
+  },
+  {
+    "name": "Star Quilt",
+    "image": "images/star_quilt_200x200.jpg",
+    "description": "A quilt with a star pattern.",
+    "fullImage": "images/star_quilt_800x800.jpg"
+  },
+  {
+    "name": "Flower Quilt",
+    "image": "images/flower_quilt_200x200.jpg",
+    "description": "A quilt with a flower pattern.",
+    "fullImage": "images/flower_quilt_800x800.jpg"
+  },
+  {
+    "name": "Heart Quilt",
+    "image": "images/heart_quilt_200x200.jpg",
+    "description": "A quilt with a heart pattern.",
+    "fullImage": "images/heart_quilt_800x800.jpg"
+  },
+  {
+    "name": "Sunshine Quilt",
+    "image": "images/sunshine_quilt_200x200.jpg",
+    "description": "A beautiful quilt with sunny colors.",
+    "fullImage": "images/sunshine_quilt_800x800.jpg"
+  },
+  {
+    "name": "Rainbow Quilt",
+    "image": "images/rainbow_quilt_200x200.jpg",
+    "description": "A quilt with all the colors of the rainbow.",
+    "fullImage": "images/rainbow_quilt_800x800.jpg"
+  },
+  {
+    "name": "Star Quilt",
+    "image": "images/star_quilt_200x200.jpg",
+    "description": "A quilt with a star pattern.",
+    "fullImage": "images/star_quilt_800x800.jpg"
+  },
+  {
+    "name": "Flower Quilt",
+    "image": "images/flower_quilt_200x200.jpg",
+    "description": "A quilt with a flower pattern.",
+    "fullImage": "images/flower_quilt_800x800.jpg"
+  },
+  {
+    "name": "Heart Quilt",
+    "image": "images/heart_quilt_200x200.jpg",
+    "description": "A quilt with a heart pattern.",
+    "fullImage": "images/heart_quilt_800x800.jpg"
+  },
+  {
+    "name": "Sunshine Quilt",
+    "image": "images/sunshine_quilt_200x200.jpg",
+    "description": "A beautiful quilt with sunny colors.",
+    "fullImage": "images/sunshine_quilt_800x800.jpg"
+  },
+  {
+    "name": "Rainbow Quilt",
+    "image": "images/rainbow_quilt_200x200.jpg",
+    "description": "A quilt with all the colors of the rainbow.",
+    "fullImage": "images/rainbow_quilt_800x800.jpg"
+  },
+  {
+    "name": "Star Quilt",
+    "image": "images/star_quilt_200x200.jpg",
+    "description": "A quilt with a star pattern.",
+    "fullImage": "images/star_quilt_800x800.jpg"
+  },
+  {
+    "name": "Flower Quilt",
+    "image": "images/flower_quilt_200x200.jpg",
+    "description": "A quilt with a flower pattern.",
+    "fullImage": "images/flower_quilt_800x800.jpg"
+  },
+  {
+    "name": "Heart Quilt",
+    "image": "images/heart_quilt_200x200.jpg",
+    "description": "A quilt with a heart pattern.",
+    "fullImage": "images/heart_quilt_800x800.jpg"
+  }
+]
