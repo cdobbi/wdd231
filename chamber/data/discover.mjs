@@ -21,7 +21,7 @@ export const discover = [
     cost: "Free",
     description:
       "This mausoleum is the final resting place of Ghana's first president, Kwame Nkrumah, and offers insight into his life and legacy.",
-    photo_link: "http://cdobbi.github.io/wdd231/chamber/images/mausoleum.webp",
+    photo_link: "https://cdobbi.github.io/wdd231/chamber/images/mausoleum.webp",
   },
   {
     name: "Boti Falls",
