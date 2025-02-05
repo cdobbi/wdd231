@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'YourFontFamily';
+    src: url('https://fonts.gstatic.com/…/pxiByp8kv.woff2') format('woff2');
+    font-display: swap;
+}
+
+
 :root {
     --primary-color: #98d5fa;
     --secondary-color: #0056b3;
