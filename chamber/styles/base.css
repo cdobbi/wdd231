@@ -102,7 +102,6 @@ nav ul.nav-links a:hover {
     color: var(--tertiary-color);
 }
 
-/* HAMBURGER MENU */
 .hamburger {
     display: none;
     background: none;
@@ -119,7 +118,6 @@ nav ul.nav-links a:hover {
     content: '✖';
 }
 
-/* MAIN CONTENT */
 .hero-container {
     position: relative;
     width: 100%;
@@ -161,7 +159,6 @@ nav ul.nav-links a:hover {
     margin-top: 1rem;
 }
 
-/* ASIDES (EVENTS, WEATHER, FORECAST) */
 aside.events,
 aside.weather,
 aside.forecast {
@@ -236,7 +233,6 @@ aside ul {
     list-style-type: none;
 }
 
-/* FOOTER */
 footer {
     width: 100%;
     max-width: none;

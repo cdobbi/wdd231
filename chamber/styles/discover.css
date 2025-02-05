@@ -30,7 +30,6 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
-/* HEADER */
 header {
     display: flex;
     align-items: flex-end;
@@ -91,7 +90,6 @@ nav ul.nav-links a:hover {
     color: var(--tertiary-color);
 }
 
-/* Hide hamburger button by default */
 .hamburger {
     display: none;
     background: none;
@@ -102,7 +100,6 @@ nav ul.nav-links a:hover {
     z-index: 1001;
 }
 
-/* Show hamburger button on smaller screens */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -130,7 +127,6 @@ nav ul.nav-links a:hover {
     }
 }
 
-/* MAIN CONTENT */
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -196,7 +192,6 @@ img {
     margin-top: 10px;
 }
 
-/* FOOTER */
 footer {
     width: 100%;
     font-size: 1.5rem;

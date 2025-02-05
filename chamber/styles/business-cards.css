@@ -30,8 +30,6 @@
 }
 
 .member-card img {
-    /* width: clamp(5rem, 10vw, 9.375rem);
-    height: clamp(5rem, 10vw, 9.375rem); */
     object-fit: cover;
     border: 0.1px solid black;
     border-radius: 50%;

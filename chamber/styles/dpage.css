@@ -19,7 +19,6 @@ div.business-card img {
     margin-bottom: 10px;
 }
 
-/* List view styles */
 .business-cards.list-view {
     display: flex;
     flex-direction: column;
