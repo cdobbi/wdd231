@@ -8,7 +8,6 @@ Welcome to the WDD231 repository! This repository contains all the materials and
 - [Course Materials](#course-materials)
 - [Assignments](#assignments)
 - [Resources](#resources)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
@@ -43,16 +42,6 @@ Additional resources and references to help you succeed in the course.
 - [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Tailwind CSS](https://tailwindcss.com)
-
-## Contributing
-
-If you would like to contribute to this repository, please follow these guidelines:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a Pull Request.
 
 ## License
 
