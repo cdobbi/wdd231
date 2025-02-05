@@ -91,6 +91,45 @@ nav ul.nav-links a:hover {
     color: var(--tertiary-color);
 }
 
+/* Hide hamburger button by default */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Show hamburger button on smaller screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    ul.nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--primary-color);
+    }
+
+    ul.nav-links.active {
+        display: flex;
+    }
+
+    nav ul.nav-links a {
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+
 /* MAIN CONTENT */
 main {
     display: grid;
