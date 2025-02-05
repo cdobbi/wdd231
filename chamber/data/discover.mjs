@@ -13,7 +13,7 @@ export const discover = [
     cost: "Approximately GHS 10",
     description:
       "The museum showcases Ghana's rich cultural heritage, history, and artifacts.",
-    photo_link: "https://cdobbi.github.io/wdd231/chamber/images/musuem.webp",
+    photo_link: "https://cdobbi.github.io/wdd231/chamber/images/museum.webp",
   },
   {
     name: "Kwame Nkrumah Mausoleum",
