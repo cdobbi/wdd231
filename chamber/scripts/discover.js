@@ -1,6 +1,5 @@
 import { discover } from "../data/discover.mjs";
 
-// Function to display discover places
 const displayDiscover = (places) => {
   const cards = document.querySelector("div.cards");
   cards.innerHTML = "";
@@ -34,10 +33,8 @@ const displayDiscover = (places) => {
   });
 };
 
-// Display all discover places initially
 displayDiscover(discover);
 
-// Filter buttons
 const allButton = document.querySelector("#all");
 const freeButton = document.querySelector("#free");
 const paidButton = document.querySelector("#paid");
