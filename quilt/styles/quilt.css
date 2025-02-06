@@ -44,14 +44,10 @@ body {
     place-items: center;
     z-index: 1000;
 }
-
+/* 
 :where(.x-link, .logo-link):is(:hover, :focus-visible) {
     opacity: 1;
-}
-
-.logo-link svg {
-    width: 75%;
-}
+} */
 
 :root {
     --info-size: 35vh;
@@ -169,9 +165,9 @@ a:hover {
     background: hsl(0 0% 40%);
 }
 
-.article__info {
+/* .article__info {
     background: canvas;
-}
+} */
 
 @media (min-width: 768px) {
     article {
