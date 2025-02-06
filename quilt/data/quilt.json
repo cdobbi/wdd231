@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://picsum.photos/1920/1080?random=1",
+    "title": "CSS Scroll Animations",
+    "description": "Check out this rad demo",
+    "link": "#",
+    "linkText": "Follow"
+  },
+  {
+    "url": "https://picsum.photos/1920/1080?random=2",
+    "title": "Animate on scroll",
+    "description": "Works with media queries too",
+    "link": "#",
+    "linkText": "Check it out"
+  },
+  {
+    "url": "https://picsum.photos/1920/1080?random=3",
+    "title": "Parallax Effects",
+    "description": "Tweak your timings",
+    "link": "#",
+    "linkText": "Get Styling"
+  }
+]
