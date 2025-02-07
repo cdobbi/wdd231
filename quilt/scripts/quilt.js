@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("quilt.json")
+  fetch("data/quilt.json") // Ensure this path is correct
     .then((response) => response.json())
     .then((data) => {
       const container = document.getElementById("articles-container");
