@@ -16,13 +16,11 @@
     <link rel="icon" href="https://cdobbi.github.io/wdd231/chamber/images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-        rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/join.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/responsive.css" media="print" onload="this.media='all'">
-
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
 </head>
@@ -55,7 +53,7 @@
 
     <main>
         <h1>Thank you for joining!</h1>
-        <h2>Your details are below</h2>
+        <div id="results" style="min-height: 200px;"></div>
         <div id="results"></div>
     </main>
     <input type="hidden" id="timestamp" name="timestamp">
@@ -63,17 +61,19 @@
         document.getElementById('timestamp').value = new Date().toISOString();
     </script>
 
-    <footer>
-        <p>Ghana<br>Chamber of Commerce<br>123 Main Street<br>Accra Ghana<br>+233 24 358 5854</p>
+    <footer style="min-height: 100px;">
+        <p>
+            Ghana<br>Chamber of Commerce<br>123 Main Street<br>Accra Ghana<br>+233 24 358 5854
+        </p>
         <div class="social-icons">
             <a href="https://www.google.com/maps/place/Accra,+Ghana/" target="_blank" class="social-icon" aria-label="Google Maps">
-                <img src="images/map.webp" alt="Ghana map icon">
+                <img src="images/map.webp" alt="Ghana map icon" width="50" height="50">
             </a>
             <a href="https://www.facebook.com/robdobb/" target="_blank" class="social-icon" aria-label="Facebook">
-                <img src="images/facebook.webp" alt="Facebook icon">
+                <img src="images/facebook.webp" alt="Facebook icon" width="50" height="50">
             </a>
             <a href="https://cdobbi.github.io/wdd231" target="_blank" class="social-icon" aria-label="Portfolio">
-                <img src="images/portfolio.webp" alt="Portfolio icon">
+                <img src="images/portfolio.webp" alt="Portfolio icon" width="50" height="50">
             </a>
         </div>
         <p>&copy; <span id="currentyear"></span> WDD - 231<br>Christina Dobbins<br>Last modified:<br> <span id="lastModified"></span></p>
