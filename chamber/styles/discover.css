@@ -1,9 +1,8 @@
-@font-face {
-    font-family: 'YourFontFamily';
-    src: url('https://fonts.gstatic.com/…/pxiByp8kv.woff2') format('woff2');
+/* @font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLPTed3FBGPaTSQ.woff2') format('woff2');
     font-display: swap;
-}
-
+} */
 
 :root {
     --primary-color: #98d5fa;
@@ -71,7 +70,7 @@ header h1 {
 }
 
 nav {
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     flex-shrink: 1;
     transition: all 0.3s ease-in-out;
 }
@@ -80,7 +79,7 @@ ul.nav-links {
     display: flex;
     list-style: none;
     flex-direction: row;
-    gap: 5px;
+    gap: 20px;
     flex-shrink: 1;
     background: none;
 }
@@ -94,7 +93,7 @@ nav ul.nav-links a {
 }
 
 nav ul.nav-links a:hover {
-    color: var(--tertiary-color);
+   background-color: burlywood;
 }
 
 .hamburger {
@@ -158,7 +157,8 @@ button {
 }
 
 button:hover {
-    background-color: var(--tertiary-color);
+    background-color: burlywood;
+    color: black;
 }
 
 .cards {
@@ -169,15 +169,25 @@ button:hover {
 }
 
 section {
-    background-color: #f4f4f4;
+    background-color: #f9f7f7;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Removed hover effect from section */
     transition: transform 0.3s ease;
 }
 
-section:hover {
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    /* Added hover effect to images */
+    transition: transform 0.3s ease;
+}
+
+img:hover {
     transform: translateY(-5px);
 }
 
@@ -187,8 +197,8 @@ h2 {
 }
 
 p {
-    font-size: 1rem;
-    margin: 5px 0;
+    font-size: 1.2rem;
+    margin:10px 0;
 }
 
 img {
@@ -196,6 +206,12 @@ img {
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
+    /* Added hover effect to images */
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: translateY(-5px);
 }
 
 footer {
@@ -206,15 +222,15 @@ footer {
     padding: 1.8rem;
     text-align: center;
     align-items: center;
-    line-height: 1.5;
+    line-height: 1.8;
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.5fr;
     margin-top: 0.5rem;
 }
 
 footer p {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
 }
 
 footer p:first-child {
