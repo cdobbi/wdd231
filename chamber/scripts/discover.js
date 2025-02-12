@@ -55,35 +55,29 @@ allButton.addEventListener("click", () => {
 });
 
 freeButton.addEventListener("click", () => {
-  const freePlaces = discover.filter(
-    (place) => place.cost.toLowerCase() === "free"
-  );
+  const freePlaces = discover.filter(place => place.cost.toLowerCase() === "free");
   displayPlaces(freePlaces);
 });
 
 paidButton.addEventListener("click", () => {
-  const paidPlaces = discover.filter(
-    (place) => place.cost.toLowerCase() !== "free"
-  );
+  const paidPlaces = discover.filter(place => place.cost.toLowerCase() !== "free");
   displayPlaces(paidPlaces);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const lastVisitKey = "lastVisit";
+document.addEventListener('DOMContentLoaded', () => {
+  const lastVisitKey = 'lastVisit';
   const now = new Date();
   const lastVisit = localStorage.getItem(lastVisitKey);
 
   if (lastVisit) {
     const lastVisitDate = new Date(lastVisit);
-    const hoursSinceLastVisit = Math.floor(
-      (now - lastVisitDate) / (1000 * 60 * 60)
-    );
+    const hoursSinceLastVisit = Math.floor((now - lastVisitDate) / (1000 * 60 * 60));
     if (hoursSinceLastVisit < 24) {
       const dialog = document.getElementById("welcomeBackDialog");
       dialog.style.display = "block";
     }
   } else {
-    console.log("Welcome to our site!");
+    console.log('Welcome to our site!');
   }
 
   localStorage.setItem(lastVisitKey, now.toISOString());
