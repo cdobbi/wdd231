@@ -30,7 +30,7 @@ const displayPlaces = (places) => {
     const learnMoreButton = document.createElement("button");
     learnMoreButton.textContent = "Learn More";
     learnMoreButton.addEventListener("click", () => {
-      openDialog(place.learn_more_link);
+      window.location.href = place.learn_more_link;
     });
 
     card.appendChild(title);
@@ -43,26 +43,6 @@ const displayPlaces = (places) => {
     container.appendChild(card);
   });
 };
-
-const openDialog = (link) => {
-  const dialog = document.getElementById("learnMoreDialog");
-  const dialogLink = document.getElementById("dialogLink");
-  dialogLink.href = link;
-  dialog.style.display = "block";
-};
-
-const closeDialog = () => {
-  const dialog = document.getElementById("learnMoreDialog");
-  dialog.style.display = "none";
-};
-
-document.querySelector(".close-button").addEventListener("click", closeDialog);
-window.addEventListener("click", (event) => {
-  const dialog = document.getElementById("learnMoreDialog");
-  if (event.target === dialog) {
-    closeDialog();
-  }
-});
 
 displayPlaces(discover);
 

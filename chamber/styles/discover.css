@@ -42,6 +42,7 @@ header {
     justify-content: space-between;
     background: var(--primary-color);
     padding: 1.5rem;
+    position: relative;
 }
 
 header img {
@@ -51,8 +52,7 @@ header img {
     flex-shrink: 1;
     border: 0.1rem solid rgba(100, 70, 9, 0.769);
     border-radius: 0.3rem;
-    /* Prevent hover effect on header image */
-    transition: none;
+    transition: none; /* Prevent hover effect on header image */
 }
 
 img:not(header img) {
@@ -60,13 +60,19 @@ img:not(header img) {
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
-    /* Added hover effect to images */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Added hover effect to images */
 }
 
 img:not(header img):hover {
     transform: translateY(-5px);
 }
+
+@media (max-width: 768px) {
+    img:not(header img):hover {
+        transform: none; /* Disable hover effect on images in mobile view */
+    }
+}
+
 h1,
 h2,
 h3 {
@@ -107,7 +113,7 @@ nav ul.nav-links a {
 }
 
 nav ul.nav-links a:hover {
-   background-color: burlywood;
+    background-color: burlywood;
 }
 
 .hamburger {
@@ -118,6 +124,9 @@ nav ul.nav-links a:hover {
     color: black;
     cursor: pointer;
     z-index: 1001;
+    position: absolute;
+    bottom: 10px; /* Adjust this value to position the hamburger menu at the bottom */
+    right: 10px; /* Adjust this value to position the hamburger menu to the right */
 }
 
 @media (max-width: 768px) {
@@ -131,6 +140,10 @@ nav ul.nav-links a:hover {
         gap: 0;
         left: 0;
         background: none;
+        position: absolute;
+        top: 100%; /* Position the dropdown below the header */
+        width: 100%;
+        background-color: var(--primary-color); /* Ensure the dropdown has a background color */
     }
 
     ul.nav-links.active {
@@ -188,8 +201,7 @@ section {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Removed hover effect from section */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Removed hover effect from section */
 }
 
 img {
@@ -197,8 +209,7 @@ img {
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
-    /* Added hover effect to images */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Added hover effect to images */
 }
 
 img:hover {
@@ -213,14 +224,7 @@ h2 {
 p {
     font-size: 1.2rem;
     margin: 10px;
-    line-height: 1.;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
+    line-height: 1.5;
 }
 
 footer {
@@ -233,7 +237,7 @@ footer {
     align-items: center;
     line-height: 1.8;
     display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-columns: 1fr;
     margin-top: 0.5rem;
 }
 
@@ -269,145 +273,8 @@ a.social-icon {
     transition: all 0.3s ease-in-out;
 }
 
-footer {
-    width: 100%;
-    font-size: 1.5rem;
-    color: black;
-    background: var(--primary-color);
-    padding: 1.8rem;
-    text-align: center;
-    align-items: center;
-    line-height: 1.8;
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr;
-    margin-top: 0.5rem;
-}
-
-footer p {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-}
-
-footer p:first-child {
-    text-align: left;
-}
-
-footer p:last-child {
-    text-align: right;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-left: 2rem;
-}
-
-.social-icon img {
-    width: 44px;
-    height: 44px;
-    border: 0.1px solid black;
-    border-radius: 26px;
-    transition: all 0.3s ease-in-out;
-}
-
 .social-icon img:hover {
     transform: translateY(-5px);
-}
-footer {
-    width: 100%;
-    font-size: 1.5rem;
-    color: black;
-    background: var(--primary-color);
-    padding: 1.8rem;
-    text-align: center;
-    align-items: center;
-    line-height: 1.8;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 0.5rem;
-}
-
-@media (min-width: 768px) {
-    footer {
-        grid-template-columns: 0.5fr 2fr 0.5fr;
-    }
-}
-
-footer p {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-}
-
-footer p:first-child {
-    text-align: left;
-}
-
-footer p:last-child {
-    text-align: right;
-}
-
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-button {
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: burlywood;
-    color: black;
-}
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .cards {
-        grid-template-areas:
-            "card1 card2 card3"
-            "card4 card5 card6";
-    }
-
-    .card:nth-child(1) { grid-area: card1; }
-    .card:nth-child(2) { grid-area: card2; }
-    .card:nth-child(3) { grid-area: card3; }
-    .card:nth-child(4) { grid-area: card4; }
-    .card:nth-child(5) { grid-area: card5; }
-    .card:nth-child(6) { grid-area: card6; }
-}
-
-@media (min-width: 1024px) {
-    .cards {
-        grid-template-areas:
-            "card1 card2 card3"
-            "card4 card5 card6";
-    }
-}
-
-@media (min-width: 1200px) {
-    .cards {
-        grid-template-areas:
-            "card1 card2 card3 card4"
-            "card5 card6 card7 card8";
-    }
-
-    .card:nth-child(7) { grid-area: card7; }
-    .card:nth-child(8) { grid-area: card8; }
 }
 
 .dialog {
@@ -444,4 +311,66 @@ button:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    footer {
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .cards {
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6";
+    }
+
+    .card:nth-child(1) {
+        grid-area: card1;
+    }
+
+    .card:nth-child(2) {
+        grid-area: card2;
+    }
+
+    .card:nth-child(3) {
+        grid-area: card3;
+    }
+
+    .card:nth-child(4) {
+        grid-area: card4;
+    }
+
+    .card:nth-child(5) {
+        grid-area: card5;
+    }
+
+    .card:nth-child(6) {
+        grid-area: card6;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards {
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6";
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+
+    .card:nth-child(7) {
+        grid-area: card7;
+    }
+
+    .card:nth-child(8) {
+        grid-area: card8;
+    }
 }
