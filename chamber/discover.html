@@ -58,7 +58,20 @@
                 <button>Learn More</button>
             </section> -->
         </div>
-        <script type="module" src="scripts/discover.js"></script>
+        <div id="learnMoreDialog" class="dialog">
+            <div class="dialog-content">
+                <span class="close-button">&times;</span>
+                <p id="dialogText"></p>
+                <a id="dialogLink" href="#" target="_blank">Click here to discover more</a>
+            </div>
+        </div>
+        <div id="welcomeBackDialog" class="dialog">
+            <div class="dialog-content">
+                <span class="close-button">&times;</span>
+                <p>Back too soon! It's nice to see you again.</p>
+            </div>
+        </div>
+        <script src="scripts/discover.js" type="module"></script>
     </main>
 
     <footer>
@@ -77,21 +90,7 @@
         <p>&copy; <span id="currentyear"></span> WDD - 231 Chamber Discover<br>Christina Dobbins<br>Last modified:<br> <span
                 id="lastModified"></span>
         </p>
-    </footer>
-        <div id="learnMoreDialog" class="dialog">
-            <div class="dialog-content">
-                <span class="close-button">&times;</span>
-                <p id="dialogText"></p>
-                <a id="dialogLink" href="#" target="_blank">Click here to discover more</a>
-            </div>
-        </div>
-        <div id="welcomeBackDialog" class="dialog">
-            <div class="dialog-content">
-                <span class="close-button">&times;</span>
-                <p>Back too soon! It's nice to see you again.</p>
-            </div>
-        </div>
-        <script src="scripts/discover.js" type="module"></script>
+    </footer>       
 </body>
 
 </html>
