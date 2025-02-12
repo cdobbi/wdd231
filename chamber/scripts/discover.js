@@ -92,7 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (lastVisit) {
     const lastVisitDate = new Date(lastVisit);
     const daysSinceLastVisit = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
-    alert(`Welcome back! It's been ${daysSinceLastVisit} days since your last visit.`);
+    if (daysSinceLastVisit > 0) {
+      alert(`Welcome back! It's been ${daysSinceLastVisit} days since your last visit.`);
+    }
   } else {
     console.log('Welcome to our site!');
   }
