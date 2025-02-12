@@ -11,6 +11,7 @@ const displayDiscover = (places) => {
     let cost = document.createElement("p");
     let description = document.createElement("p");
     let photo = document.createElement("img");
+    let learnMoreButton = document.createElement("button");
 
     h2.textContent = place.name;
     address.innerHTML = `<span class="label">Address:</span> ${place.address}`;
@@ -23,11 +24,17 @@ const displayDiscover = (places) => {
     photo.setAttribute("width", "340");
     photo.setAttribute("height", "440");
 
+    learnMoreButton.textContent = "Learn More";
+    learnMoreButton.addEventListener("click", () => {
+      window.location.href = place.learn_more_link;
+    });
+
     card.appendChild(h2);
     card.appendChild(address);
     card.appendChild(cost);
     card.appendChild(description);
     card.appendChild(photo);
+    card.appendChild(learnMoreButton);
 
     cards.appendChild(card);
   });
@@ -51,4 +58,24 @@ freeButton.addEventListener("click", () => {
 paidButton.addEventListener("click", () => {
   const paidDiscover = discover.filter(place => place.cost.toLowerCase() !== "free");
   displayDiscover(paidDiscover);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const visitCountKey = 'visitCount';
+  const lastVisitKey = 'lastVisit';
+  const now = new Date();
+  let visitCount = parseInt(localStorage.getItem(visitCountKey)) || 0;
+  const lastVisit = localStorage.getItem(lastVisitKey);
+
+  if (visitCount > 0) {
+    const lastVisitDate = new Date(lastVisit);
+    const daysSinceLastVisit = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
+    alert(`Welcome back! It's been ${daysSinceLastVisit} days since your last visit.`);
+  } else {
+    console.log('Welcome to our site!');
+  }
+
+  visitCount += 1;
+  localStorage.setItem(visitCountKey, visitCount);
+  localStorage.setItem(lastVisitKey, now.toISOString());
 });
