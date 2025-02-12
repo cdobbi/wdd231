@@ -64,37 +64,37 @@ paidButton.addEventListener("click", () => {
   displayPlaces(paidPlaces);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const lastVisitKey = 'lastVisit';
-  const now = new Date();
-  const lastVisit = localStorage.getItem(lastVisitKey);
+// document.addEventListener('DOMContentLoaded', () => {
+//   const lastVisitKey = 'lastVisit';
+//   const now = new Date();
+//   const lastVisit = localStorage.getItem(lastVisitKey);
 
-  if (lastVisit) {
-    const lastVisitDate = new Date(lastVisit);
-    const hoursSinceLastVisit = Math.floor((now - lastVisitDate) / (1000 * 60 * 60));
-    if (hoursSinceLastVisit < 24) {
-      const dialog = document.getElementById("welcomeBackDialog");
-      dialog.style.display = "block";
-    }
-  } else {
-    console.log('Welcome to our site!');
-  }
+//   if (lastVisit) {
+//     const lastVisitDate = new Date(lastVisit);
+//     const hoursSinceLastVisit = Math.floor((now - lastVisitDate) / (1000 * 60 * 60));
+//     if (hoursSinceLastVisit < 24) {
+//       const dialog = document.getElementById("welcomeBackDialog");
+//       dialog.style.display = "block";
+//     }
+//   } else {
+//     console.log('Welcome to our site!');
+//   }
 
-  localStorage.setItem(lastVisitKey, now.toISOString());
-});
+//   localStorage.setItem(lastVisitKey, now.toISOString());
+// });
 
-const closeDialog = () => {
-  const dialog = document.getElementById("welcomeBackDialog");
-  dialog.style.display = "none";
-};
+// const closeDialog = () => {
+//   const dialog = document.getElementById("welcomeBackDialog");
+//   dialog.style.display = "none";
+// };
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector(".close-button").addEventListener("click", closeDialog);
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//   document.querySelector(".close-button").addEventListener("click", closeDialog);
+// });
 
-window.addEventListener("click", (event) => {
-  const dialog = document.getElementById("welcomeBackDialog");
-  if (event.target === dialog) {
-    closeDialog();
-  }
-});
+// window.addEventListener("click", (event) => {
+//   const dialog = document.getElementById("welcomeBackDialog");
+//   if (event.target === dialog) {
+//     closeDialog();
+//   }
+// });
