@@ -6,6 +6,7 @@ export const discover = [
     description:
       "A UNESCO World Heritage Site, Elmina Castle is one of the oldest European structures in Ghana. It played a significant role in the transatlantic slave trade.",
     photo_link: "https://cdobbi.github.io/wdd231/chamber/images/trade.webp",
+    learn_more_link: "https://en.wikipedia.org/wiki/Elmina_Castle",
   },
   {
     name: "National Museum of Ghana",
@@ -14,6 +15,7 @@ export const discover = [
     description:
       "The museum showcases Ghana's rich cultural heritage, history, and artifacts.",
     photo_link: "https://cdobbi.github.io/wdd231/chamber/images/museum.webp",
+    learn_more_link: "https://en.wikipedia.org/wiki/National_Museum_of_Ghana",
   },
   {
     name: "Kwame Nkrumah Mausoleum",
@@ -22,6 +24,7 @@ export const discover = [
     description:
       "This mausoleum is the final resting place of Ghana's first president, Kwame Nkrumah, and offers insight into his life and legacy.",
     photo_link: "https://cdobbi.github.io/wdd231/chamber/images/mausoleum.webp",
+    learn_more_link: "https://en.wikipedia.org/wiki/Kwame_Nkrumah_Mausoleum",
   },
   {
     name: "Boti Falls",
@@ -30,6 +33,7 @@ export const discover = [
     description:
       "A beautiful waterfall located in the Eastern Region, perfect for nature lovers and adventure seekers.",
     photo_link: "https://cdobbi.github.io/wdd231/chamber/images/falls.webp",
+    learn_more_link: "https://en.wikipedia.org/wiki/Boti_Falls",
   },
   {
     name: "Mole National Park",
@@ -38,6 +42,7 @@ export const discover = [
     description:
       "Mole National Park, Northern Region, is home to a variety of wildlife, including elephants, antelopes, and baboons.",
     photo_link: "https://cdobbi.github.io/wdd231/chamber/images/elephants.webp",
+    learn_more_link: "https://en.wikipedia.org/wiki/Mole_National_Park",
   },
   {
     name: "Kokrobite Beach",
@@ -46,6 +51,7 @@ export const discover = [
     description:
       "A tranquil beach ideal for relaxation, reading, and enjoying the gentle waves.",
     photo_link: "https://cdobbi.github.io/wdd231/chamber/images/fisherman.webp",
+    learn_more_link: "https://en.wikipedia.org/wiki/Kokrobite",
   },
   {
     name: "Accra Mall Beach",
@@ -54,6 +60,7 @@ export const discover = [
     description:
       "A picturesque beach area near the Accra Mall, perfect for meals with ocean views.",
     photo_link: "https://cdobbi.github.io/wdd231/chamber/images/baskets.webp",
+    learn_more_link: "https://en.wikipedia.org/wiki/Accra",
   },
   {
     name: "Teshie Beach",
@@ -62,5 +69,6 @@ export const discover = [
     description:
       "Great for water sports like jet skiing and sailing, offering plenty of adventure.",
     photo_link: "https://cdobbi.github.io/wdd231/chamber/images/huts.webp",
+    learn_more_link: "https://en.wikipedia.org/wiki/Teshie",
   },
 ];
