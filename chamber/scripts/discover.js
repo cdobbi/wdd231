@@ -4,8 +4,9 @@ const displayDiscover = (places) => {
   const cards = document.querySelector("div.cards");
   cards.innerHTML = "";
 
-  places.forEach((place) => {
+  places.forEach((place, index) => {
     let card = document.createElement("section");
+    card.classList.add("card");
     let h2 = document.createElement("h2");
     let address = document.createElement("p");
     let cost = document.createElement("p");
@@ -61,13 +62,11 @@ paidButton.addEventListener("click", () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const visitCountKey = 'visitCount';
   const lastVisitKey = 'lastVisit';
   const now = new Date();
-  let visitCount = parseInt(localStorage.getItem(visitCountKey)) || 0;
   const lastVisit = localStorage.getItem(lastVisitKey);
 
-  if (visitCount > 0) {
+  if (lastVisit) {
     const lastVisitDate = new Date(lastVisit);
     const daysSinceLastVisit = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
     alert(`Welcome back! It's been ${daysSinceLastVisit} days since your last visit.`);
@@ -75,7 +74,5 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Welcome to our site!');
   }
 
-  visitCount += 1;
-  localStorage.setItem(visitCountKey, visitCount);
   localStorage.setItem(lastVisitKey, now.toISOString());
 });
