@@ -86,7 +86,7 @@ article {
     view-timeline: --article;
 }
 
-.article__img {
+.article_img {
     position: sticky;
     top: 0;
     left: 0;
@@ -137,7 +137,7 @@ article img {
     }
 }
 
-.article__info {
+.article_info {
     text-align: center;
     z-index: 2;
     display: grid;
@@ -190,7 +190,7 @@ a:hover {
         z-index: 100;
     }
 
-    .article__info {
+    .article_info {
         background: transparent;
         height: 100vh;
         width: 40%;
@@ -201,7 +201,7 @@ a:hover {
         align-content: center;
     }
 
-    .article__img {
+    .article_img {
         position: fixed;
         top: 0;
         right: 0;
@@ -211,13 +211,13 @@ a:hover {
         animation: none;
     }
 
-    .article__img {
+    .article_img {
         animation: brighten both linear;
         animation-timeline: --article;
         /* animation-range: entry 0% entry 50%; */
     }
 
-    .article__img img {
+    .article_img img {
         animation: clip-out both linear;
         animation-timeline: --article;
         /* animation-range: exit 0% exit 100%; */
