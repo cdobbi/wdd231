@@ -229,6 +229,7 @@ a:hover {
     .article-img,
     .article-img img {
         animation-timeline: --article;
+    }
 }
 
 @keyframes brighten {
