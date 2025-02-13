@@ -118,7 +118,7 @@ article img {
 
 @keyframes filter-out {
     100% {
-        filter: brightness(2);
+        filter: brightness(1);
         translate: 0 -60%;
     }
 }
@@ -213,20 +213,20 @@ a:hover {
     .article__img {
         animation: brighten both linear;
         animation-timeline: --article;
-        animation-range: entry 0% entry 50%;
+        /* animation-range: entry 0% entry 50%; */
     }
 
     .article__img img {
         animation: clip-out both linear;
         animation-timeline: --article;
-        animation-range: exit 0% exit 100%;
+        /* animation-range: exit 0% exit 100%; */
         height: 100%;
     }
 }
 
 @keyframes brighten {
     0% {
-        filter: brightness(2);
+        filter: brightness(1);
     }
 
     100% {
