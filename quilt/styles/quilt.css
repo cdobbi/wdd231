@@ -119,9 +119,10 @@ article img {
 @keyframes filter-out {
     100% {
         filter: brightness(1);
-        translate: 0 -60%;
+        transform: translate(0, -60%);
     }
 }
+
 
 @keyframes in-n-out {
 
