@@ -1,26 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 .noto-sans-uniquifier {
   font-family: "Noto Sans", serif;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
 
 :root {
-    --primary-color: #142a56;
-    --secondary-color: #435F96;
-    --accent1-color: #2ad7c9;
+    --primary-color:  #435F96;
+    --secondary-color:#142a56;
+    --accent1-color: #3dc1c5;
     --accent2-color: #456B6B;
     --accent3-color: #354141;
     --accent4-color: #ffffff;
     --paragraph-color-on-color: #ffffff;
-    --title-font: "Noto Sans", Lato, Helvetica;
+    --title-font: "Noto Sans", serif;
     --heading-font: "Noto Sans", serif;
-    --paragraph-font: "Noto Sans", Lato, Helvetica;
+    --paragraph-font: "Noto Sans",  serif;
 }
 
 *,
@@ -31,12 +29,6 @@
 
 html {
     color-scheme: light only;
-}
-
-body {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
 }
 
 .logo-link {
@@ -95,6 +87,14 @@ article {
     z-index: 2;
     animation: in-n-out both linear;
     animation-timeline: --article;
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    margin: 0;
 }
 
 h2 { 

@@ -15,3 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("close-modal").addEventListener("click", closeModal);
 });
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    const images = document.querySelectorAll('.animatable');
+    images.forEach(img => {
+        img.animate([
+            { transform: 'translate(0, 0)', filter: 'brightness(0.5)' },
+            { transform: 'translate(0, -60%)', filter: 'brightness(1)' }
+        ], {
+            duration: 2000,
+            iterations: Infinity,
+            direction: 'alternate'
+        });
+    });
+});
+
