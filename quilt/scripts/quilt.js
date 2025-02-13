@@ -1,42 +1,61 @@
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("data/quilt.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const container = document.getElementById("articles-container");
-        if (!container) {
-          console.error("Error: articles-container element not found");
-          return;
+import { quilts } from '../data/quilts.mjs';
+
+document.addEventListener('DOMContentLoaded', () => {
+    const main = document.querySelector('main');
+
+    quilts.forEach(quilt => {
+        const article = document.createElement('article');
+        article.style.setProperty('--index', quilt.index);
+
+        const articleImgDiv = document.createElement('div');
+        articleImgDiv.classList.add('article-img');
+        const img = document.createElement('img');
+        img.src = quilt.imgSrc;
+        img.alt = quilt.imgAlt;
+        articleImgDiv.appendChild(img);
+
+        const articleInfoDiv = document.createElement('div');
+        articleInfoDiv.classList.add('article-info');
+        if (quilt.heading) {
+            const h2 = document.createElement('h2');
+            h2.textContent = quilt.heading;
+            articleInfoDiv.appendChild(h2);
         }
-        data.forEach((item, index) => {
-          const article = document.createElement("article");
-          article.style.setProperty("--index", index);
-  
-          const imgDiv = document.createElement("div");
-          imgDiv.classList.add("article__img");
-          const img = document.createElement("img");
-          img.src = item.url;
-          img.alt = item.title;
-          imgDiv.appendChild(img);
-  
-          const infoDiv = document.createElement("div");
-          infoDiv.classList.add("article__info");
-          const h2 = document.createElement("h2");
-          h2.textContent = item.title;
-          const p = document.createElement("p");
-          p.textContent = item.description;
-          const a = document.createElement("a");
-          a.href = item.link;
-          a.textContent = item.linkText;
-  
-          infoDiv.appendChild(h2);
-          infoDiv.appendChild(p);
-          infoDiv.appendChild(a);
-  
-          article.appendChild(imgDiv);
-          article.appendChild(infoDiv);
-  
-          container.appendChild(article);
+        if (quilt.paragraph) {
+            const p = document.createElement('p');
+            p.textContent = quilt.paragraph;
+            articleInfoDiv.appendChild(p);
+        }
+        if (quilt.linkText && quilt.linkHref) {
+            const a = document.createElement('a');
+            a.href = quilt.linkHref;
+            a.textContent = quilt.linkText;
+            articleInfoDiv.appendChild(a);
+        }
+
+        article.appendChild(articleImgDiv);
+        article.appendChild(articleInfoDiv);
+        main.appendChild(article);
+    });
+
+    const articleImgs = document.querySelectorAll('.article-img');
+    const articleImgsImgs = document.querySelectorAll('.article-img img');
+
+    articleImgs.forEach(articleImg => {
+        articleImg.style.animation = 'in-n-out both linear';
+    });
+
+    articleImgsImgs.forEach(articleImgImg => {
+        articleImgImg.style.animation = 'filter-out both linear';
+    });
+
+    if (window.innerWidth >= 768) {
+        articleImgs.forEach(articleImg => {
+            articleImg.style.animation = 'brighten both linear';
         });
-      })
-      .catch((error) => console.error("Error loading images:", error));
-  });
+
+        articleImgsImgs.forEach(articleImgImg => {
+            articleImgImg.style.animation = 'clip-out both linear';
+        });
+    }
+});
