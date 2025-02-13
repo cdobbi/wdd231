@@ -1,4 +1,4 @@
-import { quilts } from '../data/quilts.mjs';
+import { quilts } from '../data/quilt.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
     const main = document.querySelector('main');

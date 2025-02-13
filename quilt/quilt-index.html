@@ -14,7 +14,7 @@
     <link rel="icon" href="images/blue-machine.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/quilt.css">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/quilt.js" defer></script>
+    <!-- <script type="module" src="scripts/quilt.js" defer></script> -->
     <script src="scripts/hamburger.js" defer></script>
     <!-- <script src="scripts/form.js" defer></script> -->
     <!-- <script src="scripts/patterns" defer></script> -->
@@ -32,25 +32,53 @@
         <h1>Quilt Creations</h1>
         <article style="--index: 0">
             <div class="article-img">
-                <img src="images/elegant-large.webp?random=1" alt="random quilt image index 0" rel="noreferrer noopener">
+                <img 
+                src="images/elegant-medium.webp?random=1" 
+                srcset="
+                  images/elegant-small.webp 350w,
+                  images/elegant-medium.webp 750w,
+                  images/elegant-large.webp 1200w
+                " 
+                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" 
+                alt="Responsive Image" 
+                loading="lazy" 
+                rel="noreferrer noopener">
+            </div>
+
+                
             </div>
             <div class="article-info">
-                <h2>Welcome to Quilt Creations!</h2>
+                <h2>Welcome to Quilting Creations!</h2>
                 <p>Check out my latest patterns & designs.</p>
                 <a href="#">services</a>
             </div>
         </article>
         <article style="--index: 1">
             <div class="article-img">
-                <img src="images/36xlbeigh.webp?random=2" alt="random quilt image index 1" rel="noreferrer noopener">
-            </div>
-            <div class="article-info">
-
+                <img src="images/1m.webp?random=2"
+                srcset="
+                images/1s.webp 350w,
+                images/1m.webp 750w,
+                images/1xl.webp 1200w
+              " 
+              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" 
+              alt="Responsive Image" 
+              loading="lazy" 
+              rel="noreferrer noopener">
             </div>
         </article>
         <article style="--index: 2">
             <div class="article-img">
-                <img src="images/4m.webp?random=3" alt="random quilt image index 2" rel="noreferrer noopener">
+                <img src="images/4m.webp?random=3" 
+                srcset="
+                images/4s.webp 350w,
+                images/4m.webp 750w,
+                images/4xl.webp 1200w
+                "
+                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                alt="Responsive Image"
+                loading="lazy"
+                rel="noreferrer noopener">
             </div>
             <div class="article-info">
                 <h2>patterns</h2>
@@ -60,7 +88,7 @@
         </article>
         <article style="--index: 3">
             <div class="article-img">
-                <img src="images/5m.webp?random=4" alt="random quilt image index 3" rel="noreferrer noopener">
+                <img src="images/5xl.webp?random=4" alt="random quilt image index 3" rel="noreferrer noopener">
             </div>
             <div class="article-info">
 
@@ -68,7 +96,7 @@
         </article>
         <article style="--index: 4">
             <div class="article-img">
-                <img src="images/26m.webp?random=5" alt="random quilt image index 4" rel="noreferrer noopener">
+                <img src="images/26xl.webp?random=5" alt="random quilt image index 4" rel="noreferrer noopener">
             </div>
             <div class="article-info">
                 <h2>contact me</h2>
@@ -88,17 +116,14 @@
             <div class="article-img">
                 <img src="images/33m.webp?random=7" alt="random quilt image index 6" rel="noreferrer noopener"">
             </div>
-            <div class="article-info">
+            <div class=" article-info">
                 <h2>Have an inspired day!</h2>
 
             </div>
         </article>
         <article style="--index: 7">
             <div class="article-img">
-                <img src="images/08m.webp?random=8" alt="random quilt image index 7"rel="noreferrer noopener">
-            </div>
-            <div class="article-img">
-                <img src="images/08m.webp?random=8" alt="random quilt image index 7" rel="noreferrer noopener">
+                <img src="images/9m.webp?random=8" alt="random quilt image index 7" rel="noreferrer noopener">
             </div>
         </article>
     </main>

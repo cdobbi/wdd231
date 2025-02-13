@@ -43,10 +43,7 @@ html {
     z-index: 1000;
 }
 
-:root {
-    --info-size: 35vh;
-    --section-height: 50vh;
-}
+
 
 body {
     display: grid;
@@ -90,10 +87,7 @@ article {
 
 h1 {
     font-family: var(--title-font);
-    font-size: 3rem;
     color: var(--primary-color);
-    font-weight: 400;
-    margin: 0;
 }
 
 h2 { 
@@ -174,7 +168,7 @@ a:hover {
     color: var(--accent4-color);
 }
 
-/* .article__info {
+/* * .article_info {
     background: canvas;
 } */
 
@@ -186,6 +180,15 @@ a:hover {
         z-index: calc(var(--count, 10) - var(--index, 0));
         position: relative;
         grid-template-rows: unset;
+    }
+    article img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        height: calc(100vh - var(--info-size));
+        height: calc(var(--section-height) - var(--info-size));
+        animation: filter-out both linear;
+        animation-range: exit 0% cover 100%;
     }
 
     nav {
@@ -211,7 +214,7 @@ a:hover {
         right: 0;
         left: 40%;
         bottom: 0;
-        height: 100vh;
+        height: auto;
         animation: none;
     }
 
@@ -230,6 +233,7 @@ a:hover {
     .article-img img {
         animation-timeline: --article;
     }
+        
 }
 
 @keyframes brighten {
@@ -263,3 +267,6 @@ footer {
     padding: 0.5rem;
     z-index: 100;
 }
+
+
+

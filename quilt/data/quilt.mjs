@@ -64,7 +64,7 @@ export const quilts = [
     },
     {
         index: 7,
-        imgSrc: "images/08m.webp?random=8",
+        imgSrc: "images/9m.webp?random=8",
         imgAlt: "random quilt image index 7",
         heading: "",
         paragraph: "",
