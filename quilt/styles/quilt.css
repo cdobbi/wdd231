@@ -113,7 +113,7 @@ article img {
     height: calc(var(--section-height) - var(--info-size));
     animation: filter-out both linear;
     animation-timeline: --article;
-    animation-range: exit 0% cover 100%;
+    /* animation-range: exit 0% cover 100%; */
 }
 
 @keyframes filter-out {
