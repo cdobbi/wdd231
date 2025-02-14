@@ -15,4 +15,3 @@ document.addEventListener("DOMContentLoaded", () => {
       lastModifiedElement.textContent = formatter.format(lastModifiedDate);
     }
   });
-  
