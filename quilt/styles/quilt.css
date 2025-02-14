@@ -138,7 +138,7 @@ article {
 
 h1 {
     font-family: var(--title-font);
-    color: white;
+    color: black;
     z-index: 0;
 }
 
@@ -155,7 +155,8 @@ article img {
     width: 100%;
     height: 100%;
     /* height: calc(100vh - var(--info-size)); */
-    height: calc(100vh - var(--info-size));    animation: filter-out both linear;
+    height: calc(100vh - var(--info-size));
+    animation: filter-out both linear;
     /* animation-range: exit 0% cover 100%; */
 }
 
@@ -163,7 +164,8 @@ article img {
 article img {
     animation-timeline: --article;
     object-fit: cover;
-    height: calc(100vh - var(--info-size));    animation: filter-out both linear;
+    height: calc(100vh - var(--info-size));
+    animation: filter-out both linear;
 
 }
 
@@ -227,7 +229,6 @@ footer {
     width: 100%;
     background-color: var(--primary-color);
     color: var(--accent4-color);
-
     text-align: center;
     padding: 0.5rem;
     z-index: 100;
