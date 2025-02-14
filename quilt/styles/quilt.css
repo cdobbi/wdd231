@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .noto-sans-uniquifier {
-  font-family: "Noto Sans", serif;
-  font-size: 2rem;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+    font-family: "Noto Sans", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 :root {
-    --primary-color:  #435F96;
-    --secondary-color:#142a56;
+    --primary-color: #435F96;
+    --secondary-color: #142a56;
     --accent1-color: #3dc1c5;
     --accent2-color: #456B6B;
     --accent3-color: #354141;
@@ -18,7 +18,7 @@
     --paragraph-color-on-color: #ffffff;
     --title-font: "Noto Sans", serif;
     --heading-font: "Noto Sans", serif;
-    --paragraph-font: "Noto Sans",  serif;
+    --paragraph-font: "Noto Sans", serif;
 }
 
 *,
@@ -58,13 +58,39 @@ nav {
     left: 0;
     width: 100%;
     height: 80px;
-    text-align: left;
+    text-align: center;
     font-size: 1.75rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: var(--primary-color);
     padding: 0 1rem;
     z-index: 3;
+}
+
+nav h1 {
+    color: white;
+    ;
+    z-index: 1;
+    position: relative;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+    color: white;
+    ;
+    margin-left: auto;
 }
 
 article {
@@ -87,13 +113,14 @@ article {
 
 h1 {
     font-family: var(--title-font);
-    color: var(--primary-color);
+    color: white;
+    z-index: 0;
 }
 
-h2 { 
+h2 {
     font-family: var(--heading-font);
     text-transform: uppercase;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     font-weight: 200;
     margin: 0;
 }
@@ -113,25 +140,10 @@ article img {
     animation-timeline: --article;
 }
 
-
 @keyframes filter-out {
     100% {
         filter: brightness(1);
         transform: translate(0, -60%);
-    }
-}
-
-
-@keyframes in-n-out {
-
-    0%,
-    100% {
-        opacity: 0;
-    }
-
-    10%,
-    60% {
-        opacity: 1;
     }
 }
 
@@ -168,9 +180,64 @@ a:hover {
     color: var(--accent4-color);
 }
 
-/* * .article_info {
-    background: canvas;
-} */
+@keyframes brighten {
+    0% {
+        filter: brightness(1);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+
+@keyframes clip-out {
+    0% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    100% {
+        filter: brightness(0.5);
+        clip-path: inset(100% 0 0 0);
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--accent4-color);
+
+    text-align: center;
+    padding: 0.5rem;
+    z-index: 100;
+}
+
+.story-paragraph {
+    color: var(--accent4-color);
+    font-family: var(--title-font);
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 2rem auto;
+    max-width: 1600px;
+    padding: 3rem;
+    background: var(--accent2-color);
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    display: flex;
+}
+
+.story-paragraph img {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    margin: 1rem;
+}
 
 @media (min-width: 768px) {
     article {
@@ -181,6 +248,7 @@ a:hover {
         position: relative;
         grid-template-rows: unset;
     }
+
     article img {
         object-fit: cover;
         width: 100%;
@@ -233,66 +301,5 @@ a:hover {
     .article-img img {
         animation-timeline: --article;
     }
-        
+
 }
-
-@keyframes brighten {
-    0% {
-        filter: brightness(1);
-    }
-
-    100% {
-        filter: brightness(1);
-    }
-}
-
-@keyframes clip-out {
-    0% {
-        clip-path: inset(0 0 0 0);
-    }
-
-    100% {
-        filter: brightness(0.5);
-        clip-path: inset(100% 0 0 0);
-    }
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--primary-color);
-    color: var(--paragraph-color-on-color);
-    text-align: center;
-    padding: 0.5rem;
-    z-index: 100;
-}
-
-p {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.story-paragraph {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    text-align: justify;
-    margin: 2rem auto;
-    max-width: 800px;
-    padding: 1.5rem;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.story-paragraph q {
-    font-style: italic;
-    color: #555;
-}
-
-
-
