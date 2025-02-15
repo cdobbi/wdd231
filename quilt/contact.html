@@ -49,7 +49,7 @@
                 <legend>Design Your Quilt 🧵</legend>
                 <div class="form-item">
                     <label for="pattern-select">Choose a pattern to review</label>
-                    <select id="pattern-select" name="Pattern" required>
+                    <select id="pattern-select" name="Pattern">
                         <option value="" disabled selected>Choose a pattern...</option>
                         <!-- Options will be populated by JavaScript -->
                     </select>
@@ -70,7 +70,7 @@
                 <legend>Proposed Completion Date 🗓️</legend>
                 <div class="form-item">
                     <label for="date-of-purchase">When do you need this quilt finished by?</label>
-                    <input type="date" id="date-of-purchase" name="Date Of Purchase" required>
+                    <input type="date" id="date-of-purchase" name="Date Of Purchase">
                 </div>
             </fieldset>
             <fieldset class="pattern">
@@ -177,7 +177,8 @@
             <fieldset>
                 <legend>Further Instructions (Optional)</legend>
                 <div class="form-item">
-                    <textarea id="written-message-box" name="Written message" rows="4" placeholder="Write a message or instructions here."></textarea>
+                    <textarea id="written-message-box" name="Written message" rows="4"
+                        placeholder="Write a message or instructions here."></textarea>
                 </div>
             </fieldset>
             <fieldset>
@@ -197,4 +198,5 @@
         </p>
     </footer>
 </body>
+
 </html>
