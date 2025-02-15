@@ -19,9 +19,7 @@
 }
 body {
     font-family: 'Noto Sans', sans-serif;
-    line-height: 1.6;
     background: #f9f9f9;
-    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
@@ -98,9 +96,9 @@ nav h1 {
 }
 
 a.logo-link img {
-    width: 48px;
+    width: 52px;
+    height: 52px;
 }
-
 
 main {
     width: 100%;
@@ -159,20 +157,19 @@ fieldset {
     border-radius: 0.5rem;
 }
 
+input#binding {
+    padding: 0.5rem;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 25px;
+}
+
 legend {
     padding: 0.5rem;
     color: navy;
     font-size: 1.2rem;
     margin-bottom: 0;
-}
-
-label,
-input,
-button,
-select,
-textarea {
-    font-family: 'Noto Sans', serif;
-    font-size: 1.2rem;
 }
 
 input,
@@ -187,7 +184,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-    outline: none;
+    outline:#3dc1c5;
     border-color: var(--primary-color);
     box-shadow: 0 0 5px rgba(67, 95, 150, 0.5);
 }
@@ -212,43 +209,27 @@ footer {
     width: 100%;
     background-color: var(--primary-color);
     color: var(--accent4-color);
-
     text-align: center;
     padding: 0.5rem;
     z-index: 100;
-}
-
-
-.checkbox-item {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0.5rem 0;
-}
-
-.checkbox-item input[type="checkbox"] {
-    width: 44px;
-    height: 44px;
-    margin-right: 0.5rem;
 }
 
 .checkbox {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+    align-items: start;
 }
 
 .checkbox-item p {
-    margin-left: 1.5rem;
-    font-size: 1rem;
+    margin-left: 1rem;
+    font-size: 0.8rem;
     color: #333;
 }
 
 .checkbox input[type="checkbox"] {
-    width: 20px;
-    /* Adjusted size */
-    height: 20px;
-    /* Adjusted size */
+    width: 25px;
+    height: 25px;
     margin-right: 0.5rem;
 }
 
