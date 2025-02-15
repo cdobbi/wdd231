@@ -2,40 +2,25 @@ import { patterns } from '../data/patterns.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
     const patternSelect = document.getElementById('pattern-select');
-    const selectedOption = document.createElement('div');
-    selectedOption.classList.add('selected-option');
-    selectedOption.textContent = 'Choose a pattern...';
-    patternSelect.appendChild(selectedOption);
-
-    const optionsContainer = document.createElement('div');
-    optionsContainer.classList.add('options-container');
-    patternSelect.appendChild(optionsContainer);
-
     const patternImage = document.getElementById('pattern-image');
 
+    // Clear existing options
+    patternSelect.innerHTML = '<option value="" disabled selected>Choose a pattern...</option>';
+
+    // Populate the dropdown with patterns
     patterns.forEach(pattern => {
-        const option = document.createElement('div');
-        option.classList.add('option');
-        option.innerHTML = `
-            <img src="${pattern.image}" alt="${pattern.name}" style="width: 50px; height: 50px;">
-            <span>${pattern.name}</span>
-        `;
-        option.addEventListener('click', () => {
-            selectedOption.textContent = pattern.name;
-            patternImage.src = pattern.image;
-            patternImage.alt = pattern.name;
-            optionsContainer.classList.remove('active');
-        });
-        optionsContainer.appendChild(option);
+        const option = document.createElement('option');
+        option.value = pattern.id;
+        option.textContent = pattern.name;
+        patternSelect.appendChild(option);
     });
 
-    selectedOption.addEventListener('click', () => {
-        optionsContainer.classList.toggle('active');
-    });
-
-    document.addEventListener('click', (event) => {
-        if (!patternSelect.contains(event.target)) {
-            optionsContainer.classList.remove('active');
+    // Update the image when a pattern is selected
+    patternSelect.addEventListener('change', (event) => {
+        const selectedPattern = patterns.find(pattern => pattern.id === event.target.value);
+        if (selectedPattern) {
+            patternImage.src = selectedPattern.image;
+            patternImage.alt = selectedPattern.name;
         }
     });
 
