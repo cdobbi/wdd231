@@ -245,7 +245,7 @@ footer {
     gap: 1rem;
 }
 
-.rating-container {
+/* .rating-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -257,9 +257,54 @@ footer {
     margin: 0;
     padding: 0;
     margin-left: -0.8rem;
-}
+} */
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     width: 20px;
     height: 20px;
+}
+
+.custom-select {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.selected-option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.options-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: none;
+    z-index: 1000;
+}
+
+.options-container.active {
+    display: block;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option img {
+    margin-right: 10px;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
 }

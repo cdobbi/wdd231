@@ -18,7 +18,6 @@
     <script src="scripts/form.js" defer></script>
 </head>
 
-
 <body>
     <header></header>
 
@@ -45,8 +44,7 @@
     </nav>
     <main>
         <h1>Contact Me</h1>
-        <form id="review-form" method="get" action="review.html">
-            <fieldset class="form-item">
+        <form id="design-form" method="get" action="inquiry.html">            <fieldset class="form-item">
                 <legend>Design Your Quilt 🧵</legend>
                 <div class="form-item">
                     <label for="pattern-select">Choose a pattern to review</label>
@@ -54,6 +52,9 @@
                         <option value="" disabled selected>Choose a pattern...</option>
                         <!-- Options will be populated by JavaScript -->
                     </select>
+                </div>
+                <div class="form-item">
+                    <img id="pattern-image" src="" alt="Selected Pattern" style="max-width: 100%; height: auto;">
                 </div>
             </fieldset>
             <fieldset class="binding">
@@ -63,130 +64,130 @@
                     <label for="binding">Would you like your quilt bound?</label>
                 </div>
             </fieldset>
-            <fieldse class="date">
+            <fieldset class="date">
                 <legend>Proposed Completion Date 🗓️</legend>
                 <div class="form-item">
                     <label for="date-of-purchase">When do you need this quilt finished by?</label>
                     <input type="date" id="date-of-purchase" name="Date Of Purchase" required>
                 </div>
-                </fieldset>
-                <fieldset class="pattern">
-                    <legend>Pattern Styles</legend>
-                    <h4>Check all that apply</h4>
-                    <div class="checkbox">
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="Edge-to-Edge" name="Feature" value="Edge-to-Edge">
-                            <label for="Edge-to-Edge">Edge-to-Edge (E2E):</label>
-                            <p>Computerized template design that repeats across the width of the quilt.</p>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="Custom Quilting" name="Feature" value="Custom Quilting">
-                            <label for="Custom Quilting">Custom Quilting:</label>
-                            <p>A unique design that is quilted to enhance the piecing and/or applique of the quilt top.</p>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="Pantograph" name="Feature" value="Pantograph">
-                            <label for="Pantograph">Pantograph:</label>
-                            <p>Continuous line quilting designs on a paper roll that are transferred to the quilt top.</p>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="Free Motion" name="Feature" value="Free Motion">
-                            <label for="Free Motion">Free Motion:</label>
-                            <p>Created by moving the machine over the quilt top without the use of a pattern.</p>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="Ruler Work" name="Feature" value="Ruler Work">
-                            <label for="Ruler Work">Ruler Work:</label>
-                            <p>Quilting with rulers to create precise designs.</p>
-                        </div>
+            </fieldset>
+            <fieldset class="pattern">
+                <legend>Pattern Styles</legend>
+                <h4>Check all that apply</h4>
+                <div class="checkbox">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Edge-to-Edge" name="Feature" value="Edge-to-Edge">
+                        <label for="Edge-to-Edge">Edge-to-Edge (E2E):</label>
+                        <p>Computerized template design that repeats across the width of the quilt.</p>
                     </div>
-                </fieldset>
-                <fieldset class="stitch">
-                    <legend>Stitch Style</legend>
-                    <h4>Choose the style of the stitch design</h4>
-                    <div class="checkbox">
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="baby" name="Style" value="Baby">
-                            <label for="baby">Baby</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="youthful" name="Style" value="Youthful">
-                            <label for="youthful">Youthful</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="modern" name="Style" value="Modern">
-                            <label for="modern">Modern</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="heirloom" name="Style" value="Heirloom">
-                            <label for="heirloom">Heirloom</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="feathers" name="Feature" value="Feathers">
-                            <label for="feathers">Feathers</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="swirls" name="Feature" value="Swirls">
-                            <label for="swirls">Swirls</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="stars" name="Feature" value="Stars">
-                            <label for="stars">Stars</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="leaves" name="Feature" value="Leaves">
-                            <label for="leaves">Leaves</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="hearts" name="Feature" value="Hearts">
-                            <label for="hearts">Hearts</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="geometric" name="Feature" value="Geometric">
-                            <label for="geometric">Geometric</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="floral" name="Feature" value="Floral">
-                            <label for="floral">Floral</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="paisley" name="Feature" value="Paisley">
-                            <label for="paisley">Paisley</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="loops" name="Feature" value="Loops">
-                            <label for="loops">Loops</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="crosshatch" name="Feature" value="Crosshatch">
-                            <label for="crosshatch">Crosshatch</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="polkadots" name="Feature" value="Polkadots">
-                            <label for="polkadots">Polkadots</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="other" name="Style" value="Other">
-                            <label for="other">Other</label>
-                        </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Custom Quilting" name="Feature" value="Custom Quilting">
+                        <label for="Custom Quilting">Custom Quilting:</label>
+                        <p>A unique design that is quilted to enhance the piecing and/or applique of the quilt top.</p>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Further Instructions (Optional)</legend>
-                    <div class="form-item">
-                        <textarea id="written-message-box" name="Written message" rows="4" placeholder="Write a message or instructions here."></textarea>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Pantograph" name="Feature" value="Pantograph">
+                        <label for="Pantograph">Pantograph:</label>
+                        <p>Continuous line quilting designs on a paper roll that are transferred to the quilt top.</p>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Finish Up</legend>
-                    <div class="form-item">
-                        </h4>Your Contact Details 🪡</h4>
-                        <input type="text" id="name" name="User Name" placeholder="Enter your name here" required>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Free Motion" name="Feature" value="Free Motion">
+                        <label for="Free Motion">Free Motion:</label>
+                        <p>Created by moving the machine over the quilt top without the use of a pattern.</p>
                     </div>
-                </fieldset>
-                <div class="form-item">
-                    <button type="submit">Let's Get To It</button>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Ruler Work" name="Feature" value="Ruler Work">
+                        <label for="Ruler Work">Ruler Work:</label>
+                        <p>Quilting with rulers to create precise designs.</p>
+                    </div>
                 </div>
+            </fieldset>
+            <fieldset class="stitch">
+                <legend>Stitch Style</legend>
+                <h4>Choose the style of the stitch design</h4>
+                <div class="checkbox">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="baby" name="Style" value="Baby">
+                        <label for="baby">Baby</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="youthful" name="Style" value="Youthful">
+                        <label for="youthful">Youthful</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="modern" name="Style" value="Modern">
+                        <label for="modern">Modern</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="heirloom" name="Style" value="Heirloom">
+                        <label for="heirloom">Heirloom</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feathers" name="Feature" value="Feathers">
+                        <label for="feathers">Feathers</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="swirls" name="Feature" value="Swirls">
+                        <label for="swirls">Swirls</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="stars" name="Feature" value="Stars">
+                        <label for="stars">Stars</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="leaves" name="Feature" value="Leaves">
+                        <label for="leaves">Leaves</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="hearts" name="Feature" value="Hearts">
+                        <label for="hearts">Hearts</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="geometric" name="Feature" value="Geometric">
+                        <label for="geometric">Geometric</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="floral" name="Feature" value="Floral">
+                        <label for="floral">Floral</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="paisley" name="Feature" value="Paisley">
+                        <label for="paisley">Paisley</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="loops" name="Feature" value="Loops">
+                        <label for="loops">Loops</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="crosshatch" name="Feature" value="Crosshatch">
+                        <label for="crosshatch">Crosshatch</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="polkadots" name="Feature" value="Polkadots">
+                        <label for="polkadots">Polkadots</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="other" name="Style" value="Other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Further Instructions (Optional)</legend>
+                <div class="form-item">
+                    <textarea id="written-message-box" name="Written message" rows="4" placeholder="Write a message or instructions here."></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Finish Up</legend>
+                <div class="form-item">
+                    <h4>Your Contact Details 🪡</h4>
+                    <input type="text" id="name" name="User Name" placeholder="Enter your name, phone or email here." required>
+                </div>
+            </fieldset>
+            <div class="form-item">
+                <button type="submit">Let's Get To It</button>
+            </div>
         </form>
     </main>
     <footer>
