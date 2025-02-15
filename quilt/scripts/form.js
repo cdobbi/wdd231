@@ -1,7 +1,6 @@
 import { patterns } from '../data/patterns.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM fully loaded and parsed');
     const patternSelect = document.getElementById('pattern-select');
     const patternImage = document.getElementById('pattern-image');
 
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Populate the dropdown with patterns
     patterns.forEach(pattern => {
-        console.log(`Adding pattern: ${pattern.name}`);
         const option = document.createElement('option');
         option.value = pattern.id;
         option.textContent = pattern.name;

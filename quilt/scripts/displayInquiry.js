@@ -4,14 +4,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (formData) {
     inquiryDetails.innerHTML = `
-            <p><strong>Pattern:</strong> ${formData.Pattern}</p>
+            <p><strong>Pattern:</strong> ${
+              formData.Pattern || "None selected"
+            }</p>
             <p><strong>Binding:</strong> ${formData.Binding ? "Yes" : "No"}</p>
             <p><strong>Completion Date:</strong> ${
               formData["Date Of Purchase"]
             }</p>
-            <p><strong>Features:</strong> ${formData.Feature}</p>
-            <p><strong>Style:</strong> ${formData.Style}</p>
-            <p><strong>Message:</strong> ${formData["Written message"]}</p>
+            <p><strong>Features:</strong> ${
+              formData.Feature || "None selected"
+            }</p>
+            <p><strong>Style:</strong> ${formData.Style || "None selected"}</p>
+            <p><strong>Message:</strong> ${
+              formData["Written message"] || "None"
+            }</p>
             <p><strong>Contact Details:</strong> ${formData["User Name"]}</p>
         `;
   } else {
