@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/form.js" defer></script>
+    <script type="module" src="data/patterns.mjs"></script>
+    <script type="module" src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
     </nav>
     <main>
         <h1>Contact Me</h1>
-        <form id="design-form" method="get" action="inquiry.html">
+        <form id="design-form" method="get" action="inquiry.html" target="_blank">
             <fieldset class="form-item">
                 <legend>Design Your Quilt 🧵</legend>
                 <div class="form-item">
@@ -54,9 +55,9 @@
                         <!-- Options will be populated by JavaScript -->
                     </select>
                 </div>
-                <!-- <div class="form-item">
+                <div class="form-item">
                     <img id="pattern-image" src="" alt="Selected Pattern" style="max-width: 100%; height: auto;">
-                </div> -->
+                </div>
             </fieldset>
             <fieldset class="binding">
                 <legend>Binding</legend>
