@@ -157,7 +157,7 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-.sitremap {
+.sitemap {
     display: grid;
     justify-content: center;
 
@@ -170,7 +170,7 @@ nav a:hover {
         "page2 page2 . . page3 page3";
 }
 
-.sitremap>div {
+.sitemap>div {
     text-align: center;
 }
 
