@@ -52,7 +52,7 @@ nav h1 {
     position: relative;
     padding: 0.5rem 1rem;
     margin: 0;
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: 400;
     font-style: italic;
     flex-grow: 1;
@@ -113,7 +113,7 @@ a:not(.logo-link) {
     padding: 1rem 2rem;
     text-decoration: none;
     word-spacing: 0.2rem;
-    font-size: 1.25rem;
+    font-size: 1.25vw;
     border-radius: 4px;
     transition: background 0.1s;
 }
@@ -191,7 +191,7 @@ textarea:focus {
 
 button {
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 2vw;
     background-color: var(--primary-color);
     color: #fff;
     border: none;
@@ -307,4 +307,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .option:hover {
     background-color: #f0f0f0;
+}
+
+footer p {
+    font-size: 1.2vw;
+    color: var(--accent4-color);
 }
