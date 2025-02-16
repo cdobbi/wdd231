@@ -302,6 +302,19 @@ footer p {
         margin: 1rem;
     }
 
+    nav h1 {
+        font-size: 2.5vw;
+        margin-left: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5vw;
+    }
+
+    button text {
+        font-size: 8vw;
+    }
+
     .article-info {
         background: transparent;
         height: 100vh;

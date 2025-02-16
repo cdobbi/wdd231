@@ -55,7 +55,7 @@ nav h1 {
     padding: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    font-size: 4vw;
+    font-size: 2.5vw;
     font-weight: 400;
     font-style: italic;
     flex-grow: 1;
@@ -116,7 +116,7 @@ main {
 }
 
 main p {
-    font-size: 4vw;
+    font-size: 2.5vw;
     color: #333;
     text-align: start;
     margin: 1rem;
@@ -131,7 +131,7 @@ a:not(.logo-link) {
     padding: 1rem;
     text-decoration: none;
     word-spacing: 0.2rem;
-    font-size: 4vw;
+    font-size: 2.5vw;
     border-radius: 4px;
     transition: background 0.1s;
 }
@@ -197,7 +197,7 @@ textarea {
     height: auto;
     border: 1px solid #ccc;
     border-radius: 0.25rem;
-    font-size: 4vw;
+    font-size: 2.5vw;
 }
 
 input:focus,
@@ -210,7 +210,7 @@ textarea:focus {
 
 button {
     padding: 0.5rem;
-    font-size: 4vw;
+    font-size: 2.5vw;
     background-color: var(--primary-color);
     color: #fff;
     border: none;
@@ -234,7 +234,7 @@ footer {
 }
 
 footer p {
-    font-size: 4vw;
+    font-size: 2.5vw;
 }
 
 .checkbox {
@@ -246,7 +246,7 @@ footer p {
 
 .checkbox-item p {
     margin-left: 1rem;
-    font-size: 4vw;
+    font-size: 2.5vw;
     color: #333;
 }
 
