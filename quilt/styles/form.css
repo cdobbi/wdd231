@@ -116,7 +116,7 @@ main {
 }
 
 main p {
-    font-size: 1.5vw;
+    font-size: 4vw;
     color: #333;
     text-align: start;
     margin: 1rem;
@@ -131,7 +131,7 @@ a:not(.logo-link) {
     padding: 1rem;
     text-decoration: none;
     word-spacing: 0.2rem;
-    font-size: 1vw;
+    font-size: 4vw;
     border-radius: 4px;
     transition: background 0.1s;
 }
@@ -186,7 +186,7 @@ input#binding {
 legend {
     padding: 0.5rem;
     color: navy;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0;
 }
 
@@ -197,7 +197,7 @@ textarea {
     height: auto;
     border: 1px solid #ccc;
     border-radius: 0.25rem;
-    font-size: 1.5vw;
+    font-size: 4vw;
 }
 
 input:focus,
@@ -210,7 +210,7 @@ textarea:focus {
 
 button {
     padding: 0.5rem;
-    font-size: 2vw;
+    font-size: 4vw;
     background-color: var(--primary-color);
     color: #fff;
     border: none;
@@ -234,7 +234,7 @@ footer {
 }
 
 footer p {
-    font-size: 1vw;
+    font-size: 4vw;
 }
 
 .checkbox {
@@ -246,7 +246,7 @@ footer p {
 
 .checkbox-item p {
     margin-left: 1rem;
-    font-size: 0.8rem;
+    font-size: 4vw;
     color: #333;
 }
 
