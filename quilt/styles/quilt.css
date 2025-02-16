@@ -183,13 +183,19 @@ main {
     padding-bottom: 80px;
 }
 
+main h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 4rem;
+    padding: 1rem;
+}
+
 a:not(.logo-link) {
     text-transform: uppercase;
     font-weight: 600;
     color: var(--accent3-color);
     background: var(--accent1-color);
-    padding: 1rem;
-    ;
+    padding: 1rem;;
     text-decoration: none;
     word-spacing: 0.2rem;
     font-size: 1.25vw;
@@ -314,7 +320,6 @@ footer p {
         left: 40%;
         bottom: 0;
         height: auto;
-        animation: none;
     }
 
     .article-img {
