@@ -36,6 +36,16 @@ h4 {
     padding: 0.2rem;
 }
 
+ul.nav-links.active {
+    align-items: center;
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.5rem;
+    padding: 1rem;
+}
+
 form {
     width: 325px;
     margin: 0 auto;

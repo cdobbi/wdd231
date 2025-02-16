@@ -48,7 +48,7 @@ const patterns = [
   {
     id: "pattern10",
     name: "Pattern 10",
-    image: "quilt/images/thumb10.webp",
+    image: "images/thumb10.webp",
   },
   {
     id: "pattern11",
