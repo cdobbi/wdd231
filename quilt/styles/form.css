@@ -102,7 +102,8 @@ a.logo-link img {
 
 main {
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
+
 }
 
 a:not(.logo-link) {
@@ -214,6 +215,10 @@ footer {
     z-index: 100;
 }
 
+footer p {
+    font-size: 1vw;
+}
+
 .checkbox {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -309,7 +314,3 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #f0f0f0;
 }
 
-footer p {
-    font-size: 1.2vw;
-    color: var(--accent4-color);
-}
