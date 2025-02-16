@@ -1,5 +1,6 @@
 /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --primary-color: #435F96;
     --secondary-color: #142a56;
@@ -17,6 +18,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Noto Sans', sans-serif;
     background: #f9f9f9;
@@ -50,8 +52,9 @@ nav h1 {
     color: white;
     z-index: 1;
     position: relative;
-    padding: 0.5rem 1rem;
-    margin: 0;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     font-size: 2vw;
     font-weight: 400;
     font-style: italic;
@@ -59,10 +62,16 @@ nav h1 {
     text-align: center;
 }
 
+nav img {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    align-self: center;
+}
+
 .nav-links {
     position: absolute;
     top: 80px;
-    /* Position the nav-links directly below the navbar */
     left: 0;
     width: 100%;
     justify-content: center;
@@ -106,15 +115,23 @@ main {
 
 }
 
+main p {
+    font-size: 1.5vw;
+    color: #333;
+    text-align: start;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
 a:not(.logo-link) {
     text-transform: uppercase;
     font-weight: 600;
     color: var(--accent3-color);
     background: var(--accent1-color);
-    padding: 1rem 2rem;
+    padding: 1rem;
     text-decoration: none;
     word-spacing: 0.2rem;
-    font-size: 1.25vw;
+    font-size: 1vw;
     border-radius: 4px;
     transition: background 0.1s;
 }
@@ -186,7 +203,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-    outline:#3dc1c5;
+    outline: #3dc1c5;
     border-color: var(--primary-color);
     box-shadow: 0 0 5px rgba(67, 95, 150, 0.5);
 }
@@ -314,4 +331,3 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .option:hover {
     background-color: #f0f0f0;
 }
-
