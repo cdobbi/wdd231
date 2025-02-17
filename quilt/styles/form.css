@@ -36,7 +36,7 @@ h4 {
 
 form {
     width: 100%;
-    max-width: 650px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid #5c5b5b;
@@ -66,7 +66,8 @@ input#binding {
     height: auto;
     border: 1px solid #ccc;
     border-radius: 0.25rem;
-    width: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 legend {
@@ -96,7 +97,7 @@ textarea:focus {
 
 button {
     padding: 0.5rem;
-    font-size: 2.5vw;
+    font-size: 1.5rem;
     background-color: var(--primary-color);
     color: #fff;
     border: none;
@@ -105,7 +106,7 @@ button {
 }
 
 button:hover {
-    background-color: darkgreen;
+    background-color: var(--accent1-color);
 }
 
 .checkbox {
@@ -121,8 +122,8 @@ button:hover {
 }
 
 .checkbox input[type="checkbox"] {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin-right: 0.5rem;
 }
 
@@ -139,14 +140,14 @@ button:hover {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .custom-select {
     position: relative;
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     cursor: pointer;
 }
 
