@@ -85,6 +85,7 @@ a {
 }
 
 .nav-links {
+    display: none;
     position: absolute;
     top: 80px;
     width: 100%;
@@ -100,11 +101,9 @@ a {
     z-index: 2;
 }
 
-.nav-links.active {
-    max-height: 300px;
-}
-
+.nav-links.active,
 .nav-links.active a {
+    max-height: 300px;
     text-transform: uppercase;
     font-weight: 600;
     color: black;
