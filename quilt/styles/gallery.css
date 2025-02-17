@@ -1,5 +1,12 @@
-/* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-sans-uniquifier {
+    font-family: "Noto Sans", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
 
 :root {
     --primary-color: #435F96;
@@ -9,47 +16,68 @@
     --accent3-color: #354141;
     --accent4-color: #ffffff;
     --paragraph-color-on-color: #ffffff;
+    --title-font: "Noto Sans", serif;
+    --heading-font: "Noto Sans", serif;
+    --paragraph-font: "Noto Sans", serif;
 }
 
 *,
 *:after,
 *:before {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
+html {
+    color-scheme: light only;
+}
+
+.logo-link {
+    color: white;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 48px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    z-index: 1000;
+}
 
 body {
-    font-family: 'Noto Sans', sans-serif;
-    background: #f9f9f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    overflow: auto;
 }
 
 nav {
     position: fixed;
     top: 0;
-    z-index: 100;
-}
-
-nav img {
-    width: 48px;
-    height: 48px;
-    margin: 1rem;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-color);
+    padding: 0 1rem;
+    z-index: 3;
 }
 
 nav h1 {
-    font-size: 2vw;
+    color: white;
+    z-index: 1;
+    position: relative;
+    padding: 1rem;
     margin-left: 3rem;
-}
-
-h1 {
-    font-size: 2.5vw;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .nav-links {
@@ -87,9 +115,47 @@ h1 {
     z-index: 2;
 }
 
-a.logo-link img {
-    width: 52px;
-    height: 52px;
+article {
+    max-width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: calc(100vh - var(--info-size)) var(--info-size);
+    view-timeline: --article;
+}
+
+.article-img {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    z-index: 2;
+    animation: in-n-out both linear;
+}
+
+header h1 {
+    font-family: var(--title-font);
+    color: black;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+main h1 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 4rem;
+    padding: 1rem;
 }
 
 a:not(.logo-link) {
@@ -97,10 +163,10 @@ a:not(.logo-link) {
     font-weight: 600;
     color: var(--accent3-color);
     background: var(--accent1-color);
-    padding: 1rem;
+    padding: 1rem;;
     text-decoration: none;
     word-spacing: 0.2rem;
-    font-size: 2.5vw;
+    font-size: 1.25vw;
     border-radius: 4px;
     transition: background 0.1s;
 }
@@ -109,21 +175,6 @@ a:hover {
     background: var(--accent3-color);
     color: var(--accent4-color);
 }
-
-main {
-    width: 100%;
-    padding-bottom: 100px;
-
-}
-
-main p {
-    font-size: 2.5vw;
-    color: #333;
-    text-align: start;
-    margin: 1rem;
-    margin-bottom: 2rem;
-}
-
 @property --gradient-angle {
     syntax: "<angle>";
     initial-value: 0turn;
@@ -186,10 +237,12 @@ footer {
     background-color: var(--primary-color);
     color: var(--accent4-color);
     text-align: center;
-    padding: 0.5rem;
     z-index: 100;
 }
 
 footer p {
-    font-size: 2.5vw;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0.5rem;
 }
+
