@@ -216,19 +216,19 @@ a:hover {
     }
 }
 
-.container {
+/* .container {
     display: grid;
     justify-content: center;
     margin-inline: auto;
     grid-auto-flow: column;
     gap: 16px 40px;
-}
+} */
 
-@media (max-width: 970px) {
+/* @media (max-width: 970px) {
     .container {
         grid-auto-flow: row;
     }
-}
+} */
 
 footer {
     position: fixed;
