@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.noto-sans-uniquifier {
-    font-family: "Noto Sans", serif;
-    font-size: 2rem;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
 }
 
 :root {
@@ -15,192 +13,18 @@
     --accent2-color: #456B6B;
     --accent3-color: #354141;
     --accent4-color: #ffffff;
-    --paragraph-color-on-color: #ffffff;
-    --title-font: "Noto Sans", serif;
-    --heading-font: "Noto Sans", serif;
-    --paragraph-font: "Noto Sans", serif;
 }
 
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
-}
-
-.logo-link {
-    color: white;
-    position: fixed;
-    margin: 0.5rem;
-    width: 52px;
-    aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    z-index: 1000;
-}
-
-body {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    overflow: auto;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--primary-color);
-    padding: 0 1rem;
-    z-index: 3;
-}
-
-nav h1 {
-    color: white;
-    z-index: 1;
-    position: relative;
-    padding: 1rem;
-    margin-left: 3rem;
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-style: italic;
-    flex-grow: 1;
-    text-align: center;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-.nav-links {
-    position: absolute;
-    top: 80px;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-    gap: 1rem;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    z-index: 2;
-}
-
-.nav-links.active {
-    max-height: 300px;
-}
-
-.nav-links.active a {
-    text-transform: uppercase;
-    font-weight: 600;
-    color: black;
-    background: var(--accent1-color);
-    padding: 1rem;
-    text-decoration: none;
-    word-spacing: 0.2rem;
-    font-size: 1.45vw;
-    border-radius: 4px;
-    transition: background 0.1s;
-}
-
-.hamburger {
-    display: block;
+.noto-sans-uniquifier {
+    font-family: "Noto Sans", serif;
     font-size: 2rem;
-    cursor: pointer;
-    display: block;
-    color: white;
-    margin-left: auto;
-    background: white;
-    z-index: 2;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
-header h1 {
-    font-family: var(--title-font);
-    color: black;
-}
-
-h2 {
-    font-family: var(--heading-font);
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 200;
-    margin: 0;
-}
-
-main {
-    width: 100%;
-    padding-bottom: 80px;
-}
-
-
-main h1 {
-    font-size: 1.45vw;
-    word-spacing: 0.2rem;
-    font-weight: 200;
-    margin: 4rem;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: black;
-    background: var(--accent1-color);
-    padding: 1rem;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background 0.1s;
-}
-
-main a {
-    text-transform: uppercase;
-    font-weight: 600;
-    color: black;
-    background: var(--accent1-color);
-    padding: 1rem;
-    text-decoration: none;
-    word-spacing: 0.2rem;
-    font-size: 1.45vw;
-    border-radius: 4px;
-    transition: background 0.1s;
-}
-
-main p {
-    font-family: var(--paragraph-font);
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.5;
-    margin: 2rem;
-    margin-bottom: 0;
-    padding: 0;
-}
-
-a:hover {
-    background: var(--accent3-color);
-    color: var(--accent4-color);
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--primary-color);
-    color: var(--accent4-color);
-    text-align: center;
-    z-index: 100;
-}
-
-footer p {
-    font-size: 0.8rem;
-    padding: 0;
-    margin: 0.5rem;
+html {
+    font-family: "Noto-sans", serif;
 }
 
 @property --gradient-angle {
@@ -236,7 +60,6 @@ footer p {
     justify-content: center;
 }
 
-
 @keyframes gradient-angle {
     to {
         --gradient-angle: 1turn;
@@ -244,27 +67,6 @@ footer p {
 }
 
 @media (min-width: 768px) {
-    nav {
-        position: fixed;
-        top: 0;
-        z-index: 100;
-    }
-
-    nav img {
-        width: 52px;
-        height: 52px;
-        margin: 1rem;
-    }
-
-    nav h1 {
-        font-size: 1rem;
-        margin-left: 2rem;
-    }
-
-    h1 {
-        font-size: 1.2rem;
-    }
-
     .card {
         display: grid;
         margin: 1rem;
