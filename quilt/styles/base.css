@@ -181,6 +181,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding: 1rem;
     background-color: var(--primary-color);
     text-align: center;
     z-index: 100;
@@ -190,7 +191,8 @@ footer p {
     color: var(--accent4-color);
     font-size: 0.8rem;
     padding: 0;
-    margin-bottom: 0;
+    margin: 0;
+    
 }
 
 @media (min-width: 768px) {
