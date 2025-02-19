@@ -1,92 +1,92 @@
 [
   {
     "id": "pattern1",
-    "name": "Pattern 1",
+    "name": "Daisy Delight",
     "image": "images/thumb1.webp",
-    "description": "Description for Pattern 1"
+    "description": "Brighten your quilt with this charming pattern featuring daisies, stems, and leaves. Perfect for spring projects, it adds a touch of nature's beauty to any quilt."
   },
   {
     "id": "pattern2",
-    "name": "Pattern 2",
+    "name": "Ode to Antique Rosettes",
     "image": "images/thumb2.webp",
-    "description": "Description for Pattern 2"
+    "description": "In hues of old, rosettes unfold, Stitches tell stories, histories retold. Petals and threads, crafted with care, Antique rosettes, beyond compare."
   },
   {
     "id": "pattern3",
-    "name": "Pattern 3",
+    "name": "Rhombus and Triangles",
     "image": "images/thumb3.webp",
-    "description": "Description for Pattern 3"
+    "description": "This quilt pattern combines plain rhombus and triangles to create a striking geometric design. Perfect for modern and minimalist quilt projects, it brings clean lines and dynamic shapes to your handmade creation."
   },
   {
     "id": "pattern4",
-    "name": "Pattern 4",
+    "name": "Highway Lines",
     "image": "images/thumb4.webp",
-    "description": "Description for Pattern 4"
+    "description": "Zoom down the quilt with lines so straight, A highway design that is simply great. With roads and lanes, it is sure to impress, This pattern is a journey to quilting success"
   },
   {
     "id": "pattern5",
-    "name": "Pattern 5",
+    "name": "Heartfelt",
     "image": "images/thumb5.webp",
-    "description": "Description for Pattern 5"
+    "description": "Craft your quilt with love using this heartfelt pattern. Charming hearts scattered across the fabric create a warm and affectionate design, perfect for adding a touch of tenderness to any quilt."
   },
   {
     "id": "pattern6",
-    "name": "Pattern 6",
+    "name": "Not A Paisley",
     "image": "images/thumb6.webp",
-    "description": "Description for Pattern 6"
+    "description": "A playful twist on the classic paisley shape. Perfect for adding a modern and unexpected touch to your quilt."
   },
   {
     "id": "pattern7",
-    "name": "Pattern 7",
+    "name": "Swirly Gig",
     "image": "images/thumb7.webp",
-    "description": "Description for Pattern 7"
+    "description": "Dive into a quilt adorned with swirly gigs that swoop like ocean waves, forming elegant shell shapes. Perfect for adding a touch of whimsy and flow to your design"
   },
   {
     "id": "pattern8",
-    "name": "Pattern 8",
+    "name": "Linear Leaves",
     "image": "images/thumb8.webp",
-    "description": "Description for Pattern 8"
+    "description": "This pattern showcases a repeated arrangement of straightforward leaves. Perfect for adding a touch of nature’s simplicity to your quilts, this design brings a clean and structured elegance to any project."
   },
   {
     "id": "pattern9",
-    "name": "Pattern 9",
+    "name": "Bunny Hop",
     "image": "images/thumb9.webp",
-    "description": "Description for Pattern 9"
+    "description": "Bounce into cuteness with this Bunny Hop pattern. Adorable bunnies in a repeated design add a playful and charming touch to any quilt"
   },
   {
     "id": "pattern10",
-    "name": "Pattern 10",
+    "name": "Retro-spective",
     "image": "images/thumb10.webp",
-    "description": "Description for Pattern 10"
+    "description": "Featuring straight lines intersected by circles, this design brings a nostalgic yet modern touch to your quilts, perfect for adding a dynamic and playful flair."
   },
   {
     "id": "pattern11",
-    "name": "Pattern 11",
+    "name": "Ponytail Silhouette",
     "image": "images/thumb11.webp",
-    "description": "Description for Pattern 11"
+    "description": "Featuring the bust of a girl in silhouette, complete with a stylish ponytail. This pattern adds a touch of whimsey and sophistication to any tween quilt."
   },
   {
     "id": "pattern12",
-    "name": "Pattern 12",
+    "name": "Cartoon Clouds",
     "image": "images/thumb12.webp",
-    "description": "Description for Pattern 12"
+    "description": "Add a playful touch to your quilt with this Cartoon Clouds pattern. Whimsical and fun, these fluffy clouds bring cheer to any project"
   },
   {
     "id": "pattern13",
-    "name": "Pattern 13",
+    "name": "Butterfly Essence",
     "image": "images/thumb13.webp",
-    "description": "Description for Pattern 13"
+    "description": "Delight in this enchanting Butterfly Essence pattern. Featuring elegant shapes that evoke the beauty of butterflies, this design adds a touch of grace and whimsy to any quilt."
   },
   {
     "id": "pattern14",
-    "name": "Pattern 14",
+    "name": "I Heart Vintage",
     "image": "images/thumb14.webp",
-    "description": "Description for Pattern 14"
+    "description": "Combine nostalgia and love with this Vintage Hearts Mashup pattern. Featuring a charming blend of antique designs and heart motifs, this pattern adds a rich, romantic touch to any quilt."
   },
   {
     "id": "pattern15",
-    "name": "Pattern 15",
+    "name": "Busy Vintage",
     "image": "images/thumb15.webp",
-    "description": "Description for Pattern 15"
+    "description": "Featuring intricate, bustling designs, this pattern adds a rich, historical touch to your quilt, perfect for creating a timeless treasure."
   }
 ]
