@@ -1,0 +1,92 @@
+[
+  {
+    "id": "pattern1",
+    "name": "Pattern 1",
+    "image": "images/thumb1.webp",
+    "description": "Description for Pattern 1"
+  },
+  {
+    "id": "pattern2",
+    "name": "Pattern 2",
+    "image": "images/thumb2.webp",
+    "description": "Description for Pattern 2"
+  },
+  {
+    "id": "pattern3",
+    "name": "Pattern 3",
+    "image": "images/thumb3.webp",
+    "description": "Description for Pattern 3"
+  },
+  {
+    "id": "pattern4",
+    "name": "Pattern 4",
+    "image": "images/thumb4.webp",
+    "description": "Description for Pattern 4"
+  },
+  {
+    "id": "pattern5",
+    "name": "Pattern 5",
+    "image": "images/thumb5.webp",
+    "description": "Description for Pattern 5"
+  },
+  {
+    "id": "pattern6",
+    "name": "Pattern 6",
+    "image": "images/thumb6.webp",
+    "description": "Description for Pattern 6"
+  },
+  {
+    "id": "pattern7",
+    "name": "Pattern 7",
+    "image": "images/thumb7.webp",
+    "description": "Description for Pattern 7"
+  },
+  {
+    "id": "pattern8",
+    "name": "Pattern 8",
+    "image": "images/thumb8.webp",
+    "description": "Description for Pattern 8"
+  },
+  {
+    "id": "pattern9",
+    "name": "Pattern 9",
+    "image": "images/thumb9.webp",
+    "description": "Description for Pattern 9"
+  },
+  {
+    "id": "pattern10",
+    "name": "Pattern 10",
+    "image": "images/thumb10.webp",
+    "description": "Description for Pattern 10"
+  },
+  {
+    "id": "pattern11",
+    "name": "Pattern 11",
+    "image": "images/thumb11.webp",
+    "description": "Description for Pattern 11"
+  },
+  {
+    "id": "pattern12",
+    "name": "Pattern 12",
+    "image": "images/thumb12.webp",
+    "description": "Description for Pattern 12"
+  },
+  {
+    "id": "pattern13",
+    "name": "Pattern 13",
+    "image": "images/thumb13.webp",
+    "description": "Description for Pattern 13"
+  },
+  {
+    "id": "pattern14",
+    "name": "Pattern 14",
+    "image": "images/thumb14.webp",
+    "description": "Description for Pattern 14"
+  },
+  {
+    "id": "pattern15",
+    "name": "Pattern 15",
+    "image": "images/thumb15.webp",
+    "description": "Description for Pattern 15"
+  }
+]

@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Quilting Creations Website is a place you'll find the stitch you're looking for. From hand, or machine quilting to computerized quilting, we have you covered.">
+        content="Get in touch with Quilting Creations. We offer personalized quilting services to meet all your needs. Contact us today to start your quilting journey!">
     <meta name="keywords"
-        content="quilting, machine quilting, computerized quilting, computerized stippling, longarm quilting, longarm services, quilting services in Utah, Salt Lake County quilting services, Salt Lake City Quilts, quilting service near me, West Valley City quilting services, quilting shop, quilting blog, quilting classes, quilting events, quilting gallery, quilting contact, Quilting about, quilt, quilt patterns, quilt ideas, stippling, quilt binding, quilt finishing, quilt backing, quilt tops, quilt blocks, Quilt Kits, Quilt Fabric, Quilt Notions, Quilt Thread, Quilt Batting, Quilt Rulers, Quilt Templates, Quilt Books, Quilt Magazines, Quilt Videos, Quilt Podcasts, Quilt Websites, Quilt Social Media, Quilt Creations, fabric, quilt fabric, Christi Dobbins, Christina Dobbins, LeAnn Hill, Quilt Creations Website">
+        content="quilting, contact, quilting services, quilting inquiries, personalized quilting, Utah quilting, Christi Dobbins">
     <meta name="author" content="Christi Dobbins">
-    <link rel="icon" href="images/blue-machine.ico" type="image/x-icon">
+    <img src="images/blue-machine.ico" alt="Quilt Creations Logo" width="52" height="52" loading="lazy">
+
+    <meta property="og:title" content="Contact Us | Quilting Creations">
+    <meta property="og:description"
+        content="Contact Quilting Creations for personalized quilting services. We are here to meet all your quilting needs.">
+    <meta property="og:image" content="https://cdobbi.github.io/wdd231/images/contact-thumbnail.jpg">
+    <meta property="og:url" content="https://cdobbi.github.io/wdd231/contact.html">
     <title>Contact | WDD231 Project Quilting Creations | Christi Dobbins</title>
 
     <link rel="stylesheet" href="styles/form.css">
@@ -19,11 +25,12 @@
     <script src="scripts/form.js" defer></script>
 </head>
 
+
 <body>
     <header></header>
     <nav>
         <a class="logo-link" href="https://cdobbi.github.io/wdd231/index.html" target="_blank" rel="noreferrer noopener">
-            <img src="images/blue-machine.ico" alt="Quilt Creations Logo" width="52" height="52">
+            <img src="images/blue-machine.ico" alt="Quilt Creations Logo" width="52" height="52" loading="lazy">
         </a>
         <h1>Stitches of love, patches of dreams, quilts tell stories through fabric seams.</h1>
         <div class="hamburger-menu" aria-expanded="false">&#9776;</div>
@@ -56,7 +63,7 @@
                     </select>
                 </div>
                 <div class="form-item">
-                    <img src="images/zthumb.webp" id="pattern-image" src="" alt="Selected Pattern" width="150">
+                    <img src="images/zthumb.webp" id="pattern-image" alt="Selected Pattern" width="150" height="150" loading="lazy">
                 </div>
             </fieldset>
             <fieldset class="binding">
@@ -75,7 +82,7 @@
             </fieldset>
             <fieldset class="pattern">
                 <legend>Pattern Styles</legend>
-                <h4>Check all that apply</h4>
+                <h4>Select 2</h4>
                 <div class="checkbox">
                     <div class="checkbox-item">
                         <input type="checkbox" id="Edge-to-Edge" name="Feature" value="Edge-to-Edge">
@@ -169,8 +176,20 @@
                         <label for="polkadots">Polkadots</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="other" name="Style" value="Other">
-                        <label for="other">Other</label>
+                        <input type="checkbox" id="other" name="Style" value="Other 1">
+                        <label for="other">Other 1</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="crosshatch" name="Style" value="Zigzag">
+                        <label for="crosshatch">Zigzag</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="polkadots" name="Style" value="Pony Tail">
+                        <label for="polkadots">Pony Tail</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="other" name="Style" value="Other 2">
+                        <label for="other">Other 2</label>
                     </div>
                 </div>
             </fieldset>
@@ -193,6 +212,14 @@
             </div>
         </form>
     </main>
+
+    <!-- Modal HTML Structure -->
+    <div id="pattern-modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+        </div>
+    </div>
+
     <footer>
         <p>Design | Quilting Creations | 1234 Quilt Lane | Salt Lake City, UT 84123 | 801-555-1234</p>
         <p>&copy; 2025 | Christi Dobbins | WDD 231 | 🧵 Project Quilting Creations 🪡 Last Modified:<span id="lastModified"></span> 🕰️
