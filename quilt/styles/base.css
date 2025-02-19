@@ -195,10 +195,17 @@ footer p {
 
 }
 
+footer a[href^="mailto:"] {
+    color: white;
+    font-weight: 600;
+}
+
+
 @media (min-width: 768px) {
     nav h1 {
         font-size: 2rem;
         margin-left: 1.5rem;
+        background: none;
     }
 
     button text {
