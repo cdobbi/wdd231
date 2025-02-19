@@ -56,7 +56,7 @@ nav {
     width: 100%;
     height: 80px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--accent4-color);
     display: flex;
     align-items: center;
@@ -71,7 +71,7 @@ nav h1 {
     position: relative;
     padding: 1rem;
     margin-left: 2.5rem;
-    font-size: 2vw;
+    font-size: 2.2vw;
     font-style: italic;
     font-weight: 300;
     flex-grow: 1;
@@ -128,13 +128,14 @@ nav h1 {
 h2 {
     font-family: var(--heading-font);
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 200;
     margin: 0;
     word-spacing: 1rem;
 }
 
 main {
+    margin-top: 80px;
     width: 100%;
     padding-bottom: 80px;
 }
@@ -189,7 +190,7 @@ footer {
 
 footer p {
     color: var(--accent4-color);
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     padding: 0;
     margin: 0;
 
