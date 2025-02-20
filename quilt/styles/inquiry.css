@@ -1,125 +1,24 @@
-/* General responsive styles */
-body {
-    font-family: "Noto Sans", serif;
+main h2,
+p {
+    margin-bottom: 1rem;
+    line-height: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    word-spacing: 1rem;
+}
+
+main {
+    padding-top: o;
+    padding-bottom: 15rem;
+
+}
+
+footer p {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-header, nav, main, footer {
-    padding: 1rem;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo-link img {
-    width: 52px;
-    height: 52px;
-}
-
-.hamburger-menu {
-    display: none;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li {
-    margin: 0 1rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.2rem;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links li {
-        margin: 0.5rem 0;
-    }
-
-    .nav-links a {
-        font-size: 1.5rem;
-    }
-
-    .hamburger-menu[aria-expanded="true"] + .nav-links {
-        display: flex;
-    }
-
-    nav h1 {
-        font-size: 1.2rem;
-        margin-left: 2.2rem;
-    }
-
-    footer p,
-    footer a {
-        font-size: 1.5vh;
-    }
-}
-
-@media (max-width: 480px) {
-    header, nav, main, footer {
-        padding: 0.5rem;
-    }
-
-    .nav-links a {
-        font-size: 1.2rem;
-    }
-
-    nav h1 {
-        font-size: 1rem;
-        margin-left: 3rem;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 1rem;
-    }
-
-    main h2 {
-        font-size: 1.5rem;
-        margin-top: 4rem;
-        margin-bottom: 0;
-    }
-
-    button text {
-        font-size: 0.9rem;
-    }
-
-    main p {
-        font-family: var(--paragraph-font);
-        font-size: 1rem;
-        font-weight: 300;
-        margin: 2rem;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    footer p,
-    footer a {
-        font-size: 1.2vh;
-    }
+    line-height: 1.5rem;
 }
