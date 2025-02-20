@@ -239,7 +239,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .option img {
-    width: 50px; /* Set explicit width */
-    height: auto; /* Maintain aspect ratio */
+    width: 50px;
+    height: auto;
     margin-right: 10px;
+}
+
+.price {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #435F96;
+    font-weight: 600;
 }
