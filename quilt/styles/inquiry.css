@@ -1,4 +1,4 @@
-/* General styles */
+/* General responsive styles */
 body {
     font-family: "Noto Sans", serif;
     margin: 0;
@@ -66,6 +66,16 @@ nav {
     .hamburger-menu[aria-expanded="true"] + .nav-links {
         display: flex;
     }
+
+    nav h1 {
+        font-size: 1.2rem;
+        margin-left: 2.2rem;
+    }
+
+    footer p,
+    footer a {
+        font-size: 1.5vh;
+    }
 }
 
 @media (max-width: 480px) {
@@ -75,5 +85,41 @@ nav {
 
     .nav-links a {
         font-size: 1.2rem;
+    }
+
+    nav h1 {
+        font-size: 1rem;
+        margin-left: 3rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+
+    button text {
+        font-size: 0.9rem;
+    }
+
+    main p {
+        font-family: var(--paragraph-font);
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2rem;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    footer p,
+    footer a {
+        font-size: 1.2vh;
     }
 }

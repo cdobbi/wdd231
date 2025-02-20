@@ -77,9 +77,8 @@ article img {
     align-content: center;
     gap: 0.5rem;
     height: var(--info-size);
-    margin-top: -3rem;
-    margin-bottom: 1rem;
-    padding-top: 0rem;
+    margin-top: -5rem;
+    padding-top: -1rem;
 }
 
 @keyframes brighten {
