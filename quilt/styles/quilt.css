@@ -77,8 +77,8 @@ article img {
     align-content: center;
     gap: 0.5rem;
     height: var(--info-size);
-    margin-top: -5rem;
-    padding-top: -1rem;
+    margin-top: 0 auto;
+    padding-top: 0 auto;
 }
 
 @keyframes brighten {
@@ -117,11 +117,8 @@ p.story-paragraph {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    /* Ensure the image and text are stacked vertically */
     align-items: center;
-    /* Center the image horizontally */
     justify-content: center;
-    /* Center the image vertically */
 }
 
 p.story-paragraph img {
@@ -130,7 +127,6 @@ p.story-paragraph img {
     border-radius: 8px;
     margin: 1rem;
     object-fit: cover;
-    /* Ensure the image covers the specified dimensions */
 }
 
 @media (min-width: 768px) {
@@ -159,8 +155,6 @@ p.story-paragraph img {
         width: 40%;
         display: grid;
         place-items: center;
-        padding: 1rem;
-        gap: 1rem;
         align-content: center;
     }
 
@@ -175,12 +169,10 @@ p.story-paragraph img {
 
     .article-img {
         animation: brighten both linear;
-        /* animation-range: entry 0% entry 50%; */
     }
 
     .article-img img {
         animation: clip-out both linear;
-        /* animation-range: exit 0% exit 100%; */
         height: 100%;
     }
 
@@ -211,6 +203,5 @@ main h1 {
     font-size: 2rem;
     font-weight: 700;
     text-align: left;
-    margin-bottom: -1rem;
-    margin-top: -1rem;
+    margin: 0 auto;
 }

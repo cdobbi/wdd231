@@ -141,12 +141,11 @@ main {
 main h2 {
     font-size: 2rem;
     word-spacing: 0.2rem;
-    margin-top: 3.5rem;
+    margin-top: 3.3rem;
     margin-bottom: 0;
-    padding: 1rem;
     text-transform: uppercase;
     font-weight: 100;
-    padding: 1rem;
+    padding: 0;;
 }
 
 main a {
@@ -168,7 +167,6 @@ main p {
     font-weight: 300;
     margin: 0;
     margin-bottom: 1rem;
-    padding: 1rem;
 }
 
 a:hover {
