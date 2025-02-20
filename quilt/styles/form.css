@@ -38,6 +38,8 @@ form {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 1rem;
     border: 1px solid #5c5b5b;
     border-radius: 0.5rem;
