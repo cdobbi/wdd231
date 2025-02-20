@@ -237,3 +237,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-decoration: none;
     cursor: pointer;
 }
+
+.option img {
+    width: 50px; /* Set explicit width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}

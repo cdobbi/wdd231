@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Submit your quilting inquiries and get detailed responses from A Quilting Creation. Let us help you with your quilt projects!">
+    <meta name="description" content="This is where you will find the details of your quilting inquiries.">
     <link rel="icon" href="images/blue-machine.ico" type="image/x-icon">
-
     <meta name="keywords"
         content="quilting, inquiry, quilting services, quilting questions, Utah quilting, Longarm machine Quilting, Stippling, quilt binding services, hand quilted, heirloom stitchied quilt, Christi Dobbins">
     <meta name="author" content="Christi Dobbins">
@@ -15,11 +13,9 @@
     <meta property="og:description"
         content="Submit your quilting inquiries and get detailed responses from A Quilting Creation. Let us help you with your quilt projects!">
     <meta property="og:image" content="https://cdobbi.github.io/wdd231/quilt/images/blue-machine.ico">
-
     <meta property="og:url" content="https://cdobbi.github.io/wdd231/quilt/inquiry.html">
     <title>Inquiry Details | WDD231 Project A Quilting Creation | Christi Dobbins</title>
-
-    <link rel="stylesheet" href="styles/form.css">
+    <!-- <link rel="stylesheet" href="styles/form.css"> -->
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/displayInquiry.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
@@ -31,38 +27,32 @@
     <header></header>
     <nav>
         <a class="logo-link" href="https://cdobbi.github.io/wdd231/index.html" target="_blank" rel="noreferrer noopener">
-            <img src="images/blue-machine.ico" alt="Quilt Creations Logo" width="52" height="52" loading="lazy">
+            <img src="images/blue-machine.webp" alt="Quilt Creations Logo" width="52" height="52" loading="lazy">
         </a>
-        <h1>Stitches of love, patches of dreams, quilts tell stories through fabric seams.</h1>
-        <div class="hamburger-menu" aria-expanded="false">&#9776;</div>
+        <h1 tabindex="0">Stitches of love, patches of dreams, quilts tell stories through fabric seams.</h1>
+        <div class="hamburger-menu" aria-expanded="false" role="button" tabindex="0">&#9776;</div>
         <ul class="nav-links">
             <li>
-                <a href="https://cdobbi.github.io/wdd231/quilt/quilt-index.html" target="_blank" rel="noreferrer noopener"
-                    data-text="Home">Home</a>
+                <a href="https://cdobbi.github.io/wdd231/quilt/quilt-index.html" target="_blank" rel="noreferrer noopener" data-text="Home">Home</a>
             </li>
             <li>
-                <a href="https://cdobbi.github.io/wdd231/quilt/gallery.html" target="_blank" data-text="Chamber"
-                    rel="noreferrer noopener">Gallery</a>
+                <a href="https://cdobbi.github.io/wdd231/quilt/gallery.html" target="_blank" data-text="Chamber" rel="noreferrer noopener" tabindex="0">Gallery</a>
             </li>
             <li>
-                <a href="https://cdobbi.github.io/wdd231/quilt/contact.html" target="_blank" data-text="Form"
-                    rel="noreferrer noopener">Design</a>
+                <a href="https://cdobbi.github.io/wdd231/quilt/contact.html" target="_blank" data-text="Form" rel="noreferrer noopener" tabindex="0">Design</a>
             </li>
         </ul>
     </nav>
     <main>
-        <h1>Inquiry Details</h1>
+        <h2 tabindex="0">Inquiry Details</h2>
         <div id="inquiry-details"></div>
 
 
-
     </main>
-
-
-
     <footer>
-        <p>Inquiry Results | A Quilting Creation | 801-555-1234 | <a href="mailto:LongarmQuiltingCreations@gmail.com"
-                target="_blank">LongarmQuiltingCreations@gmail.com</a></p>
+        <p>Home | A Quilting Creation | 801-555-1234 |
+            <a href="mailto:LongarmQuiltingCreations@gmail.com" target="_blank">LongarmQuiltingCreations@gmail.com</a>
+        </p>
         <p>&copy; 2025 | Christi Dobbins | WDD 231 | 🧵 Project A Quilting Creation 🪡 Last Modified:<span id="lastModified"></span> 🕰️
         </p>
     </footer>
